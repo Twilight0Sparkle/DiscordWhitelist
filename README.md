@@ -1,1 +1,1 @@
-![https://windstudio.gitbook.io/discordwhitelist](https://i.imgur.com/4hajuPr.png)
+![first](https://i.imgur.com/4hajuPr.png)(https://windstudio.gitbook.io/discordwhitelist)
