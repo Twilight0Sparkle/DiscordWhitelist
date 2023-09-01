@@ -1,0 +1,337 @@
+### EMBEDS ###
+ErrorTitle: ":x: EROARE"
+#Title for an embed messages, :x: is emoji
+SuccessTitle: ":white_check_mark: SUCCES"
+#Title for an embed messages, :white_check_mark: is emoji
+InfoTitle: ":warning: INFORMAȚII"
+#Title for an embed messages, :warning: is emoji
+DMMessageTitle: ":wave: BUN VENIT LA SERVERUL NOSTRU"
+#Title for DM welcome message, :wave: is emoji
+WelcomeMessageTitle: ":wave: BUN VENIT LA SERVERUL NOSTRU"
+#Title for global welcome message, :wave: is emoji
+###          ###
+
+### MAIN (DISCORD) ###
+AlreadyIn: "Jucătorul `%u` este deja pe lista albă!"
+#Message: If player already in whitelist. %u - user's nickname which already in whitelist!
+AddedIn: "Jucătorul `%u` a fost adăugat cu succes în lista albă!"
+#Message: If player successfully added in whitelist. %u - user's nickname which was added in whitelist!
+SymbolsError: "Ne pare rău, dar porecla dvs. poate conține numai caractere englezești (cu 0-9 și _)"
+#Error message if message wrote not on English language
+LengthError: "Ne pare rău, dar porecla dvs. trebuie să aibă mai mult de 2 caractere sau mai puțin de 17 caractere!"
+#Error message if nickname contains fewer than 3 symbols
+Blacklist-message: "Ne pare rău, dar „%u” se află pe o listă neagră, îmi pare rău."
+#Message: A Blacklist Message that will send like an error in channel if user is in Blacklist. %u - user's nickname which was added in whitelist!
+DM-Message:
+  - "Bună ziua, **%u**! Vă mulțumim că ne-ați ales ca server de redare!"
+  - "Ne bucurăm să vă vedem aici!"
+#Message: A Direct Message will send to user who was whitelisted. %u - user's nickname which was added in whitelist!
+Welcome-Message:
+  - "**Bine ați venit pe serverul nostru, **%u**. Sperăm că vă veți distra în curând!**"
+#Message: A Welcome Message will send to channel that setted up before(GlobalChannelID).
+#%u - user's mention! (@User)
+#%p - user's nickname which was added in whitelist! (USER)
+ReactionEmbedTitle: "**Bine ați venit pe serverul nostru!**"
+#Message: A embed message title that will be used in /setupreaction
+ReactionEmbedDescription:
+  - "Trebuie să faceți clic pe butonul de mai jos pentru a"
+  - "pentru a continua în serverul nostru de discordie!"
+  - "O zi bună!"
+#Message: A embed message description that will be used in /setupreaction
+ReactionButton: "Sunt de acord cu regulile"
+#Message: A embed message button that will be used in /setupreaction
+ReactionNotEnabled: "Ar trebui să-l activați pe config pentru a utiliza această comandă!"
+#Message: A embed message error description that will be used in /setupreaction
+ReactionSuccess: "Gata! Acum puteți face totul pe serverul nostru!"
+#Message: A embed message success description that will be used in /setupreaction
+###          ###
+
+### CONFIRM ###
+ConfirmTitle: "Confirmați corectitudinea numelui de utilizator introdus"
+#Title for an embed message that will be used when user types their username
+ConfirmMessage: "Confirmați că numele de utilizator „%u” este corect"
+#Message: Will be used when user types their username.  user's nickname which was texted to a channel!
+ConfirmButtonYes: "Da, este corect"
+#Confirm button for a message
+ConfirmButtonNo: "Nu, încă o încercare."
+#Confirm button for a message
+TitleRefused: ":x: Ați respins verificarea corectitudinii"
+#Title for an embed message that will be used when user rejected correctness check, :x: is smile
+MessageRefused: "Incearca din nou si fii cat mai atent!"
+#Message: Will be used when user rejected correctness check!
+MessageError: "Nu puteți utiliza aceste butoane!"
+#Message: Will be used when other user used foreign buttons!
+###          ###
+
+### WHITELIST ###
+### VERSION: 0.7A2803 (Include that version if you will report any whitelist bug)
+WhitelistUsage: "&fUtilizare: &6/lista albă <on/off/lock_on/lock_off/add/add_administrator/remove/remove_administrator/message/lock_message/list/list_administrators>"
+#Whitelist: command usage
+WhitelistList: "&fLista jucătorilor(%p): &6%s"
+#Whitelist: shows the list of all whitelisted players. %s - player nicknames!
+AdministratorsList: "&fLista administratorilor(%p): &6%s"
+#Whitelist: shows the list of all administrators. %s - administrator nicknames!
+WhitelistOn: "&fLista albă a devenit &aon"
+#Whitelist: turns on whitelist
+WhitelistAlreadyOn: "&fLista albă a devenit deja &aon!"
+#Whitelist: whitelist already turned on
+WhitelistOff: "&fLista albă a devenit &coff"
+#Whitelist: turns off whitelist
+WhitelistAlreadyOff: "&fWhitelist deja transformat &coff!"
+#Whitelist: whitelist already turned off
+WhitelistLockOn: "Blocarea & fServer s-a transformat în &aon"
+#Whitelist: turns on server locking
+WhitelistLockOff: "Blocarea & fServer s-a transformat în &coff"
+#Whitelist: turns off server locking
+WhitelistAdded: "&fPlayer &6%s &fwas whitelisted"
+#Whitelist: player was added in whitelist. %s - player's nickname!
+WhitelistLockAdded: "&fAdministrator &6%s & fa fost adăugat!"
+#Whitelist: player was added in whitelist. %s - administrator's nickname!
+WhitelistRemoved: "&fPlayer &6%s & fa fost un-whitelisted"
+#Whitelist: player was removed from whitelist. %s - player's nickname!
+WhitelistLockRemoved: "&fAdministrator &6%s & fa fost eliminat"
+#Whitelist: player was removed from whitelist. %s - administrator's nickname!
+WhitelistPlayerNotFound: "& fPlayernu a fost găsit"
+#Whitelist: player not found
+MessageNotFound: "&fTrebuie să incluzi un mesaj"
+#Whitelist: message was not written
+WhitelistMsgSet: "Mesajul & fWhitelist kick a fost setat la: &6%s"
+#Whitelist: kick message. %s - kick message!
+LockMsgSet: "Mesajul & fLock a fost setat la: &6%s"
+#Whitelist: lock kick message. %s - lock kick message!
+WhitelistAlreadyAdded: "&fAcest player este deja în lista albă"
+#Whitelist: player already in
+
+### LINKING ###
+### VERSION: 0.2A0604 (Include that version if you will report any linking bug)
+LeftDiscordKickReason: "Ai părăsit serverul nostru Discord!"
+LinkingTurnedOff: "&cLink este dezactivat momentan. Contactați administrația pentru a obține mai multe informații"
+LinkingProfileNotExist: "&cNuaveți conturi asociate. Nu există informații despre tine."
+LinkingTurnedOffEmbed: "Linkul este dezactivat momentan. Contactați administrația pentru a obține mai multe informații"
+LinkingUsage: "&fUtilizare: &6/link <CODE>"
+#Linking: command usage.
+LinkingStart: "&fYou & 6should&fto începe procesul de conectare prin intermediul serverului nostru Discord! Tastați(în Discord): &6/link cont <NAME>"
+#Linking: when player needs to start linking process.
+LinkingInvalidCode: "&cCodul dvs. este nevalid! Încercați din nou!"
+#Linking: when player include invalid linking code
+LinkingAlreadyLinked: "&cSuntețideja conectat!"
+#Linking: when player already linked
+LinkingNotLinked: "& cNusunteți conectat (ă)!"
+#Linking: when player trying to unlink not linked account
+LinkingLeftGuild: "&cAțiplecat de pe serverul Discord"
+#Linking: when player left from guild
+LinkingLinkedEmbedTitle: ":link: CONECTAT"
+#Linking: discord embed message title when player successful linked
+LinkingLinkedEmbedDescription: "Felicitări! Te-ai conectat cu succes la contul tău Minecraft: **%u**"
+#Linking: discord embed message description when player successful linked,  %u - Minecraft account
+LinkingLinkedMsg: "&aV-ațiconectat cu succes la contul Discord:&6 %u"
+#Linking: discord message when player successful linked, %u - Discord account
+LinkingInfo:
+  - "&fExistă informații complete despre conturile dvs.: "
+  - "&fNickname: &e%0"
+  - "&fUUID: &e%1"
+  - "&fDiscord: &e%2"
+  - "&fDiscordID: &e%3"
+  - "Data & fLink: &e%4"
+#Linking: information message
+LinkingSlashCommandPlayerNotOnlne: "Acest jucător nu este online!"
+#Linking: player needs to be online
+LinkingSlashCommandNotLinked: "Nu ești legat!"
+#Linking: when player trying to unlink not linked account
+LinkingSlashCommandAccountNotYours: "Nu puteți deconecta contul altcuiva!"
+#Linking: user trying to unlink other's account
+LinkingSlashCommandAlreadyLinked: "Ești deja conectat!"
+#Linking: user is already linked!
+LinkingSlashCommandNicknameError: "Porecla nu poate fi prea scurtă sau prea lungă!"
+#Linking: nickname should be longed than 3 symbols or shorter than 17 symbols!
+LinkingSlashCommandCodeGenerated: "Ați generat deja codul!"
+#Linking: if linking process already started
+LinkingSlashCommandLink: "Cod generat! Acum, aveți nevoie pentru a utiliza `/link-ul %u` joc! Multumesc!"
+#Linking: start of linking process. %u - linking code
+LinkingSlashCommandUnLink: "Gata! Ți-ai deconectat contul cu succes"
+#Linking: unlinked accounts
+LinkingUnlinkedMessage: "Contul dvs. a fost deconectat de &f%u &erequest"
+#Linking: unlinked accounts. %u - Discord
+LinkingKickMsg: "&cTrebuie să vă conectați contul Minecraft cu contul Discord!"
+#Linking: kick message
+
+### SLASHCOMMANDS ###
+WhitelistRegexErrorDescription: "Porecla poate conține doar simboluri englezești!"
+#Whitelist: SlashCommand nickname regex check failed
+WhitelistedSuccessful: "Jucătorul **%p** a fost adăugat în lista albă"
+#Whitelist: player was added in whitelist
+WhitelistedAlready: "Jucător **%p** deja în lista albă"
+#Whitelist: player already in whitelist
+WhitelistRemovedSuccessful: "Jucătorul **%p** a fost eliminat din lista albă"
+#Whitelist: player was removed from whitelist
+NotInWhitelist: "Jucătorul **%p* * nu a fost găsit în lista albă"
+#Whitelist: player not found in whitelist
+WhitelistListChooseTitle: ":warning: Alegeți opțiunea"
+#Whitelist: list of whitelisted players choose option (title)
+WhitelistListChooseDescription:
+  - "Alegeți aceste opțiuni pentru a vedea toți jucătorii din lista albă!"
+  - ":green_circle: %0 - Lista albă implicită (după server)"
+  - ":blue_circle: %1 - OurWhitelist(după modul)"
+#Whitelist: list of whitelisted players choose option (description)
+WhitelistListChooseDefaultWhitelistButton: "Lista albă implicită"
+#Whitelist: list of whitelisted players choose option (button name) [default]
+WhitelistListChooseOurWhitelistButton: "Lista noastră de albi"
+#Whitelist: list of whitelisted players choose option (button name) [ourwhitelist]
+WhitelistListOurWhitelistChooseTitle: ":warning: Alegeți opțiunea"
+#Whitelist: list of whitelisted players choose option (title) [ourwhitelist]
+WhitelistListOurWhitelistChooseDescription:
+  - "Alegeți aceste opțiuni pentru a vedea toți jucătorii sau administratorii din Lista noastră!"
+  - ":green_circle: %0 - Jucători obișnuiți"
+  - ":blue_circle: %1 - Administratori"
+#Whitelist: list of whitelisted players choose option (description) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonPlayers: "Jucători obișnuiți"
+#Whitelist: list of whitelisted players choose option (button name) (players) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonAdministrators: "Administratori"
+#Whitelist: list of whitelisted players choose option (button name) (administrators) [ourwhitelist]
+ListPlayersTitle: ":page_with_curl: Lista jucătorilor"
+#Whitelist: list of online players (title)
+ListPlayersDescription: "Jucători online: **%p**"
+#Whitelist: list of online players (description)
+ListPlayersFooter: "Total jucători online: %p"
+#Whitelist: list of online players (footer)
+ListBannedPlayersTitle: ":page_with_curl: Lista jucătorilor interziși"
+#Whitelist: list of banned players (title)
+ListBannedPlayersDescription: "Jucători interziși în prezent: **%p**"
+#Whitelist: list of banned players (description)
+ListBannedPlayersFooter: "Total jucători interziși: %p"
+#Whitelist: list of banned players (footer)
+ListWhitelistedDefaultTitle: ":page_with_curl: Lista jucătorilor de pe lista albă (Implicit)"
+#Whitelist: list of whitelisted players (title) [default]
+ListWhitelistedDefaultDescription: "Jucători în prezent în lista albă implicită: **%p**"
+#Whitelist: list of whitelisted players (description) [default]
+ListWhitelistedDefaultFooter: "Total jucători pe lista albă: %p"
+#Whitelist: list of whitelisted players (footer) [default]
+ListWhitelistedOurWhitelistTitle: ":page_with_curl: Lista jucătorilor de pe lista albă (Lista noastră albă)"
+#Whitelist: list of whitelisted players (title) [ourwhitelist]
+ListWhitelistedOurWhitelistDescription: "Jucători în prezent în lista noastră: **%p**"
+#Whitelist: list of whitelisted players (description) [ourwhitelist]
+ListWhitelistedOurWhitelistFooter: "Total jucători pe lista albă: %p"
+#Whitelist: list of whitelisted players (footer) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistTitle: ":page_with_curl: Lista administratorilor din lista albă (Lista noastră albă)"
+#Whitelist: list of whitelisted administrators (title) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistDescription: "Administratori în prezent în lista noastră: **%p**"
+#Whitelist: list of whitelisted administrators (description) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistFooter: "Total administratori pe lista albă: %p"
+#Whitelist: list of whitelisted administrators (footer) [ourwhitelist]
+
+### EMBEDS COLORS ###
+# Use this site(https://htmlcolorcodes.com/) to pick your color
+
+ErrorEmbedColor: "#ff380d"
+# Embed color for error embeds
+
+SuccessEmbedColor: "#c0ff5f"
+# Embed color for success embeds
+
+ConfirmMenuEmbedColor: "#f7dcd7"
+# Embed color for whitelist confirmation menu embed
+
+ListEmbedColor: "#ffe14d"
+# Embed color for whitelisted players list embed
+
+ReactionEmbedColor: "#94e45b"
+# Embed color for /setupreaction embed
+
+LogsEmbedColor: "#51ffb5"
+# Embed color for logs embeds
+
+DMEmbedColor: "#51ff80"
+# Embed color for welcome DM embed
+
+WelcomeMessageEmbedColor: "#51ffca"
+# Embed color for global welcome message embed
+
+LinkedEmbedColor: "#9eff52"
+# Embed color for successful account link DM embed
+
+### LOGGING ###
+WhitelistLogEmbedTitle: ":page_with_curl: JURNAL LISTĂ ALBĂ"
+#Title for whitelist embed message log
+WhitelistLogEmbedDescription: "Utilizatorul **%u* * și-a adăugat porecla **%p* * în lista albă!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+WhitelistSlashCommandAddLogEmbedDescription: "Administrator **%a** a adăugat porecla **%p** la lista albă!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+WhitelistSlashCommandRemovedLogEmbedDescription: "Administrator **%a** a eliminat porecla **%p** din lista albă!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+LinkingLogTitle: "JURNAL DE LEGĂTURI :page_with_curl:"
+#Title for link embed message log
+LinkingLogLinkedDescription: "Utilizator **%u** conectat la contul său Minecraft **%p** cu UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+LinkingLogUnLinkedDescription: "Utilizatorul **%u** și-a deconectat contul Minecraft **%p** cu UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+CheckLogEmbedTitle: ":page_with_curl: JURNAL DE VERIFICARE"
+#Title for account check embed message log
+CheckWhitelistLogEmbedDescription: "Administrator **%a** jucător verificat **%p** pentru prezența sa în lista albă"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+CheckLinkNickLogEmbedDescription: "Administrator **%a** jucător verificat **%p** pentru contul său conectat"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkDiscordIDLogEmbedDescription: "Administrator **%a** utilizator verificat cu DiscordID **%p** pentru contul său conectat"
+#Description for account check embed message log
+#%p - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkLogEmbedDescription: "Administrator **%a** a verificat utilizatorul cu DiscordID* *%l** și cu porecla **%p** pentru contul său conectat"
+#Description for account check embed message log
+#%p - player's nickname
+#%l - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+
+### CHECK ###
+WhitelistCheckFoundTitle: ":green_book: GĂSITE"
+#Title for found account embed message
+WhitelistCheckFoundDescription: "Jucătorul **%p** a fost găsit în lista albă"
+#Description for found account embed message [Default whitelist]
+WhitelistCheckFoundOurWhitelistDescription: "Jucătorul **%p* * a fost găsit în lista noastră albă. El este: **%t**"
+#Description for found account embed message [OurWhitelist]
+WhitelistCheckNotFoundTitle: ":closed_book: NU A FOST GĂSIT"
+#Title for not found account embed message
+WhitelistCheckNotFoundDescription: "Jucătorul **%p** a fost găsit în lista albă"
+#Description for not found account embed message [Default whitelist]
+LinkingCheckDiscordIDNotFound: "DiscordID trebuie să aibă 18 caractere și să fie de tip: long"
+#Description for DiscordID issue embed message
+LinkingCheckFoundTitle: ":green_book: GĂSITE"
+#Title for found account embed message
+LinkingCheckFoundDescription:
+  - "Există informații pe care le-am găsit despre acest cont:"
+  - "Poreclă: **%n**"
+  - "UUID: **%u**"
+  - "Discord: **%d**"
+  - "DiscordID: **%i**"
+  - "Data conectării: **%t**"
+  - "Mențiune(dacă este disponibilă): %m"
+#Description for all linked account information embed message
+LinkingCheckNotFoundTitle: ":closed_book: NU A FOST GĂSIT"
+#Title for error embed message
+LinkingCheckNotFoundDescription: "Nu putem găsi informații despre acest jucător! Fie nu a conectat contul, fie ați furnizat informații inexacte"
+#Description for error embed message
+
+#Language file version: 1.0 (Include this version where you report translation issue)

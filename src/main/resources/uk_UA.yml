@@ -1,0 +1,348 @@
+### ЕМБЕДИ ###
+
+ErrorTitle: ":x: ПОМИЛКА"
+# Заголовок для ембеда, :x: - смайл.
+
+SuccessTitle: ":white_check_mark: УСПІШНО"
+# Заголовок для ембеда, :white_check_mark: - смайл.
+
+InfoTitle: ":warning: INFORMATION"
+# Title for an embed messages, :warning: is emoji
+
+DMMessageTitle: ":wave: WELCOME TO OUR SERVER"
+# Title for DM welcome message, :wave: is emoji
+
+WelcomeMessageTitle: ":wave: WELCOME TO OUR SERVER"
+# Title for global welcome message, :wave: is emoji
+
+###          ###
+
+### ГОЛОВНЕ (ДИСКОРД) ###
+
+AlreadyIn: "Гравець `%u` вже у білому списку!"
+# Повідомлення: Якщо гравець вже у білому списку. %u - нікнейм гравця!
+
+AddedIn: "Гравець `%u` успішно додано до білого списку!"
+# Повідомлення: Якщо гравець успішно доданий до білого списку. %u - нікнейм гравця!
+
+SymbolsError: "Вибачте, але ваш нікнейм може містити лише англійські символи (включаючи 0-9 та _)"
+# Повідомлення: Якщо гравець написав нікнейм не англійською мовою.
+
+LengthError: "Вибачте, але ваш нікнейм повинен бути довшим за 2 сиволи або коротше 17!"
+# Повідомлення: Якщо у гравця занадто короткий/довгий нікнейм.
+
+Blacklist-message: "Вибачте, але `%u` у чорному списку."
+# Повідомлення: Якщо гравець перебуває в чорному списку. %u - нікнейм гравця!
+
+DM-Message:
+  - "**Привіт, %u! Дякую, що вибрав нас!"
+# Повідомлення: Особисте повідомлення гравцю. %u - нікнейм гравця!
+
+Welcome-Message:
+  - "**Welcome to our server, **%u**. We hope u will get fun soon!**"
+# Повідомлення: Повідомлення, яке буде надіслано в заздалегідь налаштований канал після додавання гравця до білого списку. %u - нікнейм гравця!
+# Message: A Welcome Message will send to channel that setted up before(GlobalChannelID).
+# %u - user's mention! (@User)
+# %p - user's nickname which was added in whitelist! (USER)
+
+ReactionEmbedTitle: "**Welcome to our server!**"
+# Message: A embed message title that will be used in /setupreaction
+
+ReactionEmbedDescription:
+  - "You need to click button below in order"
+  - "to proceed in our discord server!"
+  - "Have a nice day!"
+# Message: A embed message description that will be used in /setupreaction
+
+ReactionButton: "Agree with rules"
+# Message: A embed message button that will be used in /setupreaction
+
+ReactionNotEnabled: "You should enable it on config to use this command!"
+# Message: A embed message error description that will be used in /setupreaction
+
+ReactionSuccess: "Done! You can now do everything on our server!"
+# Message: A embed message success description that will be used in /setupreaction
+
+###          ###
+
+### ПІДТВЕРДЖЕННЯ ###
+
+ConfirmTitle: "Підтверди правильність нікнейму"
+# Заголовок для ембеда: коли гравець написав свій нік.
+
+ConfirmMessage: "Будь ласка, підтверди, що нікнейм `%u` вірний"
+# Вміст ембеда: %u - нікнейм гравця!
+
+ConfirmButtonYes: "Так, все вірно"
+# Кнопка: Підтвердження дії.
+
+ConfirmButtonNo: "Ні, ще раз"
+# Кнопка: Відхилення дії.
+
+TitleRefused: ":x: Ви вирішили спробувати ще раз"
+# Заголовок для ембеда: коли гравець вирішив спробувати ще раз, :x: - смайл.
+
+MessageRefused: "Спробуй знову, але будь уважним!"
+# Вміст ембеда.
+
+MessageError: "Ти не можеш натискати кнопки інших!"
+# Вміст ембеда: якщо інший гравець натисне на чужу кнопку підтвердження.
+
+###          ###
+
+### БІЛИЙ СПИСОК ###
+### ВЕРСIЯ: 0.7A2803 (Вкажіть цю версію, при репорті будь-якого бага, пов'язаного з білим списком)
+
+WhitelistUsage: "&fВикористання: &6/whitelist <on/off/lock_on/lock_off/add/add_administrator/remove/remove_administrator/message/lock_message/list/list_administrators>"
+# Білий список: використання команди
+
+WhitelistList: "&fГравці у білому списку: &6%s"
+# Білий список: показує список гравців. %s - нікнейми гравців!
+
+AdministratorsList: "&fСписок адміністраторів: &6%s"
+# Білий список: показує список усіх адміністраторів. %s - нікнейми адміністратора!
+
+WhitelistOn: "&fБілий список був &aвключений"
+# Білий список: включає білий список
+
+WhitelistAlreadyOn: "&fWhitelist already turned &aon!"
+# Whitelist: whitelist already turned on
+
+WhitelistOff: "&fБілий список був &cвимкнено"
+# Білий список: вимикає білий список
+
+WhitelistAlreadyOff: "&fWhitelist already turned &coff!"
+# Whitelist: whitelist already turned off
+
+WhitelistLockOn: "&fБлокування сервера &aувімкнено"
+# Білий список: вмикає блокування сервера
+
+WhitelistLockOff: "&fБлокування сервера &cвимкнено"
+# Білий список: вимикає блокування сервера
+
+WhitelistAdded: "&fГравець &6%s &fбув доданий до білого списку"
+# Білий список: додавання гравця до білого списку %s - нікнейм гравця!
+
+WhitelistLockAdded: "&fДодано адміністратора &6%s&f!"
+# Білий список: гравця додано в білий список. %s - нікнейм адміністратора!
+
+WhitelistRemoved: "&fГравець &6%s &fбув видалений із білого списку"
+# Білий список: видалення гравця з білого списку. %s - нікнейм гравця!
+
+WhitelistLockRemoved: "&fАдміністратора &6%s видалено"
+# Білий список: гравця видалено з білого списку. %s - нікнейм адміністратора!
+
+WhitelistPlayerNotFound: "&fГравця не було знайдено"
+# Білий список: гравця не було знайдено
+
+WhitelistMsgNotFound: "&fНеобхідно вказати повідомлення про кіку гравця"
+# Білий список: не вказано повідомлення про кіку гравця
+
+WhitelistMsgSet: "&fПовідомлення про кіку гравця було встановлено на &6%s"
+# Білий список: повідомлення про кіку гравця. %s - повідомлення про кіку!
+
+LockMsgSet: "&fПовідомлення блокування встановлено на &6%s"
+# Білий список: повідомлення про блокування. %s - повідомлення про блокування!
+
+WhitelistAlreadyAdded: "&fThis player is already in whitelist"
+# Whitelist: player already in
+
+### LINKING ###
+### VERSION: 0.2A0604 (Include that version if you will report any linking bug)
+
+LeftDiscordKickReason: "You left our Discord server!"
+
+LinkingTurnedOff: "&cLinking currently turned off. Contact with administration to get more information"
+
+LinkingProfileNotExist: "&cYou've no linked accounts. There is no information about you."
+
+LinkingTurnedOffEmbed: "Linking currently turned off. Contact with administration to get more information"
+
+LinkingUsage: "&fUsage: &6/link <CODE>"
+# Linking: command usage.
+
+LinkingStart: "&fYou &6should &fto start linking process through our Discord server! Type(in Discord): &6/account link <NAME>"
+# Linking: when player needs to start linking process.
+
+LinkingInvalidCode: "&cYour code is invalid! Try again!"
+# Linking: when player include invalid linking code
+
+LinkingAlreadyLinked: "&cYou're already linked!"
+# Linking: when player already linked
+
+LinkingNotLinked: "&cYou're not linked!"
+# Linking: when player trying to unlink not linked account
+
+LinkingLeftGuild: "&cYou've left from our Discord server"
+# Linking: when player left from guild
+
+LinkingLinkedEmbedTitle: ":link: CONNECTED"
+# Linking: discord embed message title when player successful linked
+
+LinkingLinkedEmbedDescription: "Congratulations! You've successfully linked with your Minecraft account: **%u**"
+# Linking: discord embed message description when player successful linked,  %u - Minecraft account
+
+LinkingLinkedMsg: "&aYou've successful linked with your Discord account:&6 %u"
+# Linking: discord message when player successful linked, %u - Discord account
+
+LinkingInfo:
+  - "&fThere is some information of your account: \n&6 Account name:&f %a\n&6 Discord:&f %d\n&6 Discord ID:&f %i\n"
+# Linking: information message
+
+LinkingSlashCommandPlayerNotOnlne: "This player is not online!"
+# Linking: player needs to be online
+
+LinkingSlashCommandNotLinked: "You're not linked!"
+# Linking: when player trying to unlink not linked account
+
+LinkingSlashCommandAccountNotYours: "You can't unlink other's account!"
+# Linking: user trying to unlink other's account
+
+LinkingSlashCommandAlreadyLinked: "You're already linked!"
+# Linking: user is already linked!
+
+LinkingSlashCommandNicknameError: "Nickname cant be too short or too long!"
+# Linking: nickname should be longed than 3 symbols or shorter than 17 symbols!
+
+LinkingSlashCommandCodeGenerated: "You have already code generated!"
+# Linking: if linking process already started
+
+LinkingSlashCommandLink: "Done! Use /link %u - ingame"
+# Linking: start of linking process
+
+LinkingSlashCommandUnLink: "Done! You've successful unlinked your account"
+# Linking: unlinked accounts
+
+LinkingKickMsg: "&cYou need to link your Minecraft account with Discord account!"
+# Linking: kick message.
+
+### SLASHCOMMANDS ###
+
+WhitelistRegexErrorDescription: "Nickname may contain only English symbols!"
+
+WhitelistedSuccessful: "Player **%p** was added in whitelist"
+
+WhitelistedAlready: "Player **%p** already in whitelist"
+
+WhitelistRemovedSuccessful: "Player **%p** was removed from whitelist"
+
+NotInWhitelist: "Player **%p** not found in whitelist"
+
+WhitelistListChooseTitle: ":warning: Choose option"
+
+WhitelistListChooseDescription:
+  - "Choose these options to see all players in whitelist!"
+  - ":green_circle: %0 - Default whitelist(by server)"
+  - ":blue_circle: %1 - OurWhitelist(by plugin)"
+#
+
+WhitelistListChooseDefaultWhitelistButton: "Default whitelist"
+
+WhitelistListChooseOurWhitelistButton: "OurWhitelist"
+
+WhitelistListOurWhitelistChooseTitle: ":warning: Choose option"
+
+WhitelistListOurWhitelistChooseDescription:
+  - "Choose these options to see all players or administrators in OurWhitelist!"
+  - ":green_circle: %0 - Usual players"
+  - ":blue_circle: %1 - Administrators"
+#
+WhitelistListOurWhitelistChooseButtonPlayers: "Usual Players"
+
+WhitelistListOurWhitelistChooseButtonAdministrators: "Administrators"
+
+ListPlayersTitle: ":page_with_curl: List of players"
+
+ListPlayersDescription: "Players currently online: **%p**"
+
+ListPlayersFooter: "Total online players: %p"
+
+ListBannedPlayersTitle: ":page_with_curl: List of banned players"
+
+ListBannedPlayersDescription: "Players currently banned: **%p**"
+
+ListBannedPlayersFooter: "Total banned players: %p"
+
+ListWhitelistedDefaultTitle: ":page_with_curl: List of whitelisted players(Default)"
+
+ListWhitelistedDefaultDescription: "Players currently in default whitelist: **%p**"
+
+ListWhitelistedDefaultFooter: "Total whitelisted players: %p"
+
+ListWhitelistedOurWhitelistTitle: ":page_with_curl: List of whitelisted players(OurWhitelist)"
+
+ListWhitelistedOurWhitelistDescription: "Players currently in OurWhitelist: **%p**"
+
+ListWhitelistedOurWhitelistFooter: "Total whitelisted players: %p"
+
+ListAdministratorsWhitelistedOurWhitelistTitle: ":page_with_curl: List of whitelisted administrators(OurWhitelist)"
+
+ListAdministratorsWhitelistedOurWhitelistDescription: "Administrators currently in OurWhitelist: **%p**"
+
+ListAdministratorsWhitelistedOurWhitelistFooter: "Total whitelisted administrators: %p"
+
+### EMBEDS COLORS ###
+# Use this site(https://htmlcolorcodes.com/) to pick your color
+
+ErrorEmbedColor: "#ff380d"
+# Embed color for error embeds
+
+SuccessEmbedColor: "#c0ff5f"
+# Embed color for success embeds
+
+ConfirmMenuEmbedColor: "#f7dcd7"
+# Embed color for whitelist confirmation menu embed
+
+ListEmbedColor: "#ffe14d"
+# Embed color for whitelisted players list embed
+
+ReactionEmbedColor: "#94e45b"
+# Embed color for /setupreaction embed
+
+LogsEmbedColor: "#51ffb5"
+# Embed color for logs embeds
+
+DMEmbedColor: "#51ff80"
+# Embed color for welcome DM embed
+
+WelcomeMessageEmbedColor: "#51ffca"
+# Embed color for global welcome message embed
+
+LinkedEmbedColor: "#9eff52"
+# Embed color for successful account link DM embed
+
+
+### LOGGING ###
+
+WhitelistLogEmbedTitle: ":page_with_curl: WHITELIST LOG"
+
+WhitelistLogEmbedDescription: "The user **%u** added his nickname **%p** to whitelist!"
+# %p - added nickname
+# %u - user's mention (@User)
+# %d - user's discord (User#0001)
+
+WhitelistSlashCommandAddLogEmbedDescription: "Administrator **%a** added nickname %p to whitelist!"
+# %p - added nickname
+# %a - administrator's mention (@Administrator)
+# %d - administrator's discord (Administrator#0001)
+
+WhitelistSlashCommandRemovedLogEmbedDescription: "Administrator **%a** removed nickname %p from whitelist!"
+# %p - added nickname
+# %a - administrator's mention (@Administrator)
+# %d - administrator's discord (Administrator#0001)
+
+LinkingLogTitle: ":page_with_curl: LINKING LOG"
+
+LinkingLogLinkedDescription: "User **%u** linked with his Minecraft account **%p** with UUID **%i**"
+# %p - added nickname
+# %u - user's mention (@User)
+# %d - user's discord (User#0001)
+# %i - player's UUID
+
+LinkingLogUnLinkedDescription: "User **%u** unlinked his Minecraft account **%p** with UUID **%i**"
+# %p - added nickname
+# %u - user's mention (@User)
+# %d - user's discord (User#0001)
+# %i - player's UUID
+
+# 1.3

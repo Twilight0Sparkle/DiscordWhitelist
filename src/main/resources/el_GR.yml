@@ -1,0 +1,336 @@
+### EMBEDS ###
+ErrorTitle: "ΣΦΆΛΜΑ :x:"
+#Title for an embed messages, :x: is emoji
+SuccessTitle: ":white_check_mark: ΕΠΙΤΥΧΊΕΣ"
+#Title for an embed messages, :white_check_mark: is emoji
+InfoTitle: ":warning: ΠΛΗΡΟΦΟΡΙΕΣ"
+#Title for an embed messages, :warning: is emoji
+DMMessageTitle: ":wave: ΚΑΛΩΣ ΗΡΘΑΤΕ ΣΤΟΝ ΔΙΑΚΟΜΙΣΤΗ ΜΑΣ"
+#Title for DM welcome message, :wave: is emoji
+WelcomeMessageTitle: ":wave: ΚΑΛΩΣ ΗΡΘΑΤΕ ΣΤΟΝ ΔΙΑΚΟΜΙΣΤΗ ΜΑΣ"
+#Title for global welcome message, :wave: is emoji
+###          ###
+
+### MAIN (DISCORD) ###
+AlreadyIn: "Ο παίκτης `%u` είναι ήδη στη λευκή λίστα!"
+#Message: If player already in whitelist. %u - user's nickname which already in whitelist!
+AddedIn: "Ο παίκτης `%u` προστέθηκε με επιτυχία στη λευκή λίστα!"
+#Message: If player successfully added in whitelist. %u - user's nickname which was added in whitelist!
+SymbolsError: "Λυπούμαστε, αλλά το ψευδώνυμό σας μπορεί να περιέχει μόνο αγγλικούς χαρακτήρες (με 0-9 και _)"
+#Error message if message wrote not on English language
+LengthError: "Λυπούμαστε, αλλά το ψευδώνυμό σας πρέπει να είναι περισσότεροι από 2 χαρακτήρες ή λιγότεροι από 17 χαρακτήρες!"
+#Error message if nickname contains fewer than 3 symbols
+Blacklist-message: "Λυπούμαστε, αλλά το \"%u\" είναι σε μαύρη λίστα, συγγνώμη."
+#Message: A Blacklist Message that will send like an error in channel if user is in Blacklist. %u - user's nickname which was added in whitelist!
+DM-Message:
+  - "Γεια σας, * *%u* *! Ευχαριστούμε που μας επιλέξατε ως διακομιστή παιχνιδιού!"
+  - "Χαιρόμαστε που σας βλέπουμε εδώ!"
+#Message: A Direct Message will send to user who was whitelisted. %u - user's nickname which was added in whitelist!
+Welcome-Message:
+  - "**Καλώς ήρθατε στο διακομιστή μας, **%u**. Ελπίζουμε ότι θα σας βοηθήσει να προγραμματίσετε το ταξίδι σας."
+#Message: A Welcome Message will send to channel that setted up before(GlobalChannelID).
+#%u - user's mention! (@User)
+#%p - user's nickname which was added in whitelist! (USER)
+ReactionEmbedTitle: "**Καλώς ήρθατε στο διακομιστή μας!**"
+#Message: A embed message title that will be used in /setupreaction
+ReactionEmbedDescription:
+  - "Πρέπει να κάνετε κλικ στο κουμπί παρακάτω για να"
+  - "για να προχωρήσετε στο διακομιστή διχόνοιας μας!"
+  - "Καλή σας μέρα!"
+#Message: A embed message description that will be used in /setupreaction
+ReactionButton: "Συμφωνώ με τους κανόνες"
+#Message: A embed message button that will be used in /setupreaction
+ReactionNotEnabled: "Θα πρέπει να το ενεργοποιήσετε στις ρυθμίσεις για να χρησιμοποιήσετε αυτήν την εντολή!"
+#Message: A embed message error description that will be used in /setupreaction
+ReactionSuccess: "Τέλος! Τώρα μπορείτε να κάνετε τα πάντα στον διακομιστή μας!"
+#Message: A embed message success description that will be used in /setupreaction
+###          ###
+
+### CONFIRM ###
+ConfirmTitle: "Επιβεβαίωση ορθότητας καταχωρημένου ονόματος χρήστη"
+#Title for an embed message that will be used when user types their username
+ConfirmMessage: "Επιβεβαιώστε ότι το όνομα χρήστη `%u` είναι σωστό"
+#Message: Will be used when user types their username.  user's nickname which was texted to a channel!
+ConfirmButtonYes: "Ναι, είναι σωστό."
+#Confirm button for a message
+ConfirmButtonNo: "Όχι, άλλη μια προσπάθεια"
+#Confirm button for a message
+TitleRefused: ":x: Απορρίψατε τον έλεγχο ορθότητας"
+#Title for an embed message that will be used when user rejected correctness check, :x: is smile
+MessageRefused: "Προσπαθήστε ξανά και να είστε όσο το δυνατόν πιο προσεκτικοί!"
+#Message: Will be used when user rejected correctness check!
+MessageError: "Δεν μπορείτε να χρησιμοποιήσετε αυτά τα κουμπιά!"
+#Message: Will be used when other user used foreign buttons!
+###          ###
+
+### WHITELIST ###
+### VERSION: 0.7A2803 (Include that version if you will report any whitelist bug)
+WhitelistUsage: "&fUsage: &6/whitelist <on/off/lock_on/lock_off/add/add_administrator/remove/remove_administrator/message/lock_message/list/list_administrators>"
+#Whitelist: command usage
+WhitelistList: "&fΛίστα παικτών(%p): &6%s"
+#Whitelist: shows the list of all whitelisted players. %s - player nicknames!
+AdministratorsList: "&fΛίστα διαχειριστών(%p): &6%s"
+#Whitelist: shows the list of all administrators. %s - administrator nicknames!
+WhitelistOn: "Ο &fWhitelist έχει μετατραπεί σε & aon"
+#Whitelist: turns on whitelist
+WhitelistAlreadyOn: "Ο & fWhitelist ήδη γύρισε & aon!"
+#Whitelist: whitelist already turned on
+WhitelistOff: "Ο &fWhitelist έχει μετατραπεί σε &coff"
+#Whitelist: turns off whitelist
+WhitelistAlreadyOff: "Ο &fWhitelist έχει ήδη μετατραπεί σε &coff!"
+#Whitelist: whitelist already turned off
+WhitelistLockOn: "Το& fServer κλείδωμα γύρισε & aon"
+#Whitelist: turns on server locking
+WhitelistLockOff: "Το& fServer κλείδωμα γύρισε &coff"
+#Whitelist: turns off server locking
+WhitelistAdded: "&fPlayer &6%s & fwas στη λευκή λίστα"
+#Whitelist: player was added in whitelist. %s - player's nickname!
+WhitelistLockAdded: "&fAdministrator &6%s &fwas προστέθηκε!"
+#Whitelist: player was added in whitelist. %s - administrator's nickname!
+WhitelistRemoved: "&fPlayer &6%s &fwas un-whitelisted"
+#Whitelist: player was removed from whitelist. %s - player's nickname!
+WhitelistLockRemoved: "&fΔιαχειριστής &6%s & fαφαιρέθηκε"
+#Whitelist: player was removed from whitelist. %s - administrator's nickname!
+WhitelistPlayerNotFound: "Ο &fPlayer δεν βρέθηκε"
+#Whitelist: player not found
+MessageNotFound: "&fΠρέπει να συμπεριλάβετε ένα μήνυμα"
+#Whitelist: message was not written
+WhitelistMsgSet: "Τομήνυμα kick & fWhitelist ορίστηκε σε: &6%s"
+#Whitelist: kick message. %s - kick message!
+LockMsgSet: "Τομήνυμα & fLock ορίστηκε σε: &6%s"
+#Whitelist: lock kick message. %s - lock kick message!
+WhitelistAlreadyAdded: "Αυτός ο παίκτης είναι ήδη στη λίστα επιτρεπόμενων"
+#Whitelist: player already in
+### LINKING ###
+
+### VERSION: 0.2A0604 (Include that version if you will report any linking bug)
+LeftDiscordKickReason: "Φύγατε από τον σέρβερ του Discord!"
+LinkingTurnedOff: "&cLinking απενεργοποιημένο αυτήν τη στιγμή. Επικοινωνήστε με τη διοίκηση για περισσότερες πληροφορίες"
+LinkingProfileNotExist: "&cΔενέχετε συνδεδεμένους λογαριασμούς. Δεν υπάρχουν πληροφορίες για εσάς."
+LinkingTurnedOffEmbed: "Η σύνδεση αυτή τη στιγμή είναι απενεργοποιημένη. Επικοινωνήστε με τη διοίκηση για περισσότερες πληροφορίες"
+LinkingUsage: "&fUsage: &6/σύνδεσμος <CODE>"
+#Linking: command usage.
+LinkingStart: "&fYou &6should &fto ξεκινήστε τη διαδικασία σύνδεσης μέσω του διακομιστή Discord! Τύπος(στο Discord): &6/σύνδεσμος λογαριασμού <NAME>"
+#Linking: when player needs to start linking process.
+LinkingInvalidCode: "&cΟ κωδικός σας δεν είναι έγκυρος! Προσπαθήστε ξανά!"
+#Linking: when player include invalid linking code
+LinkingAlreadyLinked: "Είστε ήδη συνδεδεμένοι!"
+#Linking: when player already linked
+LinkingNotLinked: "&cΔενείστε συνδεδεμένοι!"
+#Linking: when player trying to unlink not linked account
+LinkingLeftGuild: "Αποχωρήσατε απότον διακομιστή μας στο Discord"
+#Linking: when player left from guild
+LinkingLinkedEmbedTitle: ":link: ΣΥΝΔΕΔΕΜΈΝΟΙ"
+#Linking: discord embed message title when player successful linked
+LinkingLinkedEmbedDescription: "Συγχαρητήρια! Έχετε συνδεθεί επιτυχώς με τον λογαριασμό σας στο Minecraft: **%u**"
+#Linking: discord embed message description when player successful linked,  %u - Minecraft account
+LinkingLinkedMsg: "&aΈχετε συνδεθεί επιτυχώς με το λογαριασμό σας στο Discord:&6 %u"
+#Linking: discord message when player successful linked, %u - Discord account
+LinkingInfo:
+  - "&fΥπάρχουν πλήρεις πληροφορίες σχετικά με τους λογαριασμούς σας: "
+  - "&fNickname: &e%0"
+  - "&fUUID: &e%1"
+  - "&fDiscord: &e%2"
+  - "&fDiscordID: &e%3"
+  - "&fΗμερομηνία σύνδεσης: &e%4"
+#Linking: information message
+LinkingSlashCommandPlayerNotOnlne: "Αυτός ο παίκτης δεν είναι συνδεδεμένος!"
+#Linking: player needs to be online
+LinkingSlashCommandNotLinked: "Δεν είστε συνδεδεμένοι!"
+#Linking: when player trying to unlink not linked account
+LinkingSlashCommandAccountNotYours: "Δεν μπορείτε να αποσυνδέσετε τον λογαριασμό κάποιου άλλου!"
+#Linking: user trying to unlink other's account
+LinkingSlashCommandAlreadyLinked: "Έχετε ήδη συνδεθεί!"
+#Linking: user is already linked!
+LinkingSlashCommandNicknameError: "Το ψευδώνυμο δεν μπορεί να είναι πολύ σύντομο ή πολύ μεγάλο!"
+#Linking: nickname should be longed than 3 symbols or shorter than 17 symbols!
+LinkingSlashCommandCodeGenerated: "Έχετε ήδη δημιουργήσει κώδικα!"
+#Linking: if linking process already started
+LinkingSlashCommandLink: "Δημιουργήθηκε κωδικός! Τώρα, πρέπει να χρησιμοποιήσετε το παιχνίδι `/link %u`! Ευχαριστώ!"
+#Linking: start of linking process. %u - linking code
+LinkingSlashCommandUnLink: "Ολοκληρώθηκε! Αποσυνδέσατε επιτυχώς τον λογαριασμό σας"
+#Linking: unlinked accounts
+LinkingUnlinkedMessage: "&eΟ λογαριασμός σας αποσυνδέθηκε από το &f%u &erequest"
+#Linking: unlinked accounts. %u - Discord
+LinkingKickMsg: "& cΠρέπεινα συνδέσετε το λογαριασμό σας στο Minecraft με το λογαριασμό σας στο Discord!"
+#Linking: kick message
+
+### SLASHCOMMANDS ###
+WhitelistRegexErrorDescription: "Το ψευδώνυμο μπορεί να περιέχει μόνο αγγλικά σύμβολα!"
+#Whitelist: SlashCommand nickname regex check failed
+WhitelistedSuccessful: "Ο παίκτης **%p** προστέθηκε στη λίστα επιτρεπόμενων"
+#Whitelist: player was added in whitelist
+WhitelistedAlready: "Ο παίκτης **%p** βρίσκεται ήδη στη λίστα επιτρεπόμενων"
+#Whitelist: player already in whitelist
+WhitelistRemovedSuccessful: "Ο παίκτης **%p** αφαιρέθηκε από τη λίστα επιτρεπόμενων"
+#Whitelist: player was removed from whitelist
+NotInWhitelist: "Ο παίκτης **%p** δεν βρέθηκε στη λίστα επιτρεπόμενων"
+#Whitelist: player not found in whitelist
+WhitelistListChooseTitle: ":warning: Κάντε επιλογή"
+#Whitelist: list of whitelisted players choose option (title)
+WhitelistListChooseDescription:
+  - "Επιλέξτε αυτές τις επιλογές για να δείτε όλους τους παίκτες στη λίστα επιτρεπόμενων!"
+  - ":green_circle: %0 - Προεπιλεγμένη λίστα επιτρεπόμενων(ανά διακομιστή)"
+  - ":blue_circle: %1 - OurWhitelist(από plugin)"
+#Whitelist: list of whitelisted players choose option (description)
+WhitelistListChooseDefaultWhitelistButton: "Προεπιλεγμένη λίστα επιτρεπόμενων"
+#Whitelist: list of whitelisted players choose option (button name) [default]
+WhitelistListChooseOurWhitelistButton: "OurWhitelist"
+#Whitelist: list of whitelisted players choose option (button name) [ourwhitelist]
+WhitelistListOurWhitelistChooseTitle: ":warning: Κάντε επιλογή"
+#Whitelist: list of whitelisted players choose option (title) [ourwhitelist]
+WhitelistListOurWhitelistChooseDescription:
+  - "Ορίστε αυτές τις επιλογές για να δείτε όλους τους παίκτες ή τους διαχειριστές στη λίστα μας!"
+  - ":green_circle: %0 - Συνηθισμένοι παίκτες"
+  - ":blue_circle: %1 - Διαχειριστές"
+#Whitelist: list of whitelisted players choose option (description) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonPlayers: "Συνηθισμένοι παίκτες"
+#Whitelist: list of whitelisted players choose option (button name) (players) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonAdministrators: "Διαχειριστές"
+#Whitelist: list of whitelisted players choose option (button name) (administrators) [ourwhitelist]
+ListPlayersTitle: ":page_with_curl: Λίστα παικτών"
+#Whitelist: list of online players (title)
+ListPlayersDescription: "Παίκτες online: **%p**"
+#Whitelist: list of online players (description)
+ListPlayersFooter: "Σύνολο online παικτών: %p"
+#Whitelist: list of online players (footer)
+ListBannedPlayersTitle: ":page_with_curl: Λίστα αποκλεισμένων παικτών"
+#Whitelist: list of banned players (title)
+ListBannedPlayersDescription: "Παίκτες που έχουν ήδη αποκλειστεί: **%p**"
+#Whitelist: list of banned players (description)
+ListBannedPlayersFooter: "Σύνολο αποκλεισμένων παικτών: %p"
+#Whitelist: list of banned players (footer)
+ListWhitelistedDefaultTitle: ":page_with_curl: Λίστα παικτών στη λίστα επιτρεπόμενων (Προεπιλογή)"
+#Whitelist: list of whitelisted players (title) [default]
+ListWhitelistedDefaultDescription: "Παίκτες που βρίσκονται σε προεπιλεγμένη λευκή λίστα: **%p**"
+#Whitelist: list of whitelisted players (description) [default]
+ListWhitelistedDefaultFooter: "Σύνολο παικτών στη λευκή λίστα: %p"
+#Whitelist: list of whitelisted players (footer) [default]
+ListWhitelistedOurWhitelistTitle: ":page_with_curl: Λίστα με τους παίκτες στη λίστα επιτρεπόμενων (Η λίστα επιτρεπόμενων μας)"
+#Whitelist: list of whitelisted players (title) [ourwhitelist]
+ListWhitelistedOurWhitelistDescription: "Παίκτες που βρίσκονται στη λίστα μας: **%p**"
+#Whitelist: list of whitelisted players (description) [ourwhitelist]
+ListWhitelistedOurWhitelistFooter: "Σύνολο παικτών στη λευκή λίστα: %p"
+#Whitelist: list of whitelisted players (footer) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistTitle: ":page_with_curl: Κατάλογος των διαχειριστών που περιλαμβάνονται στη λευκή λίστα (OurWhitelist)"
+#Whitelist: list of whitelisted administrators (title) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistDescription: "Διαχειριστές που βρίσκονται επί του παρόντος στη Λευκή Λίστα μας: * *%p**"
+#Whitelist: list of whitelisted administrators (description) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistFooter: "Σύνολο διαχειριστών στη λίστα επιτρεπόμενων: %p"
+#Whitelist: list of whitelisted administrators (footer) [ourwhitelist]
+
+### EMBEDS COLORS ###
+# Use this site(https://htmlcolorcodes.com/) to pick your color
+
+ErrorEmbedColor: "#ff380d"
+# Embed color for error embeds
+
+SuccessEmbedColor: "#c0ff5f"
+# Embed color for success embeds
+
+ConfirmMenuEmbedColor: "#f7dcd7"
+# Embed color for whitelist confirmation menu embed
+
+ListEmbedColor: "#ffe14d"
+# Embed color for whitelisted players list embed
+
+ReactionEmbedColor: "#94e45b"
+# Embed color for /setupreaction embed
+
+LogsEmbedColor: "#51ffb5"
+# Embed color for logs embeds
+
+DMEmbedColor: "#51ff80"
+# Embed color for welcome DM embed
+
+WelcomeMessageEmbedColor: "#51ffca"
+# Embed color for global welcome message embed
+
+LinkedEmbedColor: "#9eff52"
+# Embed color for successful account link DM embed
+
+### LOGGING ###
+WhitelistLogEmbedTitle: ":page_with_curl: WHITELIST LOG"
+#Title for whitelist embed message log
+WhitelistLogEmbedDescription: "Ο χρήστης **%u** πρόσθεσε το ψευδώνυμό του **%p** στη λίστα επιτρεπόμενων!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+WhitelistSlashCommandAddLogEmbedDescription: "Ο διαχειριστής **%a** πρόσθεσε το ψευδώνυμο **%p** στη λίστα επιτρεπόμενων!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+WhitelistSlashCommandRemovedLogEmbedDescription: "Ο διαχειριστής **%a** αφαίρεσε το ψευδώνυμο **%p** από τη λίστα επιτρεπόμενων!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+LinkingLogTitle: "ΑΡΧΕΊΟ ΚΑΤΑΓΡΑΦΉΣ ΣΥΝΔΈΣΜΟΥ :page_with_curl:"
+#Title for link embed message log
+LinkingLogLinkedDescription: "Χρήστης **%u** συνδεδεμένος με το λογαριασμό του στο Minecraft **%p** με UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+LinkingLogUnLinkedDescription: "Ο χρήστης **%u** αποσύνδεσε τον λογαριασμό του στο Minecraft **%p** με το UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+CheckLogEmbedTitle: "ΜΗΤΡΏΟ ΕΛΈΓΧΟΥ :page_with_curl:"
+#Title for account check embed message log
+CheckWhitelistLogEmbedDescription: "Ο διαχειριστής **%a** έλεγξε τον παίκτη **%p** για την παρουσία του στη λευκή λίστα"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+CheckLinkNickLogEmbedDescription: "Ο διαχειριστής **%a** έλεγξε τον παίκτη **%p** για τον συνδεδεμένο λογαριασμό του"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkDiscordIDLogEmbedDescription: "Ο διαχειριστής **%a** έλεγξε τον χρήστη με DiscordID **%p** για τον συνδεδεμένο λογαριασμό του"
+#Description for account check embed message log
+#%p - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkLogEmbedDescription: "Ο διαχειριστής **%a** έλεγξε τον χρήστη με DiscordID* *%l** και με ψευδώνυμο **%p** για τον συνδεδεμένο λογαριασμό του"
+#Description for account check embed message log
+#%p - player's nickname
+#%l - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+
+### CHECK ###
+WhitelistCheckFoundTitle: ":green_book: FOUND"
+#Title for found account embed message
+WhitelistCheckFoundDescription: "Ο παίκτης **%p** βρέθηκε στη λίστα επιτρεπόμενων"
+#Description for found account embed message [Default whitelist]
+WhitelistCheckFoundOurWhitelistDescription: "Ο παίκτης **%p** βρέθηκε στη λίστα OurWhitelist. Είναι: **%t**"
+#Description for found account embed message [OurWhitelist]
+WhitelistCheckNotFoundTitle: ":closed_book: ΔΕΝ ΒΡΈΘΗΚΕ"
+#Title for not found account embed message
+WhitelistCheckNotFoundDescription: "Ο παίκτης **%p** βρέθηκε στη λίστα επιτρεπόμενων"
+#Description for not found account embed message [Default whitelist]
+LinkingCheckDiscordIDNotFound: "Το DiscordID πρέπει να αποτελείται από 18 χαρακτήρες και να είναι τύπου: long"
+#Description for DiscordID issue embed message
+LinkingCheckFoundTitle: ":green_book: FOUND"
+#Title for found account embed message
+LinkingCheckFoundDescription:
+  - "Υπάρχουν πληροφορίες που βρήκαμε σχετικά με αυτόν τον λογαριασμό:"
+  - "Ψευδώνυμο: **%n**"
+  - "UUID: **%u**"
+  - "Έριδα: **%d**"
+  - "DiscordID: **%i**"
+  - "Ημερομηνία σύνδεσης: **%t**"
+  - "Αναφορά(εάν υπάρχει): %m"
+#Description for all linked account information embed message
+LinkingCheckNotFoundTitle: ":closed_book: ΔΕΝ ΒΡΈΘΗΚΕ"
+#Title for error embed message
+LinkingCheckNotFoundDescription: "Δεν μπορούμε να βρούμε πληροφορίες σχετικά με αυτόν τον παίκτη! Είτε δεν συνδέθηκε με λογαριασμό, είτε παρείχατε πληροφορίες ανακριβείς"
+#Description for error embed message
+#Language file version: 1.0 (Include this version where you report translation issue)

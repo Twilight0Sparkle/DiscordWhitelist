@@ -1,0 +1,336 @@
+### EMBEDS ###
+ErrorTitle: "CHYBA :x:"
+#Title for an embed messages, :x: is emoji
+SuccessTitle: ":white_check_mark: ÚSPĚCHŮ"
+#Title for an embed messages, :white_check_mark: is emoji
+InfoTitle: ":warning: INFORMACÍ"
+#Title for an embed messages, :warning: is emoji
+DMMessageTitle: ":wave: VÍTEJTE NA NAŠEM SERVERU"
+#Title for DM welcome message, :wave: is emoji
+WelcomeMessageTitle: ":wave: VÍTEJTE NA NAŠEM SERVERU"
+#Title for global welcome message, :wave: is emoji
+###          ###
+
+### MAIN (DISCORD) ###
+AlreadyIn: "Hráč `%u` je již na bílé listině!"
+#Message: If player already in whitelist. %u - user's nickname which already in whitelist!
+AddedIn: "Hráč `%u` úspěšně přidán do whitelistu!"
+#Message: If player successfully added in whitelist. %u - user's nickname which was added in whitelist!
+SymbolsError: "Je nám líto, ale vaše přezdívka může obsahovat pouze anglické znaky (s 0-9 a _)"
+#Error message if message wrote not on English language
+LengthError: "Je nám líto, ale vaše přezdívka musí mít více než 2 znaky nebo méně než 17 znaků!"
+#Error message if nickname contains fewer than 3 symbols
+Blacklist-message: "Omlouváme se, ale `%u` je na černé listině, omlouváme se."
+#Message: A Blacklist Message that will send like an error in channel if user is in Blacklist. %u - user's nickname which was added in whitelist!
+DM-Message:
+  - "Dobrý den, **%u**! Děkujeme, že jste si vybrali nás jako hledá play server!"
+  - "Jsme rádi, že vás tu vidíme!"
+#Message: A Direct Message will send to user who was whitelisted. %u - user's nickname which was added in whitelist!
+Welcome-Message:
+  - "**Vítejte na našem serveru, **%u**. Doufáme, že se brzy pobavíte!**"
+#Message: A Welcome Message will send to channel that setted up before(GlobalChannelID).
+#%u - user's mention! (@User)
+#%p - user's nickname which was added in whitelist! (USER)
+ReactionEmbedTitle: "**Vítejte na našem serveru!**"
+#Message: A embed message title that will be used in /setupreaction
+ReactionEmbedDescription:
+  - "Musíte kliknout na tlačítko níže v pořadí"
+  - "pokračovat na našem discord serveru!"
+  - "Přeji hezký den!"
+#Message: A embed message description that will be used in /setupreaction
+ReactionButton: "Souhlasím s pravidly"
+#Message: A embed message button that will be used in /setupreaction
+ReactionNotEnabled: "Tento příkaz byste měli povolit při konfiguraci!"
+#Message: A embed message error description that will be used in /setupreaction
+ReactionSuccess: "Hotovo! Nyní můžete dělat vše na našem serveru!"
+#Message: A embed message success description that will be used in /setupreaction
+###          ###
+
+### CONFIRM ###
+ConfirmTitle: "Potvrďte správnost zadaného uživatelského jména"
+#Title for an embed message that will be used when user types their username
+ConfirmMessage: "Potvrďte prosím, že uživatelské jméno „%u“ je správné"
+#Message: Will be used when user types their username.  user's nickname which was texted to a channel!
+ConfirmButtonYes: "Ano, správně"
+#Confirm button for a message
+ConfirmButtonNo: "Ne, další pokus"
+#Confirm button for a message
+TitleRefused: ":x: Odmítli jste kontrolu správnosti"
+#Title for an embed message that will be used when user rejected correctness check, :x: is smile
+MessageRefused: "Zkuste to znovu a buďte maximálně opatrní!"
+#Message: Will be used when user rejected correctness check!
+MessageError: "Tato tlačítka nelze použít!"
+#Message: Will be used when other user used foreign buttons!
+###          ###
+
+### WHITELIST ###
+### VERSION: 0.7A2803 (Include that version if you will report any whitelist bug)
+WhitelistUsage: "&fUsage: &6/whitelist <on/off/lock_on/lock_off/add/add_administrator/remove/remove_administrator/message/lock_message/list/list_administrators>"
+#Whitelist: command usage
+WhitelistList: "&fSeznam hráčů(%p): &6%s"
+#Whitelist: shows the list of all whitelisted players. %s - player nicknames!
+AdministratorsList: "&fSeznam administrátorů(%p): &6%s"
+#Whitelist: shows the list of all administrators. %s - administrator nicknames!
+WhitelistOn: "&fWhitelist se obrátil &aon"
+#Whitelist: turns on whitelist
+WhitelistAlreadyOn: "&fWhitelist se již obrátil &aon!"
+#Whitelist: whitelist already turned on
+WhitelistOff: "&fWhitelist se obrátil &coff"
+#Whitelist: turns off whitelist
+WhitelistAlreadyOff: "&fWhitelist se již obrátil &coff!"
+#Whitelist: whitelist already turned off
+WhitelistLockOn: "Zamykání & fServeru se otočilo &aon"
+#Whitelist: turns on server locking
+WhitelistLockOff: "Zamykání & fServeru se otočilo &coff"
+#Whitelist: turns off server locking
+WhitelistAdded: "&fPlayer &6%s &fwas povoleno"
+#Whitelist: player was added in whitelist. %s - player's nickname!
+WhitelistLockAdded: "&fAdministrator &6%s &fwas přidáno!"
+#Whitelist: player was added in whitelist. %s - administrator's nickname!
+WhitelistRemoved: "&fPlayer &6%s &fwas un-whitelisted"
+#Whitelist: player was removed from whitelist. %s - player's nickname!
+WhitelistLockRemoved: "&fAdministrator &6%s &fwas odstraněn"
+#Whitelist: player was removed from whitelist. %s - administrator's nickname!
+WhitelistPlayerNotFound: "&fPlayer nebyl nalezen"
+#Whitelist: player not found
+MessageNotFound: "& fMusíte přidat zprávu"
+#Whitelist: message was not written
+WhitelistMsgSet: "Zpráva & fWhitelist kick byla nastavena na: &6%s"
+#Whitelist: kick message. %s - kick message!
+LockMsgSet: "&fLock zpráva byla nastavena na: &6%s"
+#Whitelist: lock kick message. %s - lock kick message!
+WhitelistAlreadyAdded: "&fTento hráč je již ve whitelistu"
+#Whitelist: player already in
+
+### LINKING ###
+### VERSION: 0.2A0604 (Include that version if you will report any linking bug)
+LeftDiscordKickReason: "Opustil jsi náš Discord server!"
+LinkingTurnedOff: "&cLinking je momentálně vypnutý. Pro více informací kontaktujte administrátora"
+LinkingProfileNotExist: "Nemáte žádné propojené účty. Nejsou o vás žádné informace."
+LinkingTurnedOffEmbed: "Propojení je momentálně vypnuté. Pro více informací kontaktujte administrátora"
+LinkingUsage: "&fUsage: &6/link <CODE>"
+#Linking: command usage.
+LinkingStart: "&fYou &6should &fto zahájit proces propojení prostřednictvím našeho serveru Discord! Typ(v Discordu): &6/odkaz na účet <NAME>"
+#Linking: when player needs to start linking process.
+LinkingInvalidCode: "&cVáš kód je neplatný! Zkus to znovu!"
+#Linking: when player include invalid linking code
+LinkingAlreadyLinked: "&cJste již připojeni!"
+#Linking: when player already linked
+LinkingNotLinked: "&cNejste propojeni!"
+#Linking: when player trying to unlink not linked account
+LinkingLeftGuild: "&cOdešli jste z našeho serveru Discord"
+#Linking: when player left from guild
+LinkingLinkedEmbedTitle: ":link: PŘIPOJENO"
+#Linking: discord embed message title when player successful linked
+LinkingLinkedEmbedDescription: "Blahopřejeme! Úspěšně jste se připojili ke svému účtu Minecraft: **%u**"
+#Linking: discord embed message description when player successful linked,  %u - Minecraft account
+LinkingLinkedMsg: "&aÚspěšnějste propojeni se svým účtem na Discordu:&6 %u"
+#Linking: discord message when player successful linked, %u - Discord account
+LinkingInfo:
+  - "&fK dispozici jsou úplné informace o vašich účtech: "
+  - "&fNickname: &e%0"
+  - "&fUUID: &e%1"
+  - "&fDiscord: &e%2"
+  - "&fDiscordID: &e%3"
+  - "&fDatum propojení: &e%4"
+#Linking: information message
+LinkingSlashCommandPlayerNotOnlne: "Tento hráč není online!"
+#Linking: player needs to be online
+LinkingSlashCommandNotLinked: "Nejsi propojen/a!"
+#Linking: when player trying to unlink not linked account
+LinkingSlashCommandAccountNotYours: "Nemůžete zrušit propojení účtu jiného uživatele!"
+#Linking: user trying to unlink other's account
+LinkingSlashCommandAlreadyLinked: "Už jsi propojen/a!"
+#Linking: user is already linked!
+LinkingSlashCommandNicknameError: "Přezdívka nemůže být příliš krátká nebo příliš dlouhá!"
+#Linking: nickname should be longed than 3 symbols or shorter than 17 symbols!
+LinkingSlashCommandCodeGenerated: "Kód jste již vygenerovali!"
+#Linking: if linking process already started
+LinkingSlashCommandLink: "Kód vygenerován! Nyní je třeba použít `/link %u` ingame! Díky!"
+#Linking: start of linking process. %u - linking code
+LinkingSlashCommandUnLink: "Hotovo! Úspěšně jste odpojili svůj účet"
+#Linking: unlinked accounts
+LinkingUnlinkedMessage: "Váš účet byl odpojen &f%u &erequest"
+#Linking: unlinked accounts. %u - Discord
+LinkingKickMsg: "&cMusíte propojit svůj účet Minecraft s účtem Discord!"
+#Linking: kick message
+
+### SLASHCOMMANDS ###
+WhitelistRegexErrorDescription: "Přezdívka může obsahovat pouze anglické symboly!"
+#Whitelist: SlashCommand nickname regex check failed
+WhitelistedSuccessful: "Hráč **%p** byl přidán do seznamu povolených položek"
+#Whitelist: player was added in whitelist
+WhitelistedAlready: "Hráč **%p** již na seznamu povolených položek"
+#Whitelist: player already in whitelist
+WhitelistRemovedSuccessful: "Hráč **%p** byl odstraněn ze seznamu povolených položek"
+#Whitelist: player was removed from whitelist
+NotInWhitelist: "Hráč **%p** nebyl nalezen v seznamu povolených položek"
+#Whitelist: player not found in whitelist
+WhitelistListChooseTitle: ":warning: Vyberte možnost"
+#Whitelist: list of whitelisted players choose option (title)
+WhitelistListChooseDescription:
+  - "Zvolte tyto možnosti, abyste viděli všechny hráče v seznamu povolených!"
+  - ":green_circle: %0 - Výchozí seznam povolených položek(podle serveru)"
+  - ":blue_circle: %1 - OurWhitelist(pomocí pluginu)"
+#Whitelist: list of whitelisted players choose option (description)
+WhitelistListChooseDefaultWhitelistButton: "Výchozí seznam povolených položek"
+#Whitelist: list of whitelisted players choose option (button name) [default]
+WhitelistListChooseOurWhitelistButton: "OurWhitelist"
+#Whitelist: list of whitelisted players choose option (button name) [ourwhitelist]
+WhitelistListOurWhitelistChooseTitle: ":warning: Vyberte možnost"
+#Whitelist: list of whitelisted players choose option (title) [ourwhitelist]
+WhitelistListOurWhitelistChooseDescription:
+  - "Zvolte tyto možnosti pro zobrazení všech hráčů nebo administrátorů v OurWhitelist!"
+  - ":green_circle: %0 - Obvyklí hráči"
+  - ":blue_circle: %1 - Administrátoři"
+#Whitelist: list of whitelisted players choose option (description) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonPlayers: "Obvyklí hráči"
+#Whitelist: list of whitelisted players choose option (button name) (players) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonAdministrators: "Administrátoři"
+#Whitelist: list of whitelisted players choose option (button name) (administrators) [ourwhitelist]
+ListPlayersTitle: ":page_with_curl: Seznam hráčů"
+#Whitelist: list of online players (title)
+ListPlayersDescription: "Počet hráčů online: **%p**"
+#Whitelist: list of online players (description)
+ListPlayersFooter: "Celkem online hráčů: %p"
+#Whitelist: list of online players (footer)
+ListBannedPlayersTitle: ":page_with_curl: Seznam zakázaných hráčů"
+#Whitelist: list of banned players (title)
+ListBannedPlayersDescription: "Hráči v současné době zakázán: **%p**"
+#Whitelist: list of banned players (description)
+ListBannedPlayersFooter: "Celkový počet zakázaných hráčů: %p"
+#Whitelist: list of banned players (footer)
+ListWhitelistedDefaultTitle: ":page_with_curl: Seznam povolených hráčů(výchozí)"
+#Whitelist: list of whitelisted players (title) [default]
+ListWhitelistedDefaultDescription: "Hráči v současné době ve výchozím seznamu povolených položek: **%p**"
+#Whitelist: list of whitelisted players (description) [default]
+ListWhitelistedDefaultFooter: "Celkový počet hráčů na bílém seznamu: %p"
+#Whitelist: list of whitelisted players (footer) [default]
+ListWhitelistedOurWhitelistTitle: ":page_with_curl: Seznam povolených hráčů(OurWhitelist)"
+#Whitelist: list of whitelisted players (title) [ourwhitelist]
+ListWhitelistedOurWhitelistDescription: "Hráči aktuálně v OurWhitelist: **%p**"
+#Whitelist: list of whitelisted players (description) [ourwhitelist]
+ListWhitelistedOurWhitelistFooter: "Celkový počet hráčů na bílém seznamu: %p"
+#Whitelist: list of whitelisted players (footer) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistTitle: ":page_with_curl: Seznam administrátorů(OurWhitelist)"
+#Whitelist: list of whitelisted administrators (title) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistDescription: "Administrátoři aktuálně v OurWhitelist: **%p**"
+#Whitelist: list of whitelisted administrators (description) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistFooter: "Celkem administrátorů na bílém seznamu: %p"
+#Whitelist: list of whitelisted administrators (footer) [ourwhitelist]
+
+### EMBEDS COLORS ###
+# Use this site(https://htmlcolorcodes.com/) to pick your color
+
+ErrorEmbedColor: "#ff380d"
+# Embed color for error embeds
+
+SuccessEmbedColor: "#c0ff5f"
+# Embed color for success embeds
+
+ConfirmMenuEmbedColor: "#f7dcd7"
+# Embed color for whitelist confirmation menu embed
+
+ListEmbedColor: "#ffe14d"
+# Embed color for whitelisted players list embed
+
+ReactionEmbedColor: "#94e45b"
+# Embed color for /setupreaction embed
+
+LogsEmbedColor: "#51ffb5"
+# Embed color for logs embeds
+
+DMEmbedColor: "#51ff80"
+# Embed color for welcome DM embed
+
+WelcomeMessageEmbedColor: "#51ffca"
+# Embed color for global welcome message embed
+
+LinkedEmbedColor: "#9eff52"
+# Embed color for successful account link DM embed
+
+### LOGGING ###
+WhitelistLogEmbedTitle: ":page_with_curl: SEZNAM POVOLENÝCH POLOŽEK"
+#Title for whitelist embed message log
+WhitelistLogEmbedDescription: "Uživatel **%u** přidal svou přezdívku **%p** na whitelist!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+WhitelistSlashCommandAddLogEmbedDescription: "Administrátor **%a** přidal přezdívku **%p** do whitelistu!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+WhitelistSlashCommandRemovedLogEmbedDescription: "Administrátor **%a** odstranil přezdívku **%p** ze seznamu povolených!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+LinkingLogTitle: ":page_with_curl: ZÁZNAM ODKAZŮ"
+#Title for link embed message log
+LinkingLogLinkedDescription: "Uživatel **%u** propojen se svým účtem Minecraft **%p** s UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+LinkingLogUnLinkedDescription: "Uživatel **%u** odpojil svůj účet Minecraft **%p** s UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+CheckLogEmbedTitle: ":page_with_curl: KONTROLNÍ PROTOKOL"
+#Title for account check embed message log
+CheckWhitelistLogEmbedDescription: "Administrátor **%a** zkontroloval hráče **%p** na jeho přítomnost ve whitelistu"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+CheckLinkNickLogEmbedDescription: "Administrátor **%a** zkontroloval hráče **%p** pro jeho propojený účet"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkDiscordIDLogEmbedDescription: "Administrátor **%a** zkontroloval uživatele s DiscordID **%p** pro jeho propojený účet"
+#Description for account check embed message log
+#%p - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkLogEmbedDescription: "Administrátor **%a** zkontroloval uživatele s DiscordID **%l** a s přezdívkou **%p** pro jeho propojený účet"
+#Description for account check embed message log
+#%p - player's nickname
+#%l - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+
+### CHECK ###
+WhitelistCheckFoundTitle: "NALEZENO :green_book:"
+#Title for found account embed message
+WhitelistCheckFoundDescription: "Hráč **%p** byl nalezen ve whitelistu"
+#Description for found account embed message [Default whitelist]
+WhitelistCheckFoundOurWhitelistDescription: "Hráč **%p** byl nalezen v OurWhitelist. On je: **%t**"
+#Description for found account embed message [OurWhitelist]
+WhitelistCheckNotFoundTitle: ":closed_book: NENALEZENO"
+#Title for not found account embed message
+WhitelistCheckNotFoundDescription: "Hráč **%p** byl nalezen ve whitelistu"
+#Description for not found account embed message [Default whitelist]
+LinkingCheckDiscordIDNotFound: "DiscordID musí mít délku 18 znaků a typ: long"
+#Description for DiscordID issue embed message
+LinkingCheckFoundTitle: "NALEZENO :green_book:"
+#Title for found account embed message
+LinkingCheckFoundDescription:
+  - "Informace, které jsme o tomto účtu našli:"
+  - "Přezdívka: **%n**"
+  - "UUID: **%u**"
+  - "Discord: **%d**"
+  - "DiscordID: **%i**"
+  - "Datum propojení: **%t**"
+  - "Zmínka(pokud je k dispozici): %m"
+#Description for all linked account information embed message
+LinkingCheckNotFoundTitle: ":closed_book: NENALEZENO"
+#Title for error embed message
+LinkingCheckNotFoundDescription: "Nemůžeme najít informace o tomto hráči! Buď nepropojil účet, nebo jste poskytli nepřesné informace"
+#Description for error embed message
+#Language file version: 1.0 (Include this version where you report translation issue)

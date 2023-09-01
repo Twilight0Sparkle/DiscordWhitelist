@@ -1,0 +1,337 @@
+### EMBEDS ###
+ErrorTitle: ":x: KĻŪDA"
+#Title for an embed messages, :x: is emoji
+SuccessTitle: ":white_check_mark: PANĀKUMI"
+#Title for an embed messages, :white_check_mark: is emoji
+InfoTitle: ":warning: INFORMĀCIJA"
+#Title for an embed messages, :warning: is emoji
+DMMessageTitle: ":wave: LAIPNI LŪDZAM MŪSU SERVERĪ"
+#Title for DM welcome message, :wave: is emoji
+WelcomeMessageTitle: ":wave: LAIPNI LŪDZAM MŪSU SERVERĪ"
+#Title for global welcome message, :wave: is emoji
+###          ###
+
+### MAIN (DISCORD) ###
+AlreadyIn: "Spēlētājs `%u` jau ir baltajā sarakstā!"
+#Message: If player already in whitelist. %u - user's nickname which already in whitelist!
+AddedIn: "Spēlētājs `%u` veiksmīgi pievienots baltajā sarakstā!"
+#Message: If player successfully added in whitelist. %u - user's nickname which was added in whitelist!
+SymbolsError: "Atvainojiet, bet jūsu segvārds var saturēt tikai angļu valodas rakstzīmes (ar 0-9 un _)"
+#Error message if message wrote not on English language
+LengthError: "Atvainojiet, bet jūsu segvārdam jābūt garākam par 2 rakstzīmēm vai mazākam par 17 rakstzīmēm!"
+#Error message if nickname contains fewer than 3 symbols
+Blacklist-message: "Atvainojiet, bet \"%u\" ir melnajā sarakstā."
+#Message: A Blacklist Message that will send like an error in channel if user is in Blacklist. %u - user's nickname which was added in whitelist!
+DM-Message:
+  - "Sveiki, **%u**! Paldies, ka izvēlējāties mūs kā spēļu serveri!"
+  - "Priecājamies jūs redzēt šeit!"
+#Message: A Direct Message will send to user who was whitelisted. %u - user's nickname which was added in whitelist!
+Welcome-Message:
+  - "**Laipni lūdzam mūsu serverī, **%u**. Mēs ceram, ka jums būs jautri drīz!**"
+#Message: A Welcome Message will send to channel that setted up before(GlobalChannelID).
+#%u - user's mention! (@User)
+#%p - user's nickname which was added in whitelist! (USER)
+ReactionEmbedTitle: "**Laipni lūdzam mūsu serverī!**"
+#Message: A embed message title that will be used in /setupreaction
+ReactionEmbedDescription:
+  - "Lai pasūtītu, jānoklikšķina uz tālāk redzamās pogas"
+  - "lai turpinātu mūsu nesaskaņu serverī!"
+  - "Jauku dienu!"
+#Message: A embed message description that will be used in /setupreaction
+ReactionButton: "Piekrītu noteikumiem"
+#Message: A embed message button that will be used in /setupreaction
+ReactionNotEnabled: "Lai izmantotu šo komandu, iespējojiet to konfigurācijā!"
+#Message: A embed message error description that will be used in /setupreaction
+ReactionSuccess: "Gatavs! Tagad jūs varat darīt visu mūsu serverī!"
+#Message: A embed message success description that will be used in /setupreaction
+###          ###
+
+### CONFIRM ###
+ConfirmTitle: "Apstipriniet ievadītā lietotājvārda pareizību"
+#Title for an embed message that will be used when user types their username
+ConfirmMessage: "Lūdzu, apstipriniet, ka lietotājvārds `%u` ir pareizs"
+#Message: Will be used when user types their username.  user's nickname which was texted to a channel!
+ConfirmButtonYes: "Jā, tā ir pareiza"
+#Confirm button for a message
+ConfirmButtonNo: "Nē, mēģini vēlreiz"
+#Confirm button for a message
+TitleRefused: ":x: Jūs noraidījāt pareizības pārbaudi"
+#Title for an embed message that will be used when user rejected correctness check, :x: is smile
+MessageRefused: "Mēģiniet vēlreiz un esiet maksimāli uzmanīgi!"
+#Message: Will be used when user rejected correctness check!
+MessageError: "Jūs nevarat izmantot šīs pogas!"
+#Message: Will be used when other user used foreign buttons!
+###          ###
+
+### WHITELIST ###
+### VERSION: 0.7A2803 (Include that version if you will report any whitelist bug)
+WhitelistUsage: "&fIzmantojums: &6/baltais saraksts <on/off/lock_on/lock_off/add/add_administrator/remove/remove_administrator/message/lock_message/list/list_administrators>"
+#Whitelist: command usage
+WhitelistList: "&fSpēlētāju saraksts (%p): 6 &%s"
+#Whitelist: shows the list of all whitelisted players. %s - player nicknames!
+AdministratorsList: "&fList of administrators(%p): &6%s"
+#Whitelist: shows the list of all administrators. %s - administrator nicknames!
+WhitelistOn: "&fWhitelist has turned &aon"
+#Whitelist: turns on whitelist
+WhitelistAlreadyOn: "&fBaltais saraksts jau ir ieslēgts!"
+#Whitelist: whitelist already turned on
+WhitelistOff: "&fWhitelist has turned &coff"
+#Whitelist: turns off whitelist
+WhitelistAlreadyOff: "&fWhitelist already turned &coff!"
+#Whitelist: whitelist already turned off
+WhitelistLockOn: "&fServera bloķēšana ir pārvērtusies par &aon"
+#Whitelist: turns on server locking
+WhitelistLockOff: "&fServera bloķēšana ir pārvērtusies &coff"
+#Whitelist: turns off server locking
+WhitelistAdded: "&fSpēlētājs &6%s & fbijabaltajā sarakstā"
+#Whitelist: player was added in whitelist. %s - player's nickname!
+WhitelistLockAdded: "&fAdministrator &6%s &fwas pievienots!"
+#Whitelist: player was added in whitelist. %s - administrator's nickname!
+WhitelistRemoved: "&fPlayer &6%s &fwas un-whitelisted"
+#Whitelist: player was removed from whitelist. %s - player's nickname!
+WhitelistLockRemoved: "&fAdministrators &6%s &fbija noņemts"
+#Whitelist: player was removed from whitelist. %s - administrator's nickname!
+WhitelistPlayerNotFound: "&fPlayer nav atrasts"
+#Whitelist: player not found
+MessageNotFound: "& fJums ir jāpievieno ziņojums"
+#Whitelist: message was not written
+WhitelistMsgSet: "&fWhitelist kick message was set to: &6%s"
+#Whitelist: kick message. %s - kick message!
+LockMsgSet: "&fLock message was set to: &6%s"
+#Whitelist: lock kick message. %s - lock kick message!
+WhitelistAlreadyAdded: "&fŠis atskaņotājs jau ir baltajā sarakstā"
+#Whitelist: player already in
+
+### LINKING ###
+### VERSION: 0.2A0604 (Include that version if you will report any linking bug)
+LeftDiscordKickReason: "Jūs pametāt mūsu Discord serveri!"
+LinkingTurnedOff: "&cLinking pašlaik ir izslēgts. Sazinieties ar administrāciju, lai iegūtu vairāk informācijas"
+LinkingProfileNotExist: "&cJums nav saistītu kontu. Nav informācijas par jums."
+LinkingTurnedOffEmbed: "Saistīšana pašlaik ir izslēgta. Sazinieties ar administrāciju, lai iegūtu vairāk informācijas"
+LinkingUsage: "&fIzmantošana: &6/saite <CODE>"
+#Linking: command usage.
+LinkingStart: "&fYou &6should &fto sākt saistīt procesu, izmantojot mūsu Discord serveri! Ierakstiet(Discord): &6/konta saite <NAME>"
+#Linking: when player needs to start linking process.
+LinkingInvalidCode: "&cJūsu kods nav derīgs! Mēģiniet vēlreiz!"
+#Linking: when player include invalid linking code
+LinkingAlreadyLinked: "&cJūs jau esat saistīts!"
+#Linking: when player already linked
+LinkingNotLinked: "&cJūsneesat saistīts!"
+#Linking: when player trying to unlink not linked account
+LinkingLeftGuild: "&cJūsesat aizgājis no Discord servera"
+#Linking: when player left from guild
+LinkingLinkedEmbedTitle: ":link: SAVIENOTS"
+#Linking: discord embed message title when player successful linked
+LinkingLinkedEmbedDescription: "Apsveicam! Jūs esat veiksmīgi izveidojis savienojumu ar savu Minecraft kontu: **%u**"
+#Linking: discord embed message description when player successful linked,  %u - Minecraft account
+LinkingLinkedMsg: "&aJūsesat veiksmīgi sasaistījis ar savu Discord kontu:&6 %u"
+#Linking: discord message when player successful linked, %u - Discord account
+LinkingInfo:
+  - "&fPilnīga informācija par jūsu kontiem: "
+  - "&fNosaukums: &e%0"
+  - "&fUUID: &e%1"
+  - "&fDiscord: &e%2"
+  - "&fDiscordID: &e%3"
+  - "&fSaistīšanas datums: &e%4"
+#Linking: information message
+LinkingSlashCommandPlayerNotOnlne: "Šis spēlētājs nav tiešsaistē!"
+#Linking: player needs to be online
+LinkingSlashCommandNotLinked: "Jūs neesat saistīts!"
+#Linking: when player trying to unlink not linked account
+LinkingSlashCommandAccountNotYours: "Jūs nevarat atsaistīt cita kontu!"
+#Linking: user trying to unlink other's account
+LinkingSlashCommandAlreadyLinked: "Jūs jau esat saistīts!"
+#Linking: user is already linked!
+LinkingSlashCommandNicknameError: "Segvārds nevar būt pārāk īss vai pārāk garš!"
+#Linking: nickname should be longed than 3 symbols or shorter than 17 symbols!
+LinkingSlashCommandCodeGenerated: "Jūs jau esat ģenerējis kodu!"
+#Linking: if linking process already started
+LinkingSlashCommandLink: "Kods ģenerēts! Tagad, jums ir nepieciešams, lai izmantotu `/link %u` ingame! Paldies!"
+#Linking: start of linking process. %u - linking code
+LinkingSlashCommandUnLink: "Gatavs! Jūs esat veiksmīgi atvienojis savu kontu"
+#Linking: unlinked accounts
+LinkingUnlinkedMessage: "&EJūsu kontu atsaistīja &f%u &erequest"
+#Linking: unlinked accounts. %u - Discord
+LinkingKickMsg: "&cJums ir jāsaista Minecraft konts ar Discord kontu!"
+#Linking: kick message
+
+### SLASHCOMMANDS ###
+WhitelistRegexErrorDescription: "Segvārds drīkst saturēt tikai angļu valodas simbolus!"
+#Whitelist: SlashCommand nickname regex check failed
+WhitelistedSuccessful: "Spēlētājs **%p** tika pievienots baltajā sarakstā"
+#Whitelist: player was added in whitelist
+WhitelistedAlready: "Spēlētājs **%p** jau ir baltajā sarakstā"
+#Whitelist: player already in whitelist
+WhitelistRemovedSuccessful: "Atskaņotājs **%p** tika noņemts no baltā saraksta"
+#Whitelist: player was removed from whitelist
+NotInWhitelist: "Atskaņotājs **%p** nav atrasts baltajā sarakstā"
+#Whitelist: player not found in whitelist
+WhitelistListChooseTitle: ":warning: Izvēlieties opciju"
+#Whitelist: list of whitelisted players choose option (title)
+WhitelistListChooseDescription:
+  - "Izvēlieties šīs opcijas, lai redzētu visus spēlētājus baltajā sarakstā!"
+  - ":green_circle: %0 - noklusējuma baltais saraksts(pēc servera)"
+  - ":blue_circle: %1 - OurWhitelist(pēc spraudņa)"
+#Whitelist: list of whitelisted players choose option (description)
+WhitelistListChooseDefaultWhitelistButton: "Noklusējuma baltais saraksts"
+#Whitelist: list of whitelisted players choose option (button name) [default]
+WhitelistListChooseOurWhitelistButton: "OurWhitelist"
+#Whitelist: list of whitelisted players choose option (button name) [ourwhitelist]
+WhitelistListOurWhitelistChooseTitle: ":warning: Izvēlieties opciju"
+#Whitelist: list of whitelisted players choose option (title) [ourwhitelist]
+WhitelistListOurWhitelistChooseDescription:
+  - "Izvēlieties šīs opcijas, lai redzētu visus spēlētājus vai administratorus mūsu baltajā sarakstā!"
+  - ":green_circle: %0 - parastie spēlētāji"
+  - ":blue_circle: %1 - Administratori"
+#Whitelist: list of whitelisted players choose option (description) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonPlayers: "Parastie spēlētāji"
+#Whitelist: list of whitelisted players choose option (button name) (players) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonAdministrators: "Administratori"
+#Whitelist: list of whitelisted players choose option (button name) (administrators) [ourwhitelist]
+ListPlayersTitle: ":page_with_curl: Spēlētāju saraksts"
+#Whitelist: list of online players (title)
+ListPlayersDescription: "Šobrīd online spēlētāji: **%p**"
+#Whitelist: list of online players (description)
+ListPlayersFooter: "Kopā online spēlētāji: %p"
+#Whitelist: list of online players (footer)
+ListBannedPlayersTitle: ":page_with_curl: Aizliegto spēlētāju saraksts"
+#Whitelist: list of banned players (title)
+ListBannedPlayersDescription: "Pašlaik aizliegtie spēlētāji: **%p**"
+#Whitelist: list of banned players (description)
+ListBannedPlayersFooter: "Kopā aizliegts spēlētāji: %p"
+#Whitelist: list of banned players (footer)
+ListWhitelistedDefaultTitle: ":page_with_curl: Baltajā sarakstā iekļauto spēlētāju saraksts (noklusējums)"
+#Whitelist: list of whitelisted players (title) [default]
+ListWhitelistedDefaultDescription: "Spēlētāji, kas pašlaik ir noklusējuma baltajā sarakstā: **%p**"
+#Whitelist: list of whitelisted players (description) [default]
+ListWhitelistedDefaultFooter: "Kopā baltajā sarakstā spēlētāji: %p"
+#Whitelist: list of whitelisted players (footer) [default]
+ListWhitelistedOurWhitelistTitle: ":page_with_curl: Saraksts ar baltā saraksta spēlētājiem(OurWhitelist)"
+#Whitelist: list of whitelisted players (title) [ourwhitelist]
+ListWhitelistedOurWhitelistDescription: "Spēlētāji, kas pašlaik atrodas mūsu baltajā sarakstā: **%p**"
+#Whitelist: list of whitelisted players (description) [ourwhitelist]
+ListWhitelistedOurWhitelistFooter: "Kopā baltajā sarakstā spēlētāji: %p"
+#Whitelist: list of whitelisted players (footer) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistTitle: ":page_with_curl: Baltajā sarakstā iekļauto administratoru saraksts (OurWhitelist)"
+#Whitelist: list of whitelisted administrators (title) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistDescription: "Administratori, kas pašlaik atrodas mūsu baltajā sarakstā: **%p**"
+#Whitelist: list of whitelisted administrators (description) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistFooter: "Kopā baltajā sarakstā iekļautie administratori: %p"
+#Whitelist: list of whitelisted administrators (footer) [ourwhitelist]
+
+### EMBEDS COLORS ###
+# Use this site(https://htmlcolorcodes.com/) to pick your color
+
+ErrorEmbedColor: "#ff380d"
+# Embed color for error embeds
+
+SuccessEmbedColor: "#c0ff5f"
+# Embed color for success embeds
+
+ConfirmMenuEmbedColor: "#f7dcd7"
+# Embed color for whitelist confirmation menu embed
+
+ListEmbedColor: "#ffe14d"
+# Embed color for whitelisted players list embed
+
+ReactionEmbedColor: "#94e45b"
+# Embed color for /setupreaction embed
+
+LogsEmbedColor: "#51ffb5"
+# Embed color for logs embeds
+
+DMEmbedColor: "#51ff80"
+# Embed color for welcome DM embed
+
+WelcomeMessageEmbedColor: "#51ffca"
+# Embed color for global welcome message embed
+
+LinkedEmbedColor: "#9eff52"
+# Embed color for successful account link DM embed
+
+### LOGGING ###
+WhitelistLogEmbedTitle: ":page_with_curl: BALTO SARAKSTU ŽURNĀLS"
+#Title for whitelist embed message log
+WhitelistLogEmbedDescription: "Lietotājs **%u** pievienoja savu segvārdu **%p** baltajam sarakstam!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+WhitelistSlashCommandAddLogEmbedDescription: "Administrators **%a** pievienoja segvārdu **%p** baltajam sarakstam!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+WhitelistSlashCommandRemovedLogEmbedDescription: "Administrators **%a** izņēma segvārdu **%p** no baltā saraksta!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+LinkingLogTitle: ":page_with_curl: SAIŠU ŽURNĀLS"
+#Title for link embed message log
+LinkingLogLinkedDescription: "Lietotājs **%u** saistīts ar savu Minecraft kontu **%p** ar UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+LinkingLogUnLinkedDescription: "Lietotājs **%u** atsaistīja savu Minecraft kontu **%p** ar UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+CheckLogEmbedTitle: ":page_with_curl: PĀRBAUDES ŽURNĀLS"
+#Title for account check embed message log
+CheckWhitelistLogEmbedDescription: "Administrators **%a** pārbaudīja spēlētāja * *%p* * klātbūtni baltajā sarakstā"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+CheckLinkNickLogEmbedDescription: "Administrators **%a** pārbaudīja spēlētāju **%p** savam saistītajam kontam"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkDiscordIDLogEmbedDescription: "Administrators **%a** pārbaudīja lietotāju ar DiscordID* *%p** savam saistītajam kontam"
+#Description for account check embed message log
+#%p - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkLogEmbedDescription: "Administrators **%a** pārbaudīja lietotāju ar DiscordID **%l** un ar segvārdu **%p** savam saistītajam kontam"
+#Description for account check embed message log
+#%p - player's nickname
+#%l - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+
+### CHECK ###
+WhitelistCheckFoundTitle: ":green_book: ATRASTS"
+#Title for found account embed message
+WhitelistCheckFoundDescription: "Atskaņotājs **%p** tika atrasts baltajā sarakstā"
+#Description for found account embed message [Default whitelist]
+WhitelistCheckFoundOurWhitelistDescription: "Spēlētājs **%p** tika atrasts mūsu baltajā sarakstā. Viņš ir: **%t**"
+#Description for found account embed message [OurWhitelist]
+WhitelistCheckNotFoundTitle: ":closed_book: NAV ATRASTS"
+#Title for not found account embed message
+WhitelistCheckNotFoundDescription: "Atskaņotājs **%p** tika atrasts baltajā sarakstā"
+#Description for not found account embed message [Default whitelist]
+LinkingCheckDiscordIDNotFound: "DiscordID ir 18 rakstzīmes garš, un tā tips ir: long"
+#Description for DiscordID issue embed message
+LinkingCheckFoundTitle: ":green_book: ATRASTS"
+#Title for found account embed message
+LinkingCheckFoundDescription:
+  - "Ir informācija, ko atradām par šo kontu:"
+  - "Iesauka: **%n**"
+  - "UUID: **%u**"
+  - "Discord: **%d**"
+  - "DiscordID: **%i**"
+  - "Saistīšanas datums: **%t**"
+  - "Pieminēt(ja pieejams): %m"
+#Description for all linked account information embed message
+LinkingCheckNotFoundTitle: ":closed_book: NAV ATRASTS"
+#Title for error embed message
+LinkingCheckNotFoundDescription: "Mēs nevaram atrast informāciju par šo spēlētāju! Vai nu viņš nav piesaistījis kontu, vai arī jūs norādījāt neprecīzu informāciju."
+#Description for error embed message
+
+#Language file version: 1.0 (Include this version where you report translation issue)

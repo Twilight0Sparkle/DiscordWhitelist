@@ -1,0 +1,337 @@
+### EMBEDS ###
+ErrorTitle: ":x: HATA"
+#Title for an embed messages, :x: is emoji
+SuccessTitle: ":white_check_mark: BAŞARILI"
+#Title for an embed messages, :white_check_mark: is emoji
+InfoTitle: ":warning: BİLGİ"
+#Title for an embed messages, :warning: is emoji
+DMMessageTitle: ":wave: SUNUCUMUZA HOŞGELDİNİZ"
+#Title for DM welcome message, :wave: is emoji
+WelcomeMessageTitle: ":wave: SUNUCUMUZA HOŞGELDİNİZ"
+#Title for global welcome message, :wave: is emoji
+###          ###
+
+### MAIN (DISCORD) ###
+AlreadyIn: "Oyuncu `%u` zaten beyaz listede!"
+#Message: If player already in whitelist. %u - user's nickname which already in whitelist!
+AddedIn: "Oyuncu `%u` beyaz listeye başarıyla eklendi!"
+#Message: If player successfully added in whitelist. %u - user's nickname which was added in whitelist!
+SymbolsError: "Üzgünüz, takma adınız yalnızca İngilizce karakterler içerebilir (0 -9 ve _ile)"
+#Error message if message wrote not on English language
+LengthError: "Üzgünüz, takma adınız 2 karakterden fazla veya 17 karakterden az olmalıdır!"
+#Error message if nickname contains fewer than 3 symbols
+Blacklist-message: "Üzgünüz, ama `%u` bir kara listede, üzgünüm."
+#Message: A Blacklist Message that will send like an error in channel if user is in Blacklist. %u - user's nickname which was added in whitelist!
+DM-Message:
+  - "Merhaba, **%u**! Bizi oyun sunucusu olarak seçtiğiniz için teşekkürler!"
+  - "Sizi burada gördüğümüze sevindik!"
+#Message: A Direct Message will send to user who was whitelisted. %u - user's nickname which was added in whitelist!
+Welcome-Message:
+  - "** Sunucumuza hoş geldiniz, **%u**. Umarız yakında eğlenirsiniz!:)"
+#Message: A Welcome Message will send to channel that setted up before(GlobalChannelID).
+#%u - user's mention! (@User)
+#%p - user's nickname which was added in whitelist! (USER)
+ReactionEmbedTitle: "** Sunucumuza hoş geldiniz !**"
+#Message: A embed message title that will be used in /setupreaction
+ReactionEmbedDescription:
+  - "Sırayla aşağıdaki düğmeye tıklamanız gerekir"
+  - "discord sunucumuzda ilerlemek için!"
+  - "İyi günler!"
+#Message: A embed message description that will be used in /setupreaction
+ReactionButton: "Kurallara uyun"
+#Message: A embed message button that will be used in /setupreaction
+ReactionNotEnabled: "Bu komutu kullanmak için yapılandırmayı etkinleştirmelisiniz!"
+#Message: A embed message error description that will be used in /setupreaction
+ReactionSuccess: "Bitti! Artık sunucumuzdaki her şeyi yapabilirsiniz!"
+#Message: A embed message success description that will be used in /setupreaction
+###          ###
+
+### CONFIRM ###
+ConfirmTitle: "Girilen kullanıcı adının doğruluğunu onaylayın"
+#Title for an embed message that will be used when user types their username
+ConfirmMessage: "Lütfen `%u` kullanıcı adının doğru olduğunu onaylayın"
+#Message: Will be used when user types their username.  user's nickname which was texted to a channel!
+ConfirmButtonYes: "Evet, doğru."
+#Confirm button for a message
+ConfirmButtonNo: "Hayır, başka bir deneme"
+#Confirm button for a message
+TitleRefused: ":x: Doğruluk kontrolünü reddettiniz"
+#Title for an embed message that will be used when user rejected correctness check, :x: is smile
+MessageRefused: "Tekrar deneyin ve maksimum dikkatli olun!"
+#Message: Will be used when user rejected correctness check!
+MessageError: "Bu düğmeleri kullanamazsınız!"
+#Message: Will be used when other user used foreign buttons!
+###          ###
+
+### WHITELIST ###
+### VERSION: 0.7A2803 (Include that version if you will report any whitelist bug)
+WhitelistUsage: "&fUsage :&6/beyaz liste <on/off/lock_on/lock_off/add/add_administrator/remove/remove_administrator/message/lock_message/list/list_administrators>"
+#Whitelist: command usage
+WhitelistList: "&fOyuncuların listesi (%p): &6%s"
+#Whitelist: shows the list of all whitelisted players. %s - player nicknames!
+AdministratorsList: "&fYöneticilerin listesi (%p): &6%s"
+#Whitelist: shows the list of all administrators. %s - administrator nicknames!
+WhitelistOn: "&fBitelist dönüştü &aon"
+#Whitelist: turns on whitelist
+WhitelistAlreadyOn: "&fBitelist zaten çevrildi &aon!"
+#Whitelist: whitelist already turned on
+WhitelistOff: "&fBitelist &coff oldu"
+#Whitelist: turns off whitelist
+WhitelistAlreadyOff: "&fBitelist zaten döndü &coff!"
+#Whitelist: whitelist already turned off
+WhitelistLockOn: "&fServer kilitleme döndü &aon"
+#Whitelist: turns on server locking
+WhitelistLockOff: "&fServer kilitleme döndü &coff"
+#Whitelist: turns off server locking
+WhitelistAdded: "&fPlayer &6%s & fwas beyaz listeye alındı"
+#Whitelist: player was added in whitelist. %s - player's nickname!
+WhitelistLockAdded: "&fYönetici &6%s & eklendi!"
+#Whitelist: player was added in whitelist. %s - administrator's nickname!
+WhitelistRemoved: "&fPlayer &6%s & fbeyazlisteden çıkarıldı"
+#Whitelist: player was removed from whitelist. %s - player's nickname!
+WhitelistLockRemoved: "&fYönetici &6%s &f kaldırıldı"
+#Whitelist: player was removed from whitelist. %s - administrator's nickname!
+WhitelistPlayerNotFound: "& fPlayer bulunamadı"
+#Whitelist: player not found
+MessageNotFound: "& fBir ileti eklemeniz gerekiyor"
+#Whitelist: message was not written
+WhitelistMsgSet: "&fBitelist tekme mesajı şu şekilde ayarlandı: &6%s"
+#Whitelist: kick message. %s - kick message!
+LockMsgSet: "&fLock iletisi şu şekilde ayarlandı: &6%s"
+#Whitelist: lock kick message. %s - lock kick message!
+WhitelistAlreadyAdded: "&fBu oyuncu zaten beyaz listede"
+#Whitelist: player already in
+
+### LINKING ###
+### VERSION: 0.2A0604 (Include that version if you will report any linking bug)
+LeftDiscordKickReason: "Discord sunucumuzdan ayrıldınız!"
+LinkingTurnedOff: "&cBağlantı şu anda kapalı. Daha fazla bilgi almak için yönetimle iletişime geçin"
+LinkingProfileNotExist: "&cBağlı hesabınız yok. Hakkınızda hiçbir bilgi yok."
+LinkingTurnedOffEmbed: "Bağlantı şu anda kapalı. Daha fazla bilgi almak için yönetimle iletişime geçin"
+LinkingUsage: "&fUsage: &6/link <CODE>"
+#Linking: command usage.
+LinkingStart: "Discord sunucumuz aracılığıyla bağlama işlemini başlatmak için & fYou & 6should & f! Tür(Discord'da): &6/hesap bağlantısı <NAME>"
+#Linking: when player needs to start linking process.
+LinkingInvalidCode: "&cKodunuz geçersiz! Tekrar deneyin!"
+#Linking: when player include invalid linking code
+LinkingAlreadyLinked: "&cBağlantınızzaten var!"
+#Linking: when player already linked
+LinkingNotLinked: "&cBağlantılı değilsiniz!"
+#Linking: when player trying to unlink not linked account
+LinkingLeftGuild: "& cDiscord sunucumuzdan ayrıldınız"
+#Linking: when player left from guild
+LinkingLinkedEmbedTitle: ":link: BAĞLI"
+#Linking: discord embed message title when player successful linked
+LinkingLinkedEmbedDescription: "Tebrikler! Minecraft hesabınıza başarıyla bağlandınız: **%u**"
+#Linking: discord embed message description when player successful linked,  %u - Minecraft account
+LinkingLinkedMsg: "&aDiscord hesabınızla başarıyla bağlantı kurdunuz:&6 %u"
+#Linking: discord message when player successful linked, %u - Discord account
+LinkingInfo:
+  - "&fHesaplarınız hakkında tam bilgi var: "
+  - "&fNickname: &e%0"
+  - "&fUUID: &e%1"
+  - "&fDiscord: &e%2"
+  - "&fDiscordID: &e%3"
+  - "&fBağlantı tarihi: &e%4"
+#Linking: information message
+LinkingSlashCommandPlayerNotOnlne: "Bu oyuncu çevrimiçi değil!"
+#Linking: player needs to be online
+LinkingSlashCommandNotLinked: "Bağlantınız yok!"
+#Linking: when player trying to unlink not linked account
+LinkingSlashCommandAccountNotYours: "Başkasının hesabının bağlantısını kaldıramazsınız!"
+#Linking: user trying to unlink other's account
+LinkingSlashCommandAlreadyLinked: "Zaten bağlantınız var!"
+#Linking: user is already linked!
+LinkingSlashCommandNicknameError: "Takma ad çok kısa veya çok uzun olamaz!"
+#Linking: nickname should be longed than 3 symbols or shorter than 17 symbols!
+LinkingSlashCommandCodeGenerated: "Zaten kod oluşturdunuz!"
+#Linking: if linking process already started
+LinkingSlashCommandLink: "Kod oluşturuldu! Şimdi, '/ link %u`oyununu kullanmanız gerekiyor! Teşekkürler!"
+#Linking: start of linking process. %u - linking code
+LinkingSlashCommandUnLink: "Bitti! Hesabınızın bağlantısını başarıyla kaldırdınız"
+#Linking: unlinked accounts
+LinkingUnlinkedMessage: "&eYour account was unlinked by &f%u &erequest"
+#Linking: unlinked accounts. %u - Discord
+LinkingKickMsg: "& cMinecraft hesabınızı Discord hesabına bağlamanız gerekiyor!"
+#Linking: kick message
+
+### SLASHCOMMANDS ###
+WhitelistRegexErrorDescription: "Takma ad yalnızca İngilizce semboller içerebilir!"
+#Whitelist: SlashCommand nickname regex check failed
+WhitelistedSuccessful: "Beyaz listeye **%p** oyuncusu eklendi"
+#Whitelist: player was added in whitelist
+WhitelistedAlready: "Oyuncu **%p** zaten beyaz listede"
+#Whitelist: player already in whitelist
+WhitelistRemovedSuccessful: "**%p** oyuncusu beyaz listeden çıkarıldı"
+#Whitelist: player was removed from whitelist
+NotInWhitelist: "Beyaz listede **%p** oyuncusu bulunamadı"
+#Whitelist: player not found in whitelist
+WhitelistListChooseTitle: ":warning: Seçeneği seçin"
+#Whitelist: list of whitelisted players choose option (title)
+WhitelistListChooseDescription:
+  - "Tüm oyuncuları beyaz listede görmek için bu seçenekleri seçin!"
+  - ":green_circle: %0 - Varsayılan beyaz liste(sunucuya göre)"
+  - ":blue_circle: %1 - Beyaz Listemiz (eklentiye göre)"
+#Whitelist: list of whitelisted players choose option (description)
+WhitelistListChooseDefaultWhitelistButton: "Varsayılan beyaz liste"
+#Whitelist: list of whitelisted players choose option (button name) [default]
+WhitelistListChooseOurWhitelistButton: "Beyaz Listemiz"
+#Whitelist: list of whitelisted players choose option (button name) [ourwhitelist]
+WhitelistListOurWhitelistChooseTitle: ":warning: Seçeneği seçin"
+#Whitelist: list of whitelisted players choose option (title) [ourwhitelist]
+WhitelistListOurWhitelistChooseDescription:
+  - "Tüm oyuncuları veya yöneticileri Beyaz Listemizde görmek için bu seçenekleri seçin!"
+  - ":green_circle: %0 - Olağan oyuncular"
+  - ":blue_circle: %1 - Yöneticiler"
+#Whitelist: list of whitelisted players choose option (description) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonPlayers: "Olağan Oyuncular"
+#Whitelist: list of whitelisted players choose option (button name) (players) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonAdministrators: "Yöneticiler"
+#Whitelist: list of whitelisted players choose option (button name) (administrators) [ourwhitelist]
+ListPlayersTitle: ":page_with_curl: Oyuncu listesi"
+#Whitelist: list of online players (title)
+ListPlayersDescription: "Şu anda çevrimiçi olan oyuncular: **%p**"
+#Whitelist: list of online players (description)
+ListPlayersFooter: "Toplam çevrimiçi oyuncular: %p"
+#Whitelist: list of online players (footer)
+ListBannedPlayersTitle: ":page_with_curl: Yasaklı oyuncular listesi"
+#Whitelist: list of banned players (title)
+ListBannedPlayersDescription: "Şu anda yasaklı olan oyuncular: **%p**"
+#Whitelist: list of banned players (description)
+ListBannedPlayersFooter: "Yasaklanan toplam oyuncu: %p"
+#Whitelist: list of banned players (footer)
+ListWhitelistedDefaultTitle: ":page_with_curl: Beyaz listeye alınmış oyuncuların listesi (Varsayılan)"
+#Whitelist: list of whitelisted players (title) [default]
+ListWhitelistedDefaultDescription: "Şu anda varsayılan beyaz listede olan oyuncular: **%p**"
+#Whitelist: list of whitelisted players (description) [default]
+ListWhitelistedDefaultFooter: "Toplam beyaz listedeki oyuncular: %p"
+#Whitelist: list of whitelisted players (footer) [default]
+ListWhitelistedOurWhitelistTitle: ":page_with_curl: Beyaz listeye alınmış oyuncuların listesi (OurWhitelist)"
+#Whitelist: list of whitelisted players (title) [ourwhitelist]
+ListWhitelistedOurWhitelistDescription: "Şu anda OurWhitelist'te bulunan oyuncular: ***%p**"
+#Whitelist: list of whitelisted players (description) [ourwhitelist]
+ListWhitelistedOurWhitelistFooter: "Toplam beyaz listedeki oyuncular: %p"
+#Whitelist: list of whitelisted players (footer) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistTitle: ":page_with_curl: Beyaz listeye alınmış yöneticilerin listesi (OurWhitelist)"
+#Whitelist: list of whitelisted administrators (title) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistDescription: "Şu anda Beyaz Listemizdeki Yöneticiler: ***%p**"
+#Whitelist: list of whitelisted administrators (description) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistFooter: "Toplam beyaz liste yöneticileri: %p"
+#Whitelist: list of whitelisted administrators (footer) [ourwhitelist]
+
+### EMBEDS COLORS ###
+# Use this site(https://htmlcolorcodes.com/) to pick your color
+
+ErrorEmbedColor: "#ff380d"
+# Embed color for error embeds
+
+SuccessEmbedColor: "#c0ff5f"
+# Embed color for success embeds
+
+ConfirmMenuEmbedColor: "#f7dcd7"
+# Embed color for whitelist confirmation menu embed
+
+ListEmbedColor: "#ffe14d"
+# Embed color for whitelisted players list embed
+
+ReactionEmbedColor: "#94e45b"
+# Embed color for /setupreaction embed
+
+LogsEmbedColor: "#51ffb5"
+# Embed color for logs embeds
+
+DMEmbedColor: "#51ff80"
+# Embed color for welcome DM embed
+
+WelcomeMessageEmbedColor: "#51ffca"
+# Embed color for global welcome message embed
+
+LinkedEmbedColor: "#9eff52"
+# Embed color for successful account link DM embed
+
+### LOGGING ###
+WhitelistLogEmbedTitle: ":page_with_curl: BEYAZ LİSTE GÜNLÜĞÜ"
+#Title for whitelist embed message log
+WhitelistLogEmbedDescription: "**%u** kullanıcısı **%p** takma adını beyaz listeye ekledi!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+WhitelistSlashCommandAddLogEmbedDescription: "Yönetici **%a** beyaz listeye **%p** takma adını ekledi!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+WhitelistSlashCommandRemovedLogEmbedDescription: "Yönetici **%a** beyaz listeden **%p** takma adını kaldırdı!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+LinkingLogTitle: ":page_with_curl: BAĞLANTI GÜNLÜĞÜ"
+#Title for link embed message log
+LinkingLogLinkedDescription: "Kullanıcı **%u** Minecraft hesabıyla bağlantılı **%p** UUID ile **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+LinkingLogUnLinkedDescription: "Kullanıcı **%u** Minecraft hesabının **%p** bağlantısını UUID **%i** ile kaldırdı"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+CheckLogEmbedTitle: ":page_with_curl: KONTROL GÜNLÜĞÜ"
+#Title for account check embed message log
+CheckWhitelistLogEmbedDescription: "Yönetici **%a** beyaz listedeki varlığı için **%p** oyuncuyu işaretledi"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+CheckLinkNickLogEmbedDescription: "Yönetici **%a** bağlı hesabı için **%p** oyuncuyu kontrol etti"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkDiscordIDLogEmbedDescription: "Yönetici **%a** bağlantılı hesabı için DiscordID**%p** olan kullanıcıyı işaretledi"
+#Description for account check embed message log
+#%p - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkLogEmbedDescription: "Yönetici **%a** DiscordID **%l** ve bağlantılı hesabı için **%p** takma adlı kullanıcıyı işaretledi"
+#Description for account check embed message log
+#%p - player's nickname
+#%l - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+
+### CHECK ###
+WhitelistCheckFoundTitle: ":green_book: BULUNDU"
+#Title for found account embed message
+WhitelistCheckFoundDescription: "**%p** oyuncusu beyaz listede bulundu"
+#Description for found account embed message [Default whitelist]
+WhitelistCheckFoundOurWhitelistDescription: "Oyuncu **%p** OurWhitelist bulundu. O :**%t**"
+#Description for found account embed message [OurWhitelist]
+WhitelistCheckNotFoundTitle: ":closed_book: BULUNAMADI"
+#Title for not found account embed message
+WhitelistCheckNotFoundDescription: "**%p** oyuncusu beyaz listede bulundu"
+#Description for not found account embed message [Default whitelist]
+LinkingCheckDiscordIDNotFound: "DiscordID, 18 karakter uzunluğunda ve şu türde olacaktır: long"
+#Description for DiscordID issue embed message
+LinkingCheckFoundTitle: ":green_book: BULUNDU"
+#Title for found account embed message
+LinkingCheckFoundDescription:
+  - "Bu hesap hakkında bulduğumuz bilgiler:"
+  - "Kullanıcı adı: **%n**"
+  - "UUID: **%u**"
+  - "Uyuşmazlık: **%d**"
+  - "DiscordID: **%i**"
+  - "Bağlantı tarihi: **%t**"
+  - "Bahsetme(varsa): %m"
+#Description for all linked account information embed message
+LinkingCheckNotFoundTitle: ":closed_book: BULUNAMADI"
+#Title for error embed message
+LinkingCheckNotFoundDescription: "Bu oyuncu hakkında bilgi bulamıyoruz! Ya hesabı bağlamadı, ya da yanlış bilgi verdiniz"
+#Description for error embed message
+
+#Language file version: 1.0 (Include this version where you report translation issue)

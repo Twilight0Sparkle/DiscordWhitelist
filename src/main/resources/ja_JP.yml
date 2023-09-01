@@ -1,0 +1,337 @@
+### EMBEDS ###
+ErrorTitle: ":x: エラー"
+#Title for an embed messages, :x: is emoji
+SuccessTitle: ":white_check_mark: 成功"
+#Title for an embed messages, :white_check_mark: is emoji
+InfoTitle: ":warning: INFORMATION"
+#Title for an embed messages, :warning: is emoji
+DMMessageTitle: ":wave: 私たちのサーバーへようこそ"
+#Title for DM welcome message, :wave: is emoji
+WelcomeMessageTitle: ":wave: 私たちのサーバーへようこそ"
+#Title for global welcome message, :wave: is emoji
+###          ###
+
+### MAIN (DISCORD) ###
+AlreadyIn: "プレイヤー`%u`はすでにホワイトリストに登録されています！"
+#Message: If player already in whitelist. %u - user's nickname which already in whitelist!
+AddedIn: "プレイヤー`%u`がホワイトリストに追加されました！"
+#Message: If player successfully added in whitelist. %u - user's nickname which was added in whitelist!
+SymbolsError: "申し訳ありませんが、あなたのニックネームには英語の文字のみが含まれている可能性があります（ 0 -9と_で）"
+#Error message if message wrote not on English language
+LengthError: "申し訳ありませんが、ニックネームは2文字以上または17文字未満でなければなりません！"
+#Error message if nickname contains fewer than 3 symbols
+Blacklist-message: "申し訳ありませんが、「%u」はブラックリストに登録されています。"
+#Message: A Blacklist Message that will send like an error in channel if user is in Blacklist. %u - user's nickname which was added in whitelist!
+DM-Message:
+  - "こんにちは、**%u**！プレイサーバーを探している私たちを選んでいただきありがとうございます！"
+  - "ここでお会いできてうれしいです！"
+#Message: A Direct Message will send to user who was whitelisted. %u - user's nickname which was added in whitelist!
+Welcome-Message:
+  - "**サーバーへようこそ、**%u**。早く楽しくなりますように！ ！ ！"
+#Message: A Welcome Message will send to channel that setted up before(GlobalChannelID).
+#%u - user's mention! (@User)
+#%p - user's nickname which was added in whitelist! (USER)
+ReactionEmbedTitle: "**サーバーへようこそ!**"
+#Message: A embed message title that will be used in /setupreaction
+ReactionEmbedDescription:
+  - "順番に下のボタンをクリックする必要があります"
+  - "discordサーバーで続行します！"
+  - "良い一日を！"
+#Message: A embed message description that will be used in /setupreaction
+ReactionButton: "ルールに同意する"
+#Message: A embed message button that will be used in /setupreaction
+ReactionNotEnabled: "このコマンドを使用するには、configで有効にする必要があります。"
+#Message: A embed message error description that will be used in /setupreaction
+ReactionSuccess: "完了！これでサーバー上のすべての操作が完了しました！"
+#Message: A embed message success description that will be used in /setupreaction
+###          ###
+
+### CONFIRM ###
+ConfirmTitle: "入力されたユーザー名の正しい性を確認する"
+#Title for an embed message that will be used when user types their username
+ConfirmMessage: "ユーザー名`%u`が正しいことを確認してください"
+#Message: Will be used when user types their username.  user's nickname which was texted to a channel!
+ConfirmButtonYes: "はい、正解です"
+#Confirm button for a message
+ConfirmButtonNo: "いいえ、もう一度お試しください"
+#Confirm button for a message
+TitleRefused: ":x: あなたは正しさチェックを拒否しました"
+#Title for an embed message that will be used when user rejected correctness check, :x: is smile
+MessageRefused: "もう一度やり直して、最大限に注意してください！"
+#Message: Will be used when user rejected correctness check!
+MessageError: "このボタンは使えません！"
+#Message: Will be used when other user used foreign buttons!
+###          ###
+
+### WHITELIST ###
+### VERSION: 0.7A2803 (Include that version if you will report any whitelist bug)
+WhitelistUsage: "& fUsage :& 6/whitelist <on/off/lock_on/lock_off/add/add_administrator/remove/remove_administrator/message/lock_message/list/list_administrators>"
+#Whitelist: command usage
+WhitelistList: "プレイヤーリスト(%p): & 6%s"
+#Whitelist: shows the list of all whitelisted players. %s - player nicknames!
+AdministratorsList: "& f管理者リスト(%p): & 6%s"
+#Whitelist: shows the list of all administrators. %s - administrator nicknames!
+WhitelistOn: "& fWhitelistが& aonに変わりました"
+#Whitelist: turns on whitelist
+WhitelistAlreadyOn: "& fWhitelistはすでに& aon!"
+#Whitelist: whitelist already turned on
+WhitelistOff: "& fWhitelistが& coffになりました"
+#Whitelist: turns off whitelist
+WhitelistAlreadyOff: "& fWhitelistはすでに& coff!"
+#Whitelist: whitelist already turned off
+WhitelistLockOn: "& fServerのロックが解除されました& aon"
+#Whitelist: turns on server locking
+WhitelistLockOff: "& fServerのロックが解除されました& coff"
+#Whitelist: turns off server locking
+WhitelistAdded: "&fPlayer &6%s &fwas whitelisted"
+#Whitelist: player was added in whitelist. %s - player's nickname!
+WhitelistLockAdded: "& fAdministrator & 6%s & fwasが追加されました！"
+#Whitelist: player was added in whitelist. %s - administrator's nickname!
+WhitelistRemoved: "&fPlayer &6%s &fwas un-whitelisted"
+#Whitelist: player was removed from whitelist. %s - player's nickname!
+WhitelistLockRemoved: "& fAdministrator & 6%s & fwasが削除されました"
+#Whitelist: player was removed from whitelist. %s - administrator's nickname!
+WhitelistPlayerNotFound: "& fPlayerが見つかりません"
+#Whitelist: player not found
+MessageNotFound: "& fメッセージを含める必要があります"
+#Whitelist: message was not written
+WhitelistMsgSet: "& fWhitelistキックメッセージが& 6%sに設定されました"
+#Whitelist: kick message. %s - kick message!
+LockMsgSet: "& fLockメッセージは& 6%sに設定されました"
+#Whitelist: lock kick message. %s - lock kick message!
+WhitelistAlreadyAdded: "& fこのプレイヤーはすでにホワイトリストに登録されています"
+#Whitelist: player already in
+
+### LINKING ###
+### VERSION: 0.2A0604 (Include that version if you will report any linking bug)
+LeftDiscordKickReason: "Discordサーバーを去りました！"
+LinkingTurnedOff: "& cリンクが現在オフになっています。詳細については、管理者にお問い合わせください"
+LinkingProfileNotExist: "& cリンクされたアカウントがありません。あなたに関する情報はありません。"
+LinkingTurnedOffEmbed: "リンクは現在オフになっています。詳細については、管理者にお問い合わせください"
+LinkingUsage: "& fUsage :& 6/link <CODE>"
+#Linking: command usage.
+LinkingStart: "& fYou & 6 Discordサーバーを介してリンクプロセスを開始する必要があります。タイプ(Discordで): & 6/アカウントリンク <NAME>"
+#Linking: when player needs to start linking process.
+LinkingInvalidCode: "& cコードが無効です！もう一度お試しください！"
+#Linking: when player include invalid linking code
+LinkingAlreadyLinked: "& cあなたはすでにリンクされています！"
+#Linking: when player already linked
+LinkingNotLinked: "& cリンクされていません！"
+#Linking: when player trying to unlink not linked account
+LinkingLeftGuild: "& c Discordサーバーから退出しました"
+#Linking: when player left from guild
+LinkingLinkedEmbedTitle: ":link: CONNECTED"
+#Linking: discord embed message title when player successful linked
+LinkingLinkedEmbedDescription: "おめでとうございます！ Minecraftアカウントとのリンクに成功しました：**%u**"
+#Linking: discord embed message description when player successful linked,  %u - Minecraft account
+LinkingLinkedMsg: "& a Discordアカウントとのリンクに成功しました: & 6 %u"
+#Linking: discord message when player successful linked, %u - Discord account
+LinkingInfo:
+  - "& fアカウントに関する完全な情報があります: "
+  - "& fニックネーム: & e%0"
+  - "& fUUID :& e%1"
+  - "& fDiscord :& e%2"
+  - "& fDiscordID :& e%3"
+  - "リンク日(& F): & e%4"
+#Linking: information message
+LinkingSlashCommandPlayerNotOnlne: "このプレイヤーはオンラインではありません！"
+#Linking: player needs to be online
+LinkingSlashCommandNotLinked: "リンクされていません！"
+#Linking: when player trying to unlink not linked account
+LinkingSlashCommandAccountNotYours: "他者のアカウントのリンクを解除することはできません！"
+#Linking: user trying to unlink other's account
+LinkingSlashCommandAlreadyLinked: "すでにリンクされています！"
+#Linking: user is already linked!
+LinkingSlashCommandNicknameError: "ニックネームは短すぎたり長すぎたりできません！"
+#Linking: nickname should be longed than 3 symbols or shorter than 17 symbols!
+LinkingSlashCommandCodeGenerated: "すでにコードが生成されています！"
+#Linking: if linking process already started
+LinkingSlashCommandLink: "コードが生成されました！今、あなたはゲームで'/ link %u`を使用する必要があります！ありがとう！"
+#Linking: start of linking process. %u - linking code
+LinkingSlashCommandUnLink: "完了しました！アカウントのリンク解除が完了しました"
+#Linking: unlinked accounts
+LinkingUnlinkedMessage: "& eアカウントは& f%u & erequestによってリンク解除されました"
+#Linking: unlinked accounts. %u - Discord
+LinkingKickMsg: "& cMinecraftアカウントとDiscordアカウントをリンクする必要があります！"
+#Linking: kick message
+
+### SLASHCOMMANDS ###
+WhitelistRegexErrorDescription: "ニックネームには英語のシンボルのみを含めることができます！"
+#Whitelist: SlashCommand nickname regex check failed
+WhitelistedSuccessful: "プレイヤー**%p**がホワイトリストに追加されました"
+#Whitelist: player was added in whitelist
+WhitelistedAlready: "プレイヤー**%p**はすでにホワイトリストに登録されています"
+#Whitelist: player already in whitelist
+WhitelistRemovedSuccessful: "プレイヤー**%p**がホワイトリストから削除されました"
+#Whitelist: player was removed from whitelist
+NotInWhitelist: "プレイヤー**%p**がホワイトリストに見つかりません"
+#Whitelist: player not found in whitelist
+WhitelistListChooseTitle: ":warning: オプションを選択"
+#Whitelist: list of whitelisted players choose option (title)
+WhitelistListChooseDescription:
+  - "ホワイトリストにすべてのプレイヤーを表示するには、これらのオプションを選択してください！"
+  - ":green_circle: %0 -デフォルトのホワイトリスト(サーバー別)"
+  - ":blue_circle: %1 - OurWhitelist （プラグイン別）"
+#Whitelist: list of whitelisted players choose option (description)
+WhitelistListChooseDefaultWhitelistButton: "デフォルトのホワイトリスト"
+#Whitelist: list of whitelisted players choose option (button name) [default]
+WhitelistListChooseOurWhitelistButton: "OurWhitelist"
+#Whitelist: list of whitelisted players choose option (button name) [ourwhitelist]
+WhitelistListOurWhitelistChooseTitle: ":warning: オプションを選択"
+#Whitelist: list of whitelisted players choose option (title) [ourwhitelist]
+WhitelistListOurWhitelistChooseDescription:
+  - "これらのオプションを選択して、OurWhitelistのすべてのプレイヤーまたは管理者を表示します！"
+  - ":green_circle: %0 -通常プレイヤー"
+  - ":blue_circle: %1 -管理者"
+#Whitelist: list of whitelisted players choose option (description) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonPlayers: "通常プレイヤー"
+#Whitelist: list of whitelisted players choose option (button name) (players) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonAdministrators: "管理者"
+#Whitelist: list of whitelisted players choose option (button name) (administrators) [ourwhitelist]
+ListPlayersTitle: ":page_with_curl: プレーヤーのリスト"
+#Whitelist: list of online players (title)
+ListPlayersDescription: "オンライン中のプレイヤー: **%p**"
+#Whitelist: list of online players (description)
+ListPlayersFooter: "オンラインプレーヤーの合計: %p"
+#Whitelist: list of online players (footer)
+ListBannedPlayersTitle: ":page_with_curl: 禁止されたプレーヤーのリスト"
+#Whitelist: list of banned players (title)
+ListBannedPlayersDescription: "現在禁止されているプレイヤー: **%p**"
+#Whitelist: list of banned players (description)
+ListBannedPlayersFooter: "禁止されたプレイヤーの合計: %p"
+#Whitelist: list of banned players (footer)
+ListWhitelistedDefaultTitle: ":page_with_curl: ホワイトリストに登録されているプレイヤーのリスト(デフォルト)"
+#Whitelist: list of whitelisted players (title) [default]
+ListWhitelistedDefaultDescription: "現在デフォルトのホワイトリストに登録されているプレイヤー: **%p**"
+#Whitelist: list of whitelisted players (description) [default]
+ListWhitelistedDefaultFooter: "ホワイトリストに登録されているプレイヤーの合計: %p"
+#Whitelist: list of whitelisted players (footer) [default]
+ListWhitelistedOurWhitelistTitle: ":page_with_curl: ホワイトリストに登録されている選手のリスト(OurWhitelist)"
+#Whitelist: list of whitelisted players (title) [ourwhitelist]
+ListWhitelistedOurWhitelistDescription: "OurWhitelistに現在登録されているプレイヤー: **%p**"
+#Whitelist: list of whitelisted players (description) [ourwhitelist]
+ListWhitelistedOurWhitelistFooter: "ホワイトリストに登録されているプレイヤーの合計: %p"
+#Whitelist: list of whitelisted players (footer) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistTitle: ":page_with_curl: ホワイトリストに登録された管理者のリスト(OurWhitelist)"
+#Whitelist: list of whitelisted administrators (title) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistDescription: "現在OurWhitelistにいる管理者: **%p**"
+#Whitelist: list of whitelisted administrators (description) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistFooter: "ホワイトリストに登録されている管理者の合計: %p"
+#Whitelist: list of whitelisted administrators (footer) [ourwhitelist]
+
+### EMBEDS COLORS ###
+# Use this site(https://htmlcolorcodes.com/) to pick your color
+
+ErrorEmbedColor: "#ff380d"
+# Embed color for error embeds
+
+SuccessEmbedColor: "#c0ff5f"
+# Embed color for success embeds
+
+ConfirmMenuEmbedColor: "#f7dcd7"
+# Embed color for whitelist confirmation menu embed
+
+ListEmbedColor: "#ffe14d"
+# Embed color for whitelisted players list embed
+
+ReactionEmbedColor: "#94e45b"
+# Embed color for /setupreaction embed
+
+LogsEmbedColor: "#51ffb5"
+# Embed color for logs embeds
+
+DMEmbedColor: "#51ff80"
+# Embed color for welcome DM embed
+
+WelcomeMessageEmbedColor: "#51ffca"
+# Embed color for global welcome message embed
+
+LinkedEmbedColor: "#9eff52"
+# Embed color for successful account link DM embed
+
+### LOGGING ###
+WhitelistLogEmbedTitle: ":page_with_curl: ホワイトリストログ"
+#Title for whitelist embed message log
+WhitelistLogEmbedDescription: "ユーザー**%u**が自分のニックネーム**%p**をホワイトリストに追加しました！"
+#Description for whitelist embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+WhitelistSlashCommandAddLogEmbedDescription: "管理者**%a**がニックネーム**%p**をホワイトリストに追加しました！"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+WhitelistSlashCommandRemovedLogEmbedDescription: "管理者**%a**がホワイトリストからニックネーム**%p**を削除しました！"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+LinkingLogTitle: ":page_with_curl: リンクログ"
+#Title for link embed message log
+LinkingLogLinkedDescription: "ユーザー**%u**は自分のMinecraftアカウント**%p**とリンクしており、UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+LinkingLogUnLinkedDescription: "ユーザー**%u**が自分のMinecraftアカウント**%p**とUUID **%i**のリンクを解除しました"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+CheckLogEmbedTitle: ":page_with_curl: チェックログ"
+#Title for account check embed message log
+CheckWhitelistLogEmbedDescription: "管理者**%a**は、ホワイトリストに彼の存在を確認しました**%p**"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+CheckLinkNickLogEmbedDescription: "管理者**%a**は、彼のリンクされたアカウントのプレイヤー**%p**を確認しました"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkDiscordIDLogEmbedDescription: "管理者**%a**は、DiscordID **%p**を持つユーザーをリンクされたアカウントで確認しました"
+#Description for account check embed message log
+#%p - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkLogEmbedDescription: "管理者**%a**がDiscordID **%l**とニックネーム**%p**を持つユーザーを確認しました"
+#Description for account check embed message log
+#%p - player's nickname
+#%l - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+
+### CHECK ###
+WhitelistCheckFoundTitle: ":green_book: FOUND"
+#Title for found account embed message
+WhitelistCheckFoundDescription: "プレイヤー**%p**がホワイトリストに見つかりました"
+#Description for found account embed message [Default whitelist]
+WhitelistCheckFoundOurWhitelistDescription: "プレイヤー**%p**がOurWhitelistに見つかりました。彼は：**%t**"
+#Description for found account embed message [OurWhitelist]
+WhitelistCheckNotFoundTitle: ":closed_book: が見つかりません"
+#Title for not found account embed message
+WhitelistCheckNotFoundDescription: "プレイヤー**%p**がホワイトリストに見つかりました"
+#Description for not found account embed message [Default whitelist]
+LinkingCheckDiscordIDNotFound: "DiscordIDは18文字で、タイプ: longでなければなりません"
+#Description for DiscordID issue embed message
+LinkingCheckFoundTitle: ":green_book: FOUND"
+#Title for found account embed message
+LinkingCheckFoundDescription:
+  - "このアカウントに関する情報が見つかりました。"
+  - "ニックネーム: **%n**"
+  - "UUID: **%u**"
+  - "Discord: **%d**"
+  - "DiscordID: **%i**"
+  - "リンク日: **%t**"
+  - "言及（利用可能な場合） ： %m"
+#Description for all linked account information embed message
+LinkingCheckNotFoundTitle: ":closed_book: が見つかりません"
+#Title for error embed message
+LinkingCheckNotFoundDescription: "このプレイヤーに関する情報が見つかりません！アカウントをリンクしていないか、不正確な情報を提供した"
+#Description for error embed message
+
+#Language file version: 1.0 (Include this version where you report translation issue)

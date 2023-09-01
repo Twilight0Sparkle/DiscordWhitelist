@@ -1,0 +1,337 @@
+### EMBEDS ###
+ErrorTitle: ":x: FOUT"
+#Title for an embed messages, :x: is emoji
+SuccessTitle: ":white_check_mark: SUCCES"
+#Title for an embed messages, :white_check_mark: is emoji
+InfoTitle: ":warning: INFORMATIE"
+#Title for an embed messages, :warning: is emoji
+DMMessageTitle: ":wave: WELKOM OP ONZE SERVER"
+#Title for DM welcome message, :wave: is emoji
+WelcomeMessageTitle: ":wave: WELKOM OP ONZE SERVER"
+#Title for global welcome message, :wave: is emoji
+###          ###
+
+### MAIN (DISCORD) ###
+AlreadyIn: "Speler `%u` staat al op de witte lijst!"
+#Message: If player already in whitelist. %u - user's nickname which already in whitelist!
+AddedIn: "Speler `%u` succesvol toegevoegd in whitelist!"
+#Message: If player successfully added in whitelist. %u - user's nickname which was added in whitelist!
+SymbolsError: "Sorry, maar je bijnaam mag alleen Engelse tekens bevatten (met 0-9 en _)"
+#Error message if message wrote not on English language
+LengthError: "Sorry, maar uw bijnaam moet meer dan 2 tekens of minder dan 17 tekens bevatten!"
+#Error message if nickname contains fewer than 3 symbols
+Blacklist-message: "Het spijt ons, maar `%u` staat op een zwarte lijst, sorry."
+#Message: A Blacklist Message that will send like an error in channel if user is in Blacklist. %u - user's nickname which was added in whitelist!
+DM-Message:
+  - "Hallo, **%u**! Bedankt dat je ons hebt gekozen als speelserver!"
+  - "We zijn blij je hier te zien!"
+#Message: A Direct Message will send to user who was whitelisted. %u - user's nickname which was added in whitelist!
+Welcome-Message:
+  - "**Welkom op onze server, **%u**. We hopen dat je snel plezier zult hebben!**"
+#Message: A Welcome Message will send to channel that setted up before(GlobalChannelID).
+#%u - user's mention! (@User)
+#%p - user's nickname which was added in whitelist! (USER)
+ReactionEmbedTitle: "**Welkom op onze server!**"
+#Message: A embed message title that will be used in /setupreaction
+ReactionEmbedDescription:
+  - "U moet op onderstaande knop klikken om"
+  - "om verder te gaan in onze discord server!"
+  - "Prettige dag nog!"
+#Message: A embed message description that will be used in /setupreaction
+ReactionButton: "Akkoord gaan met regels"
+#Message: A embed message button that will be used in /setupreaction
+ReactionNotEnabled: "U zou het op config moeten inschakelen om deze opdracht te gebruiken!"
+#Message: A embed message error description that will be used in /setupreaction
+ReactionSuccess: "Klaar! Je kunt nu alles doen op onze server!"
+#Message: A embed message success description that will be used in /setupreaction
+###          ###
+
+### CONFIRM ###
+ConfirmTitle: "Bevestig juistheid van ingevoerde gebruikersnaam"
+#Title for an embed message that will be used when user types their username
+ConfirmMessage: "Bevestig dat gebruikersnaam `%u` correct is"
+#Message: Will be used when user types their username.  user's nickname which was texted to a channel!
+ConfirmButtonYes: "Ja, het is juist"
+#Confirm button for a message
+ConfirmButtonNo: "Nee, nog een keer proberen"
+#Confirm button for a message
+TitleRefused: ":x: U heeft de juistheidscontrole geweigerd"
+#Title for an embed message that will be used when user rejected correctness check, :x: is smile
+MessageRefused: "Probeer het opnieuw en wees maximaal voorzichtig!"
+#Message: Will be used when user rejected correctness check!
+MessageError: "U kunt deze knoppen niet gebruiken!"
+#Message: Will be used when other user used foreign buttons!
+###          ###
+
+### WHITELIST ###
+### VERSION: 0.7A2803 (Include that version if you will report any whitelist bug)
+WhitelistUsage: "&fUsage: &6/whitelist <on/off/lock_on/lock_off/add/add_administrator/remove/remove_administrator/message/lock_message/list/list_administrators>"
+#Whitelist: command usage
+WhitelistList: "&fLijst van spelers(%p): &6%s"
+#Whitelist: shows the list of all whitelisted players. %s - player nicknames!
+AdministratorsList: "&fLijst van beheerders(%p): &6%s"
+#Whitelist: shows the list of all administrators. %s - administrator nicknames!
+WhitelistOn: "&fWhitelist has turned &aon"
+#Whitelist: turns on whitelist
+WhitelistAlreadyOn: "&fWhitelist is al omgedraaid &aon!"
+#Whitelist: whitelist already turned on
+WhitelistOff: "&fWhitelist heeft &coff omgedraaid"
+#Whitelist: turns off whitelist
+WhitelistAlreadyOff: "&fWhitelist al gedraaid &koffie!"
+#Whitelist: whitelist already turned off
+WhitelistLockOn: "&fServer-vergrendeling is &aon gedraaid"
+#Whitelist: turns on server locking
+WhitelistLockOff: "&fServervergrendeling is gedraaid &coff"
+#Whitelist: turns off server locking
+WhitelistAdded: "&fPlayer &6%s &fwas whitelisted"
+#Whitelist: player was added in whitelist. %s - player's nickname!
+WhitelistLockAdded: "&fAdministrator &6%s &fwas toegevoegd!"
+#Whitelist: player was added in whitelist. %s - administrator's nickname!
+WhitelistRemoved: "&fPlayer &6%s &fwas niet-witgelijst"
+#Whitelist: player was removed from whitelist. %s - player's nickname!
+WhitelistLockRemoved: "&fAdministrator &6%s &fwas verwijderd"
+#Whitelist: player was removed from whitelist. %s - administrator's nickname!
+WhitelistPlayerNotFound: "&fPlayer niet gevonden"
+#Whitelist: player not found
+MessageNotFound: "&fJe moet een bericht toevoegen"
+#Whitelist: message was not written
+WhitelistMsgSet: "&fWhitelist kickbericht is ingesteld op: &6%s"
+#Whitelist: kick message. %s - kick message!
+LockMsgSet: "&fLock-bericht is ingesteld op: &6%s"
+#Whitelist: lock kick message. %s - lock kick message!
+WhitelistAlreadyAdded: "&fDeze speler staat al op de witte lijst"
+#Whitelist: player already in
+
+### LINKING ###
+### VERSION: 0.2A0604 (Include that version if you will report any linking bug)
+LeftDiscordKickReason: "Je hebt onze Discord-server verlaten!"
+LinkingTurnedOff: "&cLinking is momenteel uitgeschakeld. Contact met de administratie voor meer informatie"
+LinkingProfileNotExist: "&cUhebt geen gekoppelde accounts. Er is geen informatie over u."
+LinkingTurnedOffEmbed: "Koppeling is momenteel uitgeschakeld. Contact met de administratie voor meer informatie"
+LinkingUsage: "&fUsage: &6/link <CODE>"
+#Linking: command usage.
+LinkingStart: "&fYou & 6moet&fto beginnen met het koppelen van het proces via onze Discord-server! Type(in Discord): &6/accountlink <NAME>"
+#Linking: when player needs to start linking process.
+LinkingInvalidCode: "&cUw code is ongeldig! Probeer het opnieuw!"
+#Linking: when player include invalid linking code
+LinkingAlreadyLinked: "&cJebent al gekoppeld!"
+#Linking: when player already linked
+LinkingNotLinked: "&cJebent niet gekoppeld!"
+#Linking: when player trying to unlink not linked account
+LinkingLeftGuild: "&cUbent vertrokken vanaf onze Discord-server"
+#Linking: when player left from guild
+LinkingLinkedEmbedTitle: ":link: VERBONDEN"
+#Linking: discord embed message title when player successful linked
+LinkingLinkedEmbedDescription: "Gefeliciteerd! Je hebt met succes gekoppeld aan je Minecraft-account: **%u**"
+#Linking: discord embed message description when player successful linked,  %u - Minecraft account
+LinkingLinkedMsg: "&aUhebt met succes gekoppeld aan uw Discord-account:&6 %u"
+#Linking: discord message when player successful linked, %u - Discord account
+LinkingInfo:
+  - "&fEr is volledige informatie over uw accounts: "
+  - "&fNickname: &e%0"
+  - "&fUUID: &e%1"
+  - "&fDiscord: &e%2"
+  - "&fDiscordID: &e%3"
+  - "&fLinking date: &e%4"
+#Linking: information message
+LinkingSlashCommandPlayerNotOnlne: "Deze speler is niet online!"
+#Linking: player needs to be online
+LinkingSlashCommandNotLinked: "Je bent niet verbonden!"
+#Linking: when player trying to unlink not linked account
+LinkingSlashCommandAccountNotYours: "Je kunt andermans account niet ontkoppelen!"
+#Linking: user trying to unlink other's account
+LinkingSlashCommandAlreadyLinked: "Je bent al gekoppeld!"
+#Linking: user is already linked!
+LinkingSlashCommandNicknameError: "Bijnaam kan niet te kort of te lang zijn!"
+#Linking: nickname should be longed than 3 symbols or shorter than 17 symbols!
+LinkingSlashCommandCodeGenerated: "Je hebt al code gegenereerd!"
+#Linking: if linking process already started
+LinkingSlashCommandLink: "Code gegenereerd! Nu moet je `/link %u` ingame gebruiken! Bedankt!"
+#Linking: start of linking process. %u - linking code
+LinkingSlashCommandUnLink: "Klaar! Je hebt je account succesvol ontkoppeld"
+#Linking: unlinked accounts
+LinkingUnlinkedMessage: "&eUw account is ontkoppeld door &f%u &erequest"
+#Linking: unlinked accounts. %u - Discord
+LinkingKickMsg: "& cJe moet je Minecraft-account koppelen aan Discord-account!"
+#Linking: kick message
+
+### SLASHCOMMANDS ###
+WhitelistRegexErrorDescription: "Bijnaam mag alleen Engelse symbolen bevatten!"
+#Whitelist: SlashCommand nickname regex check failed
+WhitelistedSuccessful: "Speler **%p** is toegevoegd in whitelist"
+#Whitelist: player was added in whitelist
+WhitelistedAlready: "Speler **%p** al in whitelist"
+#Whitelist: player already in whitelist
+WhitelistRemovedSuccessful: "Speler **%p** is verwijderd van de witte lijst"
+#Whitelist: player was removed from whitelist
+NotInWhitelist: "Speler **%p** niet gevonden in whitelist"
+#Whitelist: player not found in whitelist
+WhitelistListChooseTitle: ":warning: Optie kiezen"
+#Whitelist: list of whitelisted players choose option (title)
+WhitelistListChooseDescription:
+  - "Kies deze opties om alle spelers op de witte lijst te zien!"
+  - ":green_circle: %0 - Standaard whitelist(per server)"
+  - ":blue_circle: %1 - OnzeWhitelist(door plugin)"
+#Whitelist: list of whitelisted players choose option (description)
+WhitelistListChooseDefaultWhitelistButton: "Standaard whitelist"
+#Whitelist: list of whitelisted players choose option (button name) [default]
+WhitelistListChooseOurWhitelistButton: "OnzeWhitelist"
+#Whitelist: list of whitelisted players choose option (button name) [ourwhitelist]
+WhitelistListOurWhitelistChooseTitle: ":warning: Optie kiezen"
+#Whitelist: list of whitelisted players choose option (title) [ourwhitelist]
+WhitelistListOurWhitelistChooseDescription:
+  - "Kies deze opties om alle spelers of beheerders te zien in OurWhitelist!"
+  - ":green_circle: %0 - Gewone spelers"
+  - ":blue_circle: %1 - Beheerders"
+#Whitelist: list of whitelisted players choose option (description) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonPlayers: "Gebruikelijke spelers"
+#Whitelist: list of whitelisted players choose option (button name) (players) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonAdministrators: "Beheerders"
+#Whitelist: list of whitelisted players choose option (button name) (administrators) [ourwhitelist]
+ListPlayersTitle: ":page_with_curl: Lijst van spelers"
+#Whitelist: list of online players (title)
+ListPlayersDescription: "Spelers nu online: **%p**"
+#Whitelist: list of online players (description)
+ListPlayersFooter: "Totaal aantal online spelers: %p"
+#Whitelist: list of online players (footer)
+ListBannedPlayersTitle: ":page_with_curl: Lijst van verboden spelers"
+#Whitelist: list of banned players (title)
+ListBannedPlayersDescription: "Spelers momenteel verboden: **%p**"
+#Whitelist: list of banned players (description)
+ListBannedPlayersFooter: "Totaal verbannen spelers: %p"
+#Whitelist: list of banned players (footer)
+ListWhitelistedDefaultTitle: ":page_with_curl: Lijst van spelers op de witte lijst (standaard)"
+#Whitelist: list of whitelisted players (title) [default]
+ListWhitelistedDefaultDescription: "Spelers die momenteel op de standaardwhitelist staan: **%p**"
+#Whitelist: list of whitelisted players (description) [default]
+ListWhitelistedDefaultFooter: "Totaal aantal spelers op de witte lijst: %p"
+#Whitelist: list of whitelisted players (footer) [default]
+ListWhitelistedOurWhitelistTitle: ":page_with_curl: Lijst van spelers op de witte lijst (OurWhitelist)"
+#Whitelist: list of whitelisted players (title) [ourwhitelist]
+ListWhitelistedOurWhitelistDescription: "Spelers die momenteel op onze witte lijst staan: **%p**"
+#Whitelist: list of whitelisted players (description) [ourwhitelist]
+ListWhitelistedOurWhitelistFooter: "Totaal aantal spelers op de witte lijst: %p"
+#Whitelist: list of whitelisted players (footer) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistTitle: ":page_with_curl: Lijst van beheerders op de witte lijst (OurWhitelist)"
+#Whitelist: list of whitelisted administrators (title) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistDescription: "Beheerders die momenteel in onzeWhitelist staan: **%p**"
+#Whitelist: list of whitelisted administrators (description) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistFooter: "Totaal aantal beheerders op de witte lijst: %p"
+#Whitelist: list of whitelisted administrators (footer) [ourwhitelist]
+
+### EMBEDS COLORS ###
+# Use this site(https://htmlcolorcodes.com/) to pick your color
+
+ErrorEmbedColor: "#ff380d"
+# Embed color for error embeds
+
+SuccessEmbedColor: "#c0ff5f"
+# Embed color for success embeds
+
+ConfirmMenuEmbedColor: "#f7dcd7"
+# Embed color for whitelist confirmation menu embed
+
+ListEmbedColor: "#ffe14d"
+# Embed color for whitelisted players list embed
+
+ReactionEmbedColor: "#94e45b"
+# Embed color for /setupreaction embed
+
+LogsEmbedColor: "#51ffb5"
+# Embed color for logs embeds
+
+DMEmbedColor: "#51ff80"
+# Embed color for welcome DM embed
+
+WelcomeMessageEmbedColor: "#51ffca"
+# Embed color for global welcome message embed
+
+LinkedEmbedColor: "#9eff52"
+# Embed color for successful account link DM embed
+
+### LOGGING ###
+WhitelistLogEmbedTitle: ":page_with_curl: WHITELIST LOG"
+#Title for whitelist embed message log
+WhitelistLogEmbedDescription: "De gebruiker **%u** heeft zijn bijnaam * *%p* * toegevoegd aan de witte lijst!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+WhitelistSlashCommandAddLogEmbedDescription: "Beheerder **%a** heeft bijnaam * *%p* * toegevoegd aan de witte lijst!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+WhitelistSlashCommandRemovedLogEmbedDescription: "Beheerder **%a** heeft bijnaam * *%p* * verwijderd van de witte lijst!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+LinkingLogTitle: "LOGBOEK MET :page_with_curl: KOPPELINGEN"
+#Title for link embed message log
+LinkingLogLinkedDescription: "Gebruiker **%u** gekoppeld aan zijn Minecraft-account **%p** met UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+LinkingLogUnLinkedDescription: "Gebruiker **%u** ontkoppelde zijn Minecraft-account **%p** met UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+CheckLogEmbedTitle: ":page_with_curl: CHECKLOGBOEK"
+#Title for account check embed message log
+CheckWhitelistLogEmbedDescription: "Beheerder **%a** heeft speler * *%p* * gecontroleerd op zijn aanwezigheid op de witte lijst"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+CheckLinkNickLogEmbedDescription: "Beheerder **%a** gecontroleerde speler **%p** voor zijn gekoppelde account"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkDiscordIDLogEmbedDescription: "Beheerder **%a** controleerde gebruiker met DiscordID **%p** voor zijn gekoppelde account"
+#Description for account check embed message log
+#%p - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkLogEmbedDescription: "Beheerder **%a** controleerde gebruiker met DiscordID **%l** en met bijnaam **%p** voor zijn gekoppelde account"
+#Description for account check embed message log
+#%p - player's nickname
+#%l - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+
+### CHECK ###
+WhitelistCheckFoundTitle: ":green_book: GEVONDEN"
+#Title for found account embed message
+WhitelistCheckFoundDescription: "Speler **%p** is gevonden in whitelist"
+#Description for found account embed message [Default whitelist]
+WhitelistCheckFoundOurWhitelistDescription: "Speler **%p** is gevonden in onzeWhitelist. Hij is: **%t**"
+#Description for found account embed message [OurWhitelist]
+WhitelistCheckNotFoundTitle: ":closed_book: NIET GEVONDEN"
+#Title for not found account embed message
+WhitelistCheckNotFoundDescription: "Speler **%p** is gevonden in whitelist"
+#Description for not found account embed message [Default whitelist]
+LinkingCheckDiscordIDNotFound: "DiscordID moet 18 tekens lang zijn en van het type: long"
+#Description for DiscordID issue embed message
+LinkingCheckFoundTitle: ":green_book: GEVONDEN"
+#Title for found account embed message
+LinkingCheckFoundDescription:
+  - "Er is informatie die we hebben gevonden over dit account:"
+  - "Bijnaam: **%n**"
+  - "UUID: **%u**"
+  - "Discord: **%d**"
+  - "DiscordID: **%i**"
+  - "Koppelingsdatum: **%t**"
+  - "Vermelding(indien beschikbaar): %m"
+#Description for all linked account information embed message
+LinkingCheckNotFoundTitle: ":closed_book: NIET GEVONDEN"
+#Title for error embed message
+LinkingCheckNotFoundDescription: "We kunnen geen informatie vinden over deze speler! Ofwel heeft hij geen account gekoppeld, ofwel heeft u onjuiste informatie verstrekt"
+#Description for error embed message
+
+#Language file version: 1.0 (Include this version where you report translation issue)

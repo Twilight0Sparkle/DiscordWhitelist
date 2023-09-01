@@ -1,0 +1,224 @@
+#
+#    ╔═══╦══╦═══╦═══╦═══╦═══╦═══╦╗╔╗╔╦╗ ╔╦══╦════╦═══╦╗  ╔══╦═══╦════╗
+#    ╚╗╔╗╠╣╠╣╔═╗║╔═╗║╔═╗║╔═╗╠╗╔╗║║║║║║║ ║╠╣╠╣╔╗╔╗║╔══╣║  ╚╣╠╣╔═╗║╔╗╔╗║
+#     ║║║║║║║╚══╣║ ╚╣║ ║║╚═╝║║║║║║║║║║╚═╝║║║╚╝║║╚╣╚══╣║   ║║║╚══╬╝║║╚╝
+#     ║║║║║║╚══╗║║ ╔╣║ ║║╔╗╔╝║║║║╚╝╚╝║╔═╗║║║  ║║ ║╔══╣║ ╔╗║║╚══╗║ ║║
+#    ╔╝╚╝╠╣╠╣╚═╝║╚═╝║╚═╝║║║╚╦╝╚╝╠╗╔╗╔╣║ ║╠╣╠╗ ║║ ║╚══╣╚═╝╠╣╠╣╚═╝║ ║║
+#    ╚═══╩══╩═══╩═══╩═══╩╝╚═╩═══╝╚╝╚╝╚╝ ╚╩══╝ ╚╝ ╚═══╩═══╩══╩═══╝ ╚╝
+#             DISCORD WHITELIST BOT - VERSION 4.20-ASTER (Developer Preview 4LCX)
+#                      Thanks for using DiscordWhitelist plugin!
+#
+# Special thanks for:
+# ・ Tofa -> https://vk.com/hrp2000
+# ・ AqUpd -> https://vk.com/aqupd
+# ・ Ubivashka -> https://vk.com/bbaty45
+#   for supporting me and helping with plugin version: 2.10!
+#
+
+Language: en_US
+# Defines what language will use to send messages. You can translate it.
+# List of supported languages: https://windstudio.gitbook.io/discordwhitelist/step-by-step-setting/setting-up-our-bot
+
+Token: ReplaceThisWithYourBotToken
+# Bot token from "https://discord.com/developers/applications"
+
+GuildID: ReplaceThisWithYourGuildID
+# (Requires developer mode enabled!) Copy your guild ID via: RMB on your server -> click on COPY ID button
+
+Check-Updates: true
+# Should we send message about updates of a plugin to a player and console?
+# Not works for some time on Folia because of API broken
+
+### DATABASE ###
+
+DataBaseType: SQLite
+# Defines which database plugin will use to store data.
+# You can use SQLite or MySQL (case-sensitive)
+
+#=#=#=#=#=#=#=#=#=#=#=# SQLite SETTINGS #=#=#=#=#=#=#=#=#=#=#=#
+                                                              #
+SQLiteDatabaseName: information                               #
+# Name of file where information will store                   #
+                                                              #
+SQLiteTableName_Linking: linking_table                        #
+# Name of table where linking information will store          #
+                                                              #
+SQLiteTableName_Whitelist: whitelist_table                    #
+# Name of table where whitelist information will store        #
+                                                              #
+SQLiteTableName_LoginPanel: loginpanel_table                  #
+# Name of table where login information will store            #
+                                                              #
+#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+
+#=#=#=#=#=#=#=#=#=#=#=# MySQL SETTINGS #=#=#=#=#=#=#=#=#=#=#=#
+                                                             #
+MySQL_Host: localhost                                        #
+# Database dedicated host                                    #
+                                                             #
+MySQL_Port: 3306                                             #
+# Database port of dedicated host                            #
+                                                             #
+MySQL_Login: root                                            #
+# Database login of dedicated host                           #
+                                                             #
+MySQL_Password: root                                         #
+# Database password of dedicated host                        #
+                                                             #
+MySQL_DatabaseName: information                              #
+# Name of file where information will store                  #
+                                                             #
+MySQL_TableName_Linking: linking_table                       #
+# Name of table where linking information will store         #
+                                                             #
+MySQL_TableName_Whitelist: whitelist_table                   #
+# Name of table where whitelist information will store       #
+                                                             #
+MySQL_TableName_LoginPanel: loginpanel_table                 #
+# Name of table where login information will store           #
+                                                             #
+MySQL_Connection_TimeOut: 3000                               #
+# Connection timeout(in ms)                                  #
+                                                             #
+#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#+
+
+###          ###
+
+### MAIN ###
+
+WhitelistChannelID: "ChannelID"
+# WhitelistChannelID that used for whitelisting people
+
+GlobalChannelID: "GlobalChannelID"
+# GlobalChannelID that used for texting about welcome users. Required for SEND_WELCOME_MESSAGE (7) feature.
+
+LogsChannelID: "LogsChannelID"
+# GlobalChannelID that used to receive whitelist logs. Required for LOGGING (15) feature.
+
+AdminChannelID: "AdminChannelID"
+# AdminChannelID that used to receive help requests. Required for LOGIN_CONTROL_PANEL (17) feature.
+
+Status&Activities: true
+# Defines will plugin set bot's status and activity
+
+Status: Online
+# Defines which type of status bot will use. Compatible types:
+# Online, DND, Idle, Invisible
+
+ActivitiesType: Playing
+# Defines which type of activity bot will use. Compatible types:
+# Playing, Listening, Watching, Streaming, Competing
+
+Activity: "Minecraft Server | %0 players online"
+# Complements ActivitiesType, like: Playing Minecraft server
+# %0 - players online on the server
+
+ActivityURL: "https://youtube.com"
+# Used only for Streaming ActivityType! Grants user open this URL while bot streaming smth.
+# For example works with https://www.twitch.tv/user // https://www.youtube.com/watch?v=
+
+###          ###
+
+### SETTINGS ###
+
+Floodgate_Bedrock_Symbol: .
+# Special symbol for 'FLOODGATE_BEDROCK' setting
+
+RoleID: "RoleID"
+# RoleID that used when player added in whitelist [Discord Role]
+# 'notuse' tag will force plugin ignore this role to add
+
+RemoveRoleID: "notuse"
+# RoleID that will be removed when player was whitelisted [Discord Role]
+# 'notuse' tag will force plugin ignore this role to remove
+
+LinkedRoleID: "LinkedRoleID"
+# RoleID that will be added when player was linked [Discord Role]
+# Will be removed when user unlink his account
+# 'notuse' tag will force plugin ignore this role to add
+
+LinkedRemoveRoleID: "notuse"
+# RoleID that will be removed when player linked his account [Discord Role]
+# Will be added back when user unlink his account
+# 'notuse' tag will force plugin ignore this role to remove
+
+ReactionsRoleID: "notuse"
+# RoleID that will be added when player click on ReactionButton [Discord Role]
+# 'notuse' tag will force plugin ignore this role to add
+
+ReactionsRemoveRoleID: "notuse"
+# RoleID that will be removed when player click on ReactionButton [Discord Role]
+# 'notuse' tag will force plugin ignore this role to remove
+
+Blacklist-nick: [TestNick,TestNick2]
+# Edit this nicknames if u enabled the blacklist feature
+
+Blacklist-ID: [123456789123456789, 123456789123456789]
+# Edit this nicknames if u enabled the blacklist feature
+
+###          ###
+
+### FEATURES ###
+# PLEASE, DON'T ENABLE 2 SAME FEATURES IN ONE MOMENT - IT WILL FORCE RUN IT TWICE!
+
+WelcomeMessageType: EMBED
+# GlobalChannelID. Types: EMBED or TEXT
+
+SettingsEnabled:
+  - EMPHERIAL_MESSAGES
+  - WHITELIST_ROLE
+#  - REMOVE_ROLE
+#  - BLACKLIST
+  - CHANGE_NAME
+  - SEND_DM
+#  - SEND_WELCOME_MESSAGE
+  - CONFIRM_MENU
+#  - OUR_WHITELIST_SYSTEM
+#  - REACTIONS_WHITELIST
+  - SLASHCOMMANDS_REGEX_CHECK
+#  - FLOODGATE_BEDROCK
+  - LINKING
+  - REMOVE_LEFT_USERS
+# - LOGGING
+# - LINK_NAME_CHANGE
+# - UNLINK_NAME_CHANGE
+# - LOGIN_CONTROL_PANEL
+# ① EMPHERIAL_MESSAGES: Defines will all messages written in whitelist channel be deleted in certain time
+# ② WHITELIST_ROLE: Defines will user get 'RoleID' when he was whitelisted
+# ③ REMOVE_ROLE: Defines will user lose 'RomoveRoleID' when he was whitelisted
+# ④ BLACKLIST: Defines will plugin use blacklist feature
+# ⑤ CHANGE_NAME: Defines will user's nickname be changes when he was whitelisted
+# ⑥ SEND_DM: Defines will DirectMessage be sent to user when he was whitelisted
+# ⑦ SEND_WELCOME_MESSAGE: Defines will bot send message into 'GlobalChannelID' channel when user was whitelisted
+# ⑧ CONFIRM_MENU: Defines will confirmation menu will send to user when he's trying to whitelist
+# ⑨ OUR_WHITELIST_SYSTEM: Defines will plugin use Nickname-based whitelist system. Version: 0.7A2803 (Include that version if you will report any whitelist bug)
+# ⑩ REACTIONS_WHITELIST: Defines will plugin add/remove 'ReactionsRoleID' when user click on button
+# ⑪ SLASHCOMMANDS_REGEX_CHECK: Defines will plugin check nickname before adding/removing it to/from whitelist
+# ⑫ FLOODGATE_BEDROCK: Defines will plugin add bedrock player to whitelist
+# ⑬ LINKING: Defines will linking system be turned on and can players(users) use its commands. Version: 0.2A2803 (Include that version if you will report any linking bug)
+# ⑭ REMOVE_LEFT_USERS: Defines will we un-whitelist and unlink users who left your Discord server.
+# ⑮ LOGGING: Defines will plugin send whitelist/linking/check logs in channel after user got whitelisted/linked/checked account. Uses 'LogsChannelID' as logs channel
+# ⑯ LINK_NAME_CHANGE: Defines will linked discord user's nickname changed like his Minecraft nickname
+# ⑰ UNLINK_NAME_CHANGE: Defines will user's nickname changed to his default when he unlinked his account
+# ⑱ LOGIN_CONTROL_PANEL: Defines will linked user have to verify his connection every X hour(s) via Discord.
+
+###          ###
+
+### EXPERIMENTAL ###
+
+SessionTime: 12
+# Every X hour(s) user needs to verify his connection
+
+LoginSettings:
+  - COMPARE_IP
+  - CHECK_SESSION_TIME
+#  - ALWAYS_ON
+# COMPARE_IP: Defines will plugin be compare player's ips and if they are not equal - request verify connection. With SessionTime works, when user reached max. of his SessionTime
+# CHECK_SESSION_TIME: Defines will plugin count player's SessionTime and clear it when it reaches max. (>SessionTime)
+# ALWAYS_ON: WARNING! Experimental! May cause some bugs, cuz developer not designed it in start of developing. Defines will all features of LoginSettings be turned on. Requires all features in this section needs to be turned off except this one.
+
+###              ###
+
+Version: 4.20-ASTER
+# Thanks for downloading our plugin! <3
+# Do not change this!

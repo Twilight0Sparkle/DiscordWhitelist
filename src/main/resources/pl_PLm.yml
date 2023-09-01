@@ -1,0 +1,337 @@
+### EMBEDS ###
+ErrorTitle: "BŁĄD :x:"
+#Title for an embed messages, :x: is emoji
+SuccessTitle: ":white_check_mark: SUKCESÓW"
+#Title for an embed messages, :white_check_mark: is emoji
+InfoTitle: ":warning: INFORMACJI"
+#Title for an embed messages, :warning: is emoji
+DMMessageTitle: ":wave: WITAMY NA NASZYM SERWERZE"
+#Title for DM welcome message, :wave: is emoji
+WelcomeMessageTitle: ":wave: WITAMY NA NASZYM SERWERZE"
+#Title for global welcome message, :wave: is emoji
+###          ###
+
+### MAIN (DISCORD) ###
+AlreadyIn: "Gracz `%u` już na białej liście!"
+#Message: If player already in whitelist. %u - user's nickname which already in whitelist!
+AddedIn: "Gracz `%u` został pomyślnie dodany do białej listy!"
+#Message: If player successfully added in whitelist. %u - user's nickname which was added in whitelist!
+SymbolsError: "Przepraszamy, ale Twój pseudonim może zawierać tylko znaki angielskie (z 0-9 i _)"
+#Error message if message wrote not on English language
+LengthError: "Przepraszamy, ale Twój pseudonim musi mieć więcej niż 2 znaki lub mniej niż 17 znaków!"
+#Error message if nickname contains fewer than 3 symbols
+Blacklist-message: "Przepraszamy, ale \"%u\" jest na czarnej liście, przepraszam."
+#Message: A Blacklist Message that will send like an error in channel if user is in Blacklist. %u - user's nickname which was added in whitelist!
+DM-Message:
+  - "Witaj, **%u**! Dziękujemy za wybranie nas jako serwera gry!"
+  - "Cieszymy się, że tu jesteś!"
+#Message: A Direct Message will send to user who was whitelisted. %u - user's nickname which was added in whitelist!
+Welcome-Message:
+  - "**Witamy na naszym serwerze, **%u**. Mamy nadzieję, że wkrótce będziecie się dobrze bawić!**"
+#Message: A Welcome Message will send to channel that setted up before(GlobalChannelID).
+#%u - user's mention! (@User)
+#%p - user's nickname which was added in whitelist! (USER)
+ReactionEmbedTitle: "**Witamy na naszym serwerze!**"
+#Message: A embed message title that will be used in /setupreaction
+ReactionEmbedDescription:
+  - "Musisz kliknąć przycisk poniżej, aby"
+  - "aby kontynuować na naszym serwerze Discord!"
+  - "Miłego dnia!"
+#Message: A embed message description that will be used in /setupreaction
+ReactionButton: "Zgadzam się z zasadami"
+#Message: A embed message button that will be used in /setupreaction
+ReactionNotEnabled: "Powinieneś włączyć go w konfiguracji, aby użyć tego polecenia!"
+#Message: A embed message error description that will be used in /setupreaction
+ReactionSuccess: "Gotowe! Teraz możesz zrobić wszystko na naszym serwerze!"
+#Message: A embed message success description that will be used in /setupreaction
+###          ###
+
+### CONFIRM ###
+ConfirmTitle: "Potwierdź poprawność wprowadzonej nazwy użytkownika"
+#Title for an embed message that will be used when user types their username
+ConfirmMessage: "Potwierdź, że nazwa użytkownika `%u` jest prawidłowa"
+#Message: Will be used when user types their username.  user's nickname which was texted to a channel!
+ConfirmButtonYes: "Tak, jest poprawny"
+#Confirm button for a message
+ConfirmButtonNo: "Nie, spróbuj jeszcze raz"
+#Confirm button for a message
+TitleRefused: ":x: Odrzucono sprawdzenie poprawności"
+#Title for an embed message that will be used when user rejected correctness check, :x: is smile
+MessageRefused: "Spróbuj ponownie i bądź maksymalnie ostrożny!"
+#Message: Will be used when user rejected correctness check!
+MessageError: "Nie możesz używać tych przycisków!"
+#Message: Will be used when other user used foreign buttons!
+###          ###
+
+### WHITELIST ###
+### VERSION: 0.7A2803 (Include that version if you will report any whitelist bug)
+WhitelistUsage: "&fUsage: &6/whitelist <on/off/lock_on/lock_off/add/add_administrator/remove/remove_administrator/message/lock_message/list/list_administrators>"
+#Whitelist: command usage
+WhitelistList: "&fLista graczy(%p): &6%s"
+#Whitelist: shows the list of all whitelisted players. %s - player nicknames!
+AdministratorsList: "&fLista administratorów(%p): &6%s"
+#Whitelist: shows the list of all administrators. %s - administrator nicknames!
+WhitelistOn: "&fWhitelist zamienił się &aon"
+#Whitelist: turns on whitelist
+WhitelistAlreadyOn: "&fWhitelist jest już włączony &aon!"
+#Whitelist: whitelist already turned on
+WhitelistOff: "&fWhitelist odwrócił się &coff"
+#Whitelist: turns off whitelist
+WhitelistAlreadyOff: "&fWhitelist jest już włączony &coff!"
+#Whitelist: whitelist already turned off
+WhitelistLockOn: "Blokada & fServera została włączona &aon"
+#Whitelist: turns on server locking
+WhitelistLockOff: "Blokada & fServera odwróciła się &coff"
+#Whitelist: turns off server locking
+WhitelistAdded: "&fPlayer &6%s & f was whitellist"
+#Whitelist: player was added in whitelist. %s - player's nickname!
+WhitelistLockAdded: "&fAdministrator &6%s & f został dodany!"
+#Whitelist: player was added in whitelist. %s - administrator's nickname!
+WhitelistRemoved: "&fPlayer &6%s & f was un-whitellist"
+#Whitelist: player was removed from whitelist. %s - player's nickname!
+WhitelistLockRemoved: "&fAdministrator &6%s & f został usunięty"
+#Whitelist: player was removed from whitelist. %s - administrator's nickname!
+WhitelistPlayerNotFound: "Nie znaleziono & fPlayera"
+#Whitelist: player not found
+MessageNotFound: "& fMusisz dołączyć wiadomość"
+#Whitelist: message was not written
+WhitelistMsgSet: "&fWhitelist kick message was set to: &6%s"
+#Whitelist: kick message. %s - kick message!
+LockMsgSet: "&fLock wiadomość została ustawiona na: &6%s"
+#Whitelist: lock kick message. %s - lock kick message!
+WhitelistAlreadyAdded: "&fTen odtwarzacz jest już na białej liście"
+#Whitelist: player already in
+
+### LINKING ###
+### VERSION: 0.2A0604 (Include that version if you will report any linking bug)
+LeftDiscordKickReason: "Opuściłeś nasz serwer Discord!"
+LinkingTurnedOff: "&cLink jest obecnie wyłączony. Skontaktuj się z administracją, aby uzyskać więcej informacji"
+LinkingProfileNotExist: "&cNiemasz połączonych kont. Nie ma żadnych informacji o tobie."
+LinkingTurnedOffEmbed: "Łączenie jest obecnie wyłączone. Skontaktuj się z administracją, aby uzyskać więcej informacji"
+LinkingUsage: "&fUsage: &6/link <CODE>"
+#Linking: command usage.
+LinkingStart: "&fYou &6powinien &fto rozpocząć proces łączenia za pośrednictwem naszego serwera Discord! Wpisz(w Discordzie): &6/link do konta <NAME>"
+#Linking: when player needs to start linking process.
+LinkingInvalidCode: "&cTwój kod jest nieprawidłowy! Spróbuj ponownie!"
+#Linking: when player include invalid linking code
+LinkingAlreadyLinked: "&cJesteśjuż połączony!"
+#Linking: when player already linked
+LinkingNotLinked: "&cNiejesteś połączony!"
+#Linking: when player trying to unlink not linked account
+LinkingLeftGuild: "&cWyszedłeś z naszego serwera Discord"
+#Linking: when player left from guild
+LinkingLinkedEmbedTitle: ":link: PODŁĄCZONYCH"
+#Linking: discord embed message title when player successful linked
+LinkingLinkedEmbedDescription: "Gratulacje! Udało Ci się połączyć z kontem Minecraft: **%u**"
+#Linking: discord embed message description when player successful linked,  %u - Minecraft account
+LinkingLinkedMsg: "&aPowodzenie połączenia z kontem Discord:&6 %u"
+#Linking: discord message when player successful linked, %u - Discord account
+LinkingInfo:
+  - "&fIstnieją pełne informacje o Twoich kontach: "
+  - "&fNickname: &e%0"
+  - "&fUUID: &e%1"
+  - "&fDiscord: &e%2"
+  - "&fDiscordID: &e%3"
+  - "&fData powiązania: &e%4"
+#Linking: information message
+LinkingSlashCommandPlayerNotOnlne: "Ten gracz nie jest online!"
+#Linking: player needs to be online
+LinkingSlashCommandNotLinked: "Nie jesteś połączony!"
+#Linking: when player trying to unlink not linked account
+LinkingSlashCommandAccountNotYours: "Nie możesz odłączyć konta innej osoby!"
+#Linking: user trying to unlink other's account
+LinkingSlashCommandAlreadyLinked: "Jesteś już połączony!"
+#Linking: user is already linked!
+LinkingSlashCommandNicknameError: "Pseudonim nie może być zbyt krótki lub zbyt długi!"
+#Linking: nickname should be longed than 3 symbols or shorter than 17 symbols!
+LinkingSlashCommandCodeGenerated: "Wygenerowano już kod!"
+#Linking: if linking process already started
+LinkingSlashCommandLink: "Wygenerowano kod! Teraz musisz użyć `/link %u` w grze! Dzięki!"
+#Linking: start of linking process. %u - linking code
+LinkingSlashCommandUnLink: "Gotowe! Udało Ci się usunąć powiązanie konta"
+#Linking: unlinked accounts
+LinkingUnlinkedMessage: "&eTwoje konto zostało odłączone przez &f%u &erequest"
+#Linking: unlinked accounts. %u - Discord
+LinkingKickMsg: "&cMusisz połączyć swoje konto Minecraft z kontem Discord!"
+#Linking: kick message
+
+### SLASHCOMMANDS ###
+WhitelistRegexErrorDescription: "Pseudonim może zawierać tylko symbole angielskie!"
+#Whitelist: SlashCommand nickname regex check failed
+WhitelistedSuccessful: "Gracz **%p** został dodany do białej listy"
+#Whitelist: player was added in whitelist
+WhitelistedAlready: "Gracz **%p** już na białej liście"
+#Whitelist: player already in whitelist
+WhitelistRemovedSuccessful: "Gracz **%p** został usunięty z białej listy"
+#Whitelist: player was removed from whitelist
+NotInWhitelist: "Gracza **%p** nie znaleziono na białej liście"
+#Whitelist: player not found in whitelist
+WhitelistListChooseTitle: ":warning: Wybierz opcję"
+#Whitelist: list of whitelisted players choose option (title)
+WhitelistListChooseDescription:
+  - "Wybierz te opcje, aby zobaczyć wszystkich graczy na białej liście!"
+  - ":green_circle: %0 - Domyślna biała lista(według serwera)"
+  - ":blue_circle: %1 - OurWhitelist(przez wtyczkę)"
+#Whitelist: list of whitelisted players choose option (description)
+WhitelistListChooseDefaultWhitelistButton: "Domyślna biała lista"
+#Whitelist: list of whitelisted players choose option (button name) [default]
+WhitelistListChooseOurWhitelistButton: "OurWhitelist"
+#Whitelist: list of whitelisted players choose option (button name) [ourwhitelist]
+WhitelistListOurWhitelistChooseTitle: ":warning: Wybierz opcję"
+#Whitelist: list of whitelisted players choose option (title) [ourwhitelist]
+WhitelistListOurWhitelistChooseDescription:
+  - "Wybierz te opcje, aby zobaczyć wszystkich graczy lub administratorów na naszej białej liście!"
+  - ":green_circle: %0 - Zwykli gracze"
+  - ":blue_circle: %1 - Administratorzy"
+#Whitelist: list of whitelisted players choose option (description) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonPlayers: "Zwykli gracze"
+#Whitelist: list of whitelisted players choose option (button name) (players) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonAdministrators: "Administratorzy"
+#Whitelist: list of whitelisted players choose option (button name) (administrators) [ourwhitelist]
+ListPlayersTitle: ":page_with_curl: Lista graczy"
+#Whitelist: list of online players (title)
+ListPlayersDescription: "Graczy online: **%p**"
+#Whitelist: list of online players (description)
+ListPlayersFooter: "Wszystkich graczy online: %p"
+#Whitelist: list of online players (footer)
+ListBannedPlayersTitle: ":page_with_curl: Lista zbanowanych graczy"
+#Whitelist: list of banned players (title)
+ListBannedPlayersDescription: "Gracze obecnie zbanowani: **%p**"
+#Whitelist: list of banned players (description)
+ListBannedPlayersFooter: "Wszystkich zbanowanych graczy: %p"
+#Whitelist: list of banned players (footer)
+ListWhitelistedDefaultTitle: ":page_with_curl: Lista graczy na białej liście (domyślnie)"
+#Whitelist: list of whitelisted players (title) [default]
+ListWhitelistedDefaultDescription: "Gracze znajdujący się obecnie na domyślnej białej liście: **%p**"
+#Whitelist: list of whitelisted players (description) [default]
+ListWhitelistedDefaultFooter: "Całkowita liczba graczy na białej liście: %p"
+#Whitelist: list of whitelisted players (footer) [default]
+ListWhitelistedOurWhitelistTitle: ":page_with_curl: Lista graczy na białej liście (OurWhitelist)"
+#Whitelist: list of whitelisted players (title) [ourwhitelist]
+ListWhitelistedOurWhitelistDescription: "Gracze aktualnie na naszej białej liście: **%p**"
+#Whitelist: list of whitelisted players (description) [ourwhitelist]
+ListWhitelistedOurWhitelistFooter: "Całkowita liczba graczy na białej liście: %p"
+#Whitelist: list of whitelisted players (footer) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistTitle: ":page_with_curl: Lista administratorów z białej listy (OurWhitelist)"
+#Whitelist: list of whitelisted administrators (title) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistDescription: "Administratorzy obecnie na naszej białej liście: **%p**"
+#Whitelist: list of whitelisted administrators (description) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistFooter: "Całkowita liczba administratorów na białej liście: %p"
+#Whitelist: list of whitelisted administrators (footer) [ourwhitelist]
+
+### EMBEDS COLORS ###
+# Use this site(https://htmlcolorcodes.com/) to pick your color
+
+ErrorEmbedColor: "#ff380d"
+# Embed color for error embeds
+
+SuccessEmbedColor: "#c0ff5f"
+# Embed color for success embeds
+
+ConfirmMenuEmbedColor: "#f7dcd7"
+# Embed color for whitelist confirmation menu embed
+
+ListEmbedColor: "#ffe14d"
+# Embed color for whitelisted players list embed
+
+ReactionEmbedColor: "#94e45b"
+# Embed color for /setupreaction embed
+
+LogsEmbedColor: "#51ffb5"
+# Embed color for logs embeds
+
+DMEmbedColor: "#51ff80"
+# Embed color for welcome DM embed
+
+WelcomeMessageEmbedColor: "#51ffca"
+# Embed color for global welcome message embed
+
+LinkedEmbedColor: "#9eff52"
+# Embed color for successful account link DM embed
+
+### LOGGING ###
+WhitelistLogEmbedTitle: ":page_with_curl: DZIENNIK BIAŁEJ LISTY"
+#Title for whitelist embed message log
+WhitelistLogEmbedDescription: "Użytkownik **%u* * dodał swój pseudonim **%p* * do białej listy!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+WhitelistSlashCommandAddLogEmbedDescription: "Administrator **%a** dodał pseudonim **%p** do białej listy!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+WhitelistSlashCommandRemovedLogEmbedDescription: "Administrator **%a** usunął pseudonim **%p** z białej listy!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+LinkingLogTitle: "DZIENNIK LINKÓW :page_with_curl:"
+#Title for link embed message log
+LinkingLogLinkedDescription: "Użytkownik **%u** powiązany ze swoim kontem Minecraft **%p** z identyfikatorem UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+LinkingLogUnLinkedDescription: "Użytkownik **%u** odłączył swoje konto Minecraft **%p** z UUID **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+CheckLogEmbedTitle: ":page_with_curl: DZIENNIK KONTROLI"
+#Title for account check embed message log
+CheckWhitelistLogEmbedDescription: "Administrator **%a** sprawdził gracza **%p** pod kątem jego obecności na białej liście"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+CheckLinkNickLogEmbedDescription: "Administrator **%a** sprawdził gracza **%p** pod kątem powiązanego konta"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkDiscordIDLogEmbedDescription: "Administrator **%a** sprawdził użytkownika z DiscordID **%p** dla jego połączonego konta"
+#Description for account check embed message log
+#%p - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkLogEmbedDescription: "Administrator **%a** sprawdził użytkownika z identyfikatorem DiscordID* *%l* * i pseudonimem **%p** dla powiązanego konta"
+#Description for account check embed message log
+#%p - player's nickname
+#%l - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+
+### CHECK ###
+WhitelistCheckFoundTitle: ":green_book: ZNALEZIONYCH"
+#Title for found account embed message
+WhitelistCheckFoundDescription: "Gracz **%p** został znaleziony na białej liście"
+#Description for found account embed message [Default whitelist]
+WhitelistCheckFoundOurWhitelistDescription: "Gracz **%p** został znaleziony na naszej białej liście. On jest: **%t**"
+#Description for found account embed message [OurWhitelist]
+WhitelistCheckNotFoundTitle: "NIE ZNALEZIONO :closed_book:"
+#Title for not found account embed message
+WhitelistCheckNotFoundDescription: "Gracz **%p** został znaleziony na białej liście"
+#Description for not found account embed message [Default whitelist]
+LinkingCheckDiscordIDNotFound: "DiscordID powinien mieć długość 18 znaków i być typu: long"
+#Description for DiscordID issue embed message
+LinkingCheckFoundTitle: ":green_book: ZNALEZIONYCH"
+#Title for found account embed message
+LinkingCheckFoundDescription:
+  - "Znaleźliśmy informacje na temat tego konta:"
+  - "Pseudonim: **%n**"
+  - "UUID: **%u**"
+  - "Discord: **%d**"
+  - "Identyfikator Discord: **%i**"
+  - "Data powiązania: **%t**"
+  - "Wzmianka(jeśli jest dostępna): %m"
+#Description for all linked account information embed message
+LinkingCheckNotFoundTitle: "NIE ZNALEZIONO :closed_book:"
+#Title for error embed message
+LinkingCheckNotFoundDescription: "Nie możemy znaleźć informacji o tym graczu! Albo nie powiązał konta, albo podałeś informacje niedokładne"
+#Description for error embed message
+
+#Language file version: 1.0 (Include this version where you report translation issue)

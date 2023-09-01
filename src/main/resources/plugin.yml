@@ -1,0 +1,20 @@
+main: com.windstudio.discordwl.Main
+name: DiscordWhitelist
+author: WINDStudio
+version: ${project.version}
+folia-supported: true
+commands:
+  link:
+    usage: /<command>
+    description: Command to link your account
+  account:
+    usage: /<command>
+    description: Command to get information about your linked account
+  owhitelist:
+    aliases: [ owl ]
+    permission: [ whitelist.admin ]
+    description: Whitelist management command
+permissions:
+  whitelist.admin:
+    description: Allows to use all commands
+    default: op

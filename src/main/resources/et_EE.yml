@@ -1,0 +1,337 @@
+### EMBEDS ###
+ErrorTitle: ":x: VIGA"
+#Title for an embed messages, :x: is emoji
+SuccessTitle: ":white_check_mark: EDU"
+#Title for an embed messages, :white_check_mark: is emoji
+InfoTitle: ":warning: INFO"
+#Title for an embed messages, :warning: is emoji
+DMMessageTitle: ":wave: TERE TULEMAST MEIE SERVERISSE"
+#Title for DM welcome message, :wave: is emoji
+WelcomeMessageTitle: ":wave: TERE TULEMAST MEIE SERVERISSE"
+#Title for global welcome message, :wave: is emoji
+###          ###
+
+### MAIN (DISCORD) ###
+AlreadyIn: "Mängija `%u` on juba lubatud nimekirjas!"
+#Message: If player already in whitelist. %u - user's nickname which already in whitelist!
+AddedIn: "Mängija `%u` edukalt lisatud valgesse nimekirja!"
+#Message: If player successfully added in whitelist. %u - user's nickname which was added in whitelist!
+SymbolsError: "Vabandust, kuid teie hüüdnimi võib sisaldada ainult ingliskeelseid märke (0-9 ja _)"
+#Error message if message wrote not on English language
+LengthError: "Vabandust, kuid teie hüüdnimi peab olema pikem kui 2 tähemärki või lühem kui 17 tähemärki!"
+#Error message if nickname contains fewer than 3 symbols
+Blacklist-message: "Vabandame, aga \"%u\" on mustas nimekirjas, vabandame."
+#Message: A Blacklist Message that will send like an error in channel if user is in Blacklist. %u - user's nickname which was added in whitelist!
+DM-Message:
+  - "Tere, **%u**! Täname, et valisite meid mängimisserveri otsimiseks!"
+  - "Meil on hea meel teid siin näha!"
+#Message: A Direct Message will send to user who was whitelisted. %u - user's nickname which was added in whitelist!
+Welcome-Message:
+  - "**Tere tulemast meie serverisse, **%u**. Loodame, et sul saab varsti lõbus olema!:)"
+#Message: A Welcome Message will send to channel that setted up before(GlobalChannelID).
+#%u - user's mention! (@User)
+#%p - user's nickname which was added in whitelist! (USER)
+ReactionEmbedTitle: "**Tere tulemast meie serverisse!**"
+#Message: A embed message title that will be used in /setupreaction
+ReactionEmbedDescription:
+  - "Tellimiseks pead klõpsama allolevat nuppu"
+  - "et jätkata meie lahkarvamuste serveris!"
+  - "Ilusat päeva!"
+#Message: A embed message description that will be used in /setupreaction
+ReactionButton: "Nõustu reeglitega"
+#Message: A embed message button that will be used in /setupreaction
+ReactionNotEnabled: "Selle käsu kasutamiseks tuleb see sisse lülitada seadistusel!"
+#Message: A embed message error description that will be used in /setupreaction
+ReactionSuccess: "Valmis! Nüüd saate teha kõike meie serveris!"
+#Message: A embed message success description that will be used in /setupreaction
+###          ###
+
+### CONFIRM ###
+ConfirmTitle: "Kinnita sisestatud kasutajanime õigsus"
+#Title for an embed message that will be used when user types their username
+ConfirmMessage: "Palun kinnita, et kasutajanimi `%u` on õige"
+#Message: Will be used when user types their username.  user's nickname which was texted to a channel!
+ConfirmButtonYes: "Jah, see on õige"
+#Confirm button for a message
+ConfirmButtonNo: "Ei, veel üks katse"
+#Confirm button for a message
+TitleRefused: ":x: Keeldusid õigsuse kontrollist"
+#Title for an embed message that will be used when user rejected correctness check, :x: is smile
+MessageRefused: "Proovi uuesti ja ole ettevaatlikum!"
+#Message: Will be used when user rejected correctness check!
+MessageError: "Te ei saa seda nuppu kasutada!"
+#Message: Will be used when other user used foreign buttons!
+###          ###
+
+### WHITELIST ###
+### VERSION: 0.7A2803 (Include that version if you will report any whitelist bug)
+WhitelistUsage: "&fUsage: &6/valge nimekiri <on/off/lock_on/lock_off/add/add_administrator/remove/remove_administrator/message/lock_message/list/list_administrators>"
+#Whitelist: command usage
+WhitelistList: "&fMängijate nimekiri(%p): &6%s"
+#Whitelist: shows the list of all whitelisted players. %s - player nicknames!
+AdministratorsList: "&fAdministraatorite nimekiri (%p): &6%s"
+#Whitelist: shows the list of all administrators. %s - administrator nicknames!
+WhitelistOn: "&fWhitelist has turned &aon"
+#Whitelist: turns on whitelist
+WhitelistAlreadyOn: "& fValitudnimekiri on juba sisse lülitatud &aon!"
+#Whitelist: whitelist already turned on
+WhitelistOff: "&fWhitelist has turned &coff"
+#Whitelist: turns off whitelist
+WhitelistAlreadyOff: "&fWhitelist juba keeratud &coff!"
+#Whitelist: whitelist already turned off
+WhitelistLockOn: "&fServeri lukustus on pöördunud &aon"
+#Whitelist: turns on server locking
+WhitelistLockOff: "&fServeri lukustus on pööratud jakohverdatud"
+#Whitelist: turns off server locking
+WhitelistAdded: "&fPlayer &6%s & f was whiteitelisted"
+#Whitelist: player was added in whitelist. %s - player's nickname!
+WhitelistLockAdded: "&fAdministraator &6%s &f lisati!"
+#Whitelist: player was added in whitelist. %s - administrator's nickname!
+WhitelistRemoved: "&fPlayer &6%s & f was un-whitelisted"
+#Whitelist: player was removed from whitelist. %s - player's nickname!
+WhitelistLockRemoved: "&fAdministraator &6%s & eemaldati"
+#Whitelist: player was removed from whitelist. %s - administrator's nickname!
+WhitelistPlayerNotFound: "&fMängijat ei leitud"
+#Whitelist: player not found
+MessageNotFound: "& fSa pead lisama sõnumi"
+#Whitelist: message was not written
+WhitelistMsgSet: "&fWhitelist kick message was set to: &6%s"
+#Whitelist: kick message. %s - kick message!
+LockMsgSet: "&fLock sõnumiks määrati: &6%s"
+#Whitelist: lock kick message. %s - lock kick message!
+WhitelistAlreadyAdded: "&fSee mängija on juba lubatud nimekirjas"
+#Whitelist: player already in
+
+### LINKING ###
+### VERSION: 0.2A0604 (Include that version if you will report any linking bug)
+LeftDiscordKickReason: "Sa lahkusid meie Discordi serverist!"
+LinkingTurnedOff: "&cLinking on praegu välja lülitatud. Lisateabe saamiseks võtke ühendust administratsiooniga"
+LinkingProfileNotExist: "&cSulpole ühtegi seotud kontot. Sinu kohta pole mingit infot."
+LinkingTurnedOffEmbed: "Linkimine on praegu välja lülitatud. Lisateabe saamiseks võtke ühendust administratsiooniga"
+LinkingUsage: "&fUsage: &6/link <CODE>"
+#Linking: command usage.
+LinkingStart: "&fYou &6should &fto alustada linkimine protsessi kaudu meie Discord server! Tüüp(lahknevuses): &6/konto link <NAME>"
+#Linking: when player needs to start linking process.
+LinkingInvalidCode: "&cSinu kood on kehtetu! Proovi uuesti!"
+#Linking: when player include invalid linking code
+LinkingAlreadyLinked: "&cSaoled juba lingitud!"
+#Linking: when player already linked
+LinkingNotLinked: "&cSapole seotud!"
+#Linking: when player trying to unlink not linked account
+LinkingLeftGuild: "&cSa lahkusid meie lahkumisavalduste serverist"
+#Linking: when player left from guild
+LinkingLinkedEmbedTitle: ":link: ÜHENDATUD"
+#Linking: discord embed message title when player successful linked
+LinkingLinkedEmbedDescription: "Õnnitleme! Olete oma Minecrafti kontoga edukalt linkinud: **%u**"
+#Linking: discord embed message description when player successful linked,  %u - Minecraft account
+LinkingLinkedMsg: "&aYou 've successful linked with your Discord account:&6 %u"
+#Linking: discord message when player successful linked, %u - Discord account
+LinkingInfo:
+  - "&fSinu kontode kohta on täielik teave: "
+  - "&fNickname: &e%0"
+  - "&fUUID: &e%1"
+  - "&fDiscord: &e%2"
+  - "&fDiscordID: &e%3"
+  - "&fLinking date: &e%4"
+#Linking: information message
+LinkingSlashCommandPlayerNotOnlne: "See mängija pole võrgus!"
+#Linking: player needs to be online
+LinkingSlashCommandNotLinked: "Sa pole seotud!"
+#Linking: when player trying to unlink not linked account
+LinkingSlashCommandAccountNotYours: "Teise konto linkimist ei saa tühistada!"
+#Linking: user trying to unlink other's account
+LinkingSlashCommandAlreadyLinked: "Oled juba lingitud!"
+#Linking: user is already linked!
+LinkingSlashCommandNicknameError: "Hüüdnimi ei tohi olla liiga lühike või pikk!"
+#Linking: nickname should be longed than 3 symbols or shorter than 17 symbols!
+LinkingSlashCommandCodeGenerated: "Olete koodi juba loonud!"
+#Linking: if linking process already started
+LinkingSlashCommandLink: "Kood loodud! Nüüd, sa pead kasutama `/link %u` ingame! Aitäh!"
+#Linking: start of linking process. %u - linking code
+LinkingSlashCommandUnLink: "Valmis! Teie konto linkimine õnnestus"
+#Linking: unlinked accounts
+LinkingUnlinkedMessage: "&eSinu konto lingiti lahti &f%u & erequestpoolt"
+#Linking: unlinked accounts. %u - Discord
+LinkingKickMsg: "&cSa pead oma Minecrafti konto siduma Discordi kontoga!"
+#Linking: kick message
+
+### SLASHCOMMANDS ###
+WhitelistRegexErrorDescription: "Hüüdnimi võib sisaldada ainult ingliskeelseid sümboleid!"
+#Whitelist: SlashCommand nickname regex check failed
+WhitelistedSuccessful: "Mängija **%p** lisati valgesse nimekirja"
+#Whitelist: player was added in whitelist
+WhitelistedAlready: "Mängija **%p** on juba valges nimekirjas"
+#Whitelist: player already in whitelist
+WhitelistRemovedSuccessful: "Mängija **%p** eemaldati valgest nimekirjast"
+#Whitelist: player was removed from whitelist
+NotInWhitelist: "Mängijat **%p** ei leitud valgest nimekirjast"
+#Whitelist: player not found in whitelist
+WhitelistListChooseTitle: ":warning: Vali variant"
+#Whitelist: list of whitelisted players choose option (title)
+WhitelistListChooseDescription:
+  - "Tehke need valikud, et näha kõiki mängijaid valges nimekirjas!"
+  - ":green_circle: %0 - Vaikimisi valge nimekiri(serveri järgi)"
+  - ":blue_circle: %1 - OurWhitelist(plugina poolt)"
+#Whitelist: list of whitelisted players choose option (description)
+WhitelistListChooseDefaultWhitelistButton: "Vaikimisi valge nimekiri"
+#Whitelist: list of whitelisted players choose option (button name) [default]
+WhitelistListChooseOurWhitelistButton: "MeieWhitelist"
+#Whitelist: list of whitelisted players choose option (button name) [ourwhitelist]
+WhitelistListOurWhitelistChooseTitle: ":warning: Vali variant"
+#Whitelist: list of whitelisted players choose option (title) [ourwhitelist]
+WhitelistListOurWhitelistChooseDescription:
+  - "Tehke need valikud, et näha kõiki meieWhitelisti mängijaid või administraatoreid!"
+  - ":green_circle: %0 - Tavalised mängijad"
+  - ":blue_circle: %1 - Administraatorid"
+#Whitelist: list of whitelisted players choose option (description) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonPlayers: "Tavalised mängijad"
+#Whitelist: list of whitelisted players choose option (button name) (players) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonAdministrators: "Administraatorid"
+#Whitelist: list of whitelisted players choose option (button name) (administrators) [ourwhitelist]
+ListPlayersTitle: ":page_with_curl: Mängijate nimekiri"
+#Whitelist: list of online players (title)
+ListPlayersDescription: "Hetkel online mängijaid: **%p**"
+#Whitelist: list of online players (description)
+ListPlayersFooter: "Kokku online mängijad: %p"
+#Whitelist: list of online players (footer)
+ListBannedPlayersTitle: ":page_with_curl: Keelatud mängijate nimekiri"
+#Whitelist: list of banned players (title)
+ListBannedPlayersDescription: "Keelatud mängijad: **%p**"
+#Whitelist: list of banned players (description)
+ListBannedPlayersFooter: "Keelatud mängijaid kokku: %p"
+#Whitelist: list of banned players (footer)
+ListWhitelistedDefaultTitle: ":page_with_curl: Valgesse nimekirja kuuluvate mängijate nimekiri (vaikimisi)"
+#Whitelist: list of whitelisted players (title) [default]
+ListWhitelistedDefaultDescription: "Praegu vaikimisi valges nimekirjas olevad mängijad: **%p**"
+#Whitelist: list of whitelisted players (description) [default]
+ListWhitelistedDefaultFooter: "Valgesse nimekirja kantud mängijaid kokku: %p"
+#Whitelist: list of whitelisted players (footer) [default]
+ListWhitelistedOurWhitelistTitle: ":page_with_curl: Valgesse nimekirja kuuluvate mängijate nimekiri (OurWhitelist)"
+#Whitelist: list of whitelisted players (title) [ourwhitelist]
+ListWhitelistedOurWhitelistDescription: "Hetkel meie nimekirjas olevad mängijad: **%p**"
+#Whitelist: list of whitelisted players (description) [ourwhitelist]
+ListWhitelistedOurWhitelistFooter: "Valgesse nimekirja kantud mängijaid kokku: %p"
+#Whitelist: list of whitelisted players (footer) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistTitle: ":page_with_curl: Lubatud administraatorite loend (OurWhitelist)"
+#Whitelist: list of whitelisted administrators (title) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistDescription: "Hetkel meie nimekirjas olevad administraatorid: **%p**"
+#Whitelist: list of whitelisted administrators (description) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistFooter: "Lubatud administraatorid kokku: %p"
+#Whitelist: list of whitelisted administrators (footer) [ourwhitelist]
+
+### EMBEDS COLORS ###
+# Use this site(https://htmlcolorcodes.com/) to pick your color
+
+ErrorEmbedColor: "#ff380d"
+# Embed color for error embeds
+
+SuccessEmbedColor: "#c0ff5f"
+# Embed color for success embeds
+
+ConfirmMenuEmbedColor: "#f7dcd7"
+# Embed color for whitelist confirmation menu embed
+
+ListEmbedColor: "#ffe14d"
+# Embed color for whitelisted players list embed
+
+ReactionEmbedColor: "#94e45b"
+# Embed color for /setupreaction embed
+
+LogsEmbedColor: "#51ffb5"
+# Embed color for logs embeds
+
+DMEmbedColor: "#51ff80"
+# Embed color for welcome DM embed
+
+WelcomeMessageEmbedColor: "#51ffca"
+# Embed color for global welcome message embed
+
+LinkedEmbedColor: "#9eff52"
+# Embed color for successful account link DM embed
+
+### LOGGING ###
+WhitelistLogEmbedTitle: ":page_with_curl: VALGE NIMEKIRJA LOGI"
+#Title for whitelist embed message log
+WhitelistLogEmbedDescription: "Kasutaja **%u** lisas oma hüüdnime **%p** valgesse nimekirja!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+WhitelistSlashCommandAddLogEmbedDescription: "Administraator **%a** lisas valgesse nimekirja hüüdnime * *%p* *!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+WhitelistSlashCommandRemovedLogEmbedDescription: "Administraator **%a** eemaldas hüüdnime **%p** valgest nimekirjast!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+LinkingLogTitle: ":page_with_curl: LINGILOGI"
+#Title for link embed message log
+LinkingLogLinkedDescription: "Kasutaja **%u** seotud oma Minecrafti kontoga **%p** UUID-ga **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+LinkingLogUnLinkedDescription: "Kasutaja **%u** tühistas oma Minecrafti konto **%p** UUID-ga **%i**"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+CheckLogEmbedTitle: ":page_with_curl: TŠEKILOGI"
+#Title for account check embed message log
+CheckWhitelistLogEmbedDescription: "Administraator **%a** kontrollis mängijat * *%p* * tema kohalolekut valges nimekirjas"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+CheckLinkNickLogEmbedDescription: "Administraator **%a** kontrollitud mängija **%p** tema seotud konto"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkDiscordIDLogEmbedDescription: "Administraator **%a** kontrollitud kasutaja DiscordID-ga **%p** tema lingitud konto jaoks"
+#Description for account check embed message log
+#%p - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkLogEmbedDescription: "Administraator **%a** kontrollitud kasutaja DiscordID **%l** ja hüüdnimega **%p** tema lingitud konto jaoks"
+#Description for account check embed message log
+#%p - player's nickname
+#%l - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+
+### CHECK ###
+WhitelistCheckFoundTitle: ":green_book: LEITUD"
+#Title for found account embed message
+WhitelistCheckFoundDescription: "Mängija **%p** leiti valgest nimekirjast"
+#Description for found account embed message [Default whitelist]
+WhitelistCheckFoundOurWhitelistDescription: "Mängija **%p** leiti meieWhitelistist. Ta on: **%t**"
+#Description for found account embed message [OurWhitelist]
+WhitelistCheckNotFoundTitle: ":closed_book: EI LEITUD"
+#Title for not found account embed message
+WhitelistCheckNotFoundDescription: "Mängija **%p** leiti valgest nimekirjast"
+#Description for not found account embed message [Default whitelist]
+LinkingCheckDiscordIDNotFound: "DiscordID peab olema 18 tähemärki pikk ja tüübiga: long"
+#Description for DiscordID issue embed message
+LinkingCheckFoundTitle: ":green_book: LEITUD"
+#Title for found account embed message
+LinkingCheckFoundDescription:
+  - "Leidsime selle konto kohta järgmist teavet:"
+  - "Hüüdnimi: **%n**"
+  - "UUID: **%u**"
+  - "Lahknevus: **%d**"
+  - "DiscordID: **%i**"
+  - "Linkimise kuupäev: **%t**"
+  - "Mainimine(kui on olemas): %m"
+#Description for all linked account information embed message
+LinkingCheckNotFoundTitle: ":closed_book: EI LEITUD"
+#Title for error embed message
+LinkingCheckNotFoundDescription: "Me ei leia infot selle mängija kohta! Kas ta ei ole kontot sidunud või olete esitanud ebatäpset teavet"
+#Description for error embed message
+
+#Language file version: 1.0 (Include this version where you report translation issue)

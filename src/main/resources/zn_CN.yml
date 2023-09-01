@@ -1,0 +1,337 @@
+### EMBEDS ###
+ErrorTitle: ":x: 错误"
+#Title for an embed messages, :x: is emoji
+SuccessTitle: ":white_check_mark: 成功"
+#Title for an embed messages, :white_check_mark: is emoji
+InfoTitle: ":warning: 信息"
+#Title for an embed messages, :warning: is emoji
+DMMessageTitle: ":wave: 欢迎来到我们的服务器"
+#Title for DM welcome message, :wave: is emoji
+WelcomeMessageTitle: ":wave: 欢迎来到我们的服务器"
+#Title for global welcome message, :wave: is emoji
+###          ###
+
+### MAIN (DISCORD) ###
+AlreadyIn: "玩家“%u”已经在白名单中！"
+#Message: If player already in whitelist. %u - user's nickname which already in whitelist!
+AddedIn: "播放器“%u”已成功添加到白名单中！"
+#Message: If player successfully added in whitelist. %u - user's nickname which was added in whitelist!
+SymbolsError: "抱歉，您的昵称可能只包含英文字符（ 0-9和_）"
+#Error message if message wrote not on English language
+LengthError: "抱歉，您的昵称必须大于2个字符或小于17个字符！"
+#Error message if nickname contains fewer than 3 symbols
+Blacklist-message: "对不起， “%u”在黑名单中，对不起。"
+#Message: A Blacklist Message that will send like an error in channel if user is in Blacklist. %u - user's nickname which was added in whitelist!
+DM-Message:
+  - "您好， * *%u* * ！感谢您选择我们作为寻找播放服务器！"
+  - "我们很高兴在这里见到您！"
+#Message: A Direct Message will send to user who was whitelisted. %u - user's nickname which was added in whitelist!
+Welcome-Message:
+  - "* *欢迎来到我们的服务器， * *%u* *。我们希望你很快就能玩得开心！ * *"
+#Message: A Welcome Message will send to channel that setted up before(GlobalChannelID).
+#%u - user's mention! (@User)
+#%p - user's nickname which was added in whitelist! (USER)
+ReactionEmbedTitle: "* *欢迎来到我们的服务器！ * *"
+#Message: A embed message title that will be used in /setupreaction
+ReactionEmbedDescription:
+  - "您需要单击下面的按钮才能"
+  - "在我们的Discord服务器上继续！"
+  - "祝您今天愉快！"
+#Message: A embed message description that will be used in /setupreaction
+ReactionButton: "同意规则"
+#Message: A embed message button that will be used in /setupreaction
+ReactionNotEnabled: "您应该在配置上启用它以使用此命令！"
+#Message: A embed message error description that will be used in /setupreaction
+ReactionSuccess: "完成！您现在可以在我们的服务器上完成所有操作！"
+#Message: A embed message success description that will be used in /setupreaction
+###          ###
+
+### CONFIRM ###
+ConfirmTitle: "确认输入的用户名的正确性"
+#Title for an embed message that will be used when user types their username
+ConfirmMessage: "请确认用户名“%u”正确"
+#Message: Will be used when user types their username.  user's nickname which was texted to a channel!
+ConfirmButtonYes: "是，正确"
+#Confirm button for a message
+ConfirmButtonNo: "不，再试一次"
+#Confirm button for a message
+TitleRefused: ":x: 您拒绝了正确性检查"
+#Title for an embed message that will be used when user rejected correctness check, :x: is smile
+MessageRefused: "再试一次，小心谨慎！"
+#Message: Will be used when user rejected correctness check!
+MessageError: "您不能使用此按钮！"
+#Message: Will be used when other user used foreign buttons!
+###          ###
+
+### WHITELIST ###
+### VERSION: 0.7A2803 (Include that version if you will report any whitelist bug)
+WhitelistUsage: "& fUsage: & 6/白名单 <on/off/lock_on/lock_off/add/add_administrator/remove/remove_administrator/message/lock_message/list/list_administrators>"
+#Whitelist: command usage
+WhitelistList: "玩家列表(%p): & 6%s"
+#Whitelist: shows the list of all whitelisted players. %s - player nicknames!
+AdministratorsList: "& f管理员列表(%p): & 6%s"
+#Whitelist: shows the list of all administrators. %s - administrator nicknames!
+WhitelistOn: "& fWhitelist已打开& aon"
+#Whitelist: turns on whitelist
+WhitelistAlreadyOn: "& fWhitelist已经开启& aon!"
+#Whitelist: whitelist already turned on
+WhitelistOff: "& fWhitelist已转为& coff"
+#Whitelist: turns off whitelist
+WhitelistAlreadyOff: "& fWhitelist已经变成了& coff!"
+#Whitelist: whitelist already turned off
+WhitelistLockOn: "& f服务器锁定已打开& aon"
+#Whitelist: turns on server locking
+WhitelistLockOff: "服务器锁定已关闭(& F)"
+#Whitelist: turns off server locking
+WhitelistAdded: "&fPlayer &6%s &fwas whitelisted"
+#Whitelist: player was added in whitelist. %s - player's nickname!
+WhitelistLockAdded: "& fAdministrator & 6%s & fwas已添加！"
+#Whitelist: player was added in whitelist. %s - administrator's nickname!
+WhitelistRemoved: "&fPlayer &6%s &fwas un-whitelisted"
+#Whitelist: player was removed from whitelist. %s - player's nickname!
+WhitelistLockRemoved: "& f管理员& 6%s & fwas已删除"
+#Whitelist: player was removed from whitelist. %s - administrator's nickname!
+WhitelistPlayerNotFound: "找不到fPlayer (& F)"
+#Whitelist: player not found
+MessageNotFound: "& f您需要包含一条消息"
+#Whitelist: message was not written
+WhitelistMsgSet: "& fWhitelist kick message被设置为: & 6%s"
+#Whitelist: kick message. %s - kick message!
+LockMsgSet: "& fLock消息已设置为: & 6%s"
+#Whitelist: lock kick message. %s - lock kick message!
+WhitelistAlreadyAdded: "& f此播放器已在白名单中"
+#Whitelist: player already in
+
+### LINKING ###
+### VERSION: 0.2A0604 (Include that version if you will report any linking bug)
+LeftDiscordKickReason: "您离开了我们的Discord服务器！"
+LinkingTurnedOff: "链接当前已关闭(& C)。与管理部门联系以获取更多信息"
+LinkingProfileNotExist: "& c您没有关联的帐户。没有关于您的任何信息。"
+LinkingTurnedOffEmbed: "链接当前已关闭。与管理部门联系以获取更多信息"
+LinkingUsage: "& fUsage: & 6/link <CODE>"
+#Linking: command usage.
+LinkingStart: "& fYou & 6应该通过我们的Discord服务器开始链接过程！类型（在Discord中） ： & 6/帐户链接 <NAME>"
+#Linking: when player needs to start linking process.
+LinkingInvalidCode: "& c您的代码无效！请重试！"
+#Linking: when player include invalid linking code
+LinkingAlreadyLinked: "& c您已链接！"
+#Linking: when player already linked
+LinkingNotLinked: "& c您没有链接！"
+#Linking: when player trying to unlink not linked account
+LinkingLeftGuild: "& c您已离开我们的Discord服务器"
+#Linking: when player left from guild
+LinkingLinkedEmbedTitle: ":link: 已连接"
+#Linking: discord embed message title when player successful linked
+LinkingLinkedEmbedDescription: "恭喜！您已成功链接到您的Minecraft帐户： * *%u* *"
+#Linking: discord embed message description when player successful linked,  %u - Minecraft account
+LinkingLinkedMsg: "& a您已成功与Discord帐户关联： & 6 %u"
+#Linking: discord message when player successful linked, %u - Discord account
+LinkingInfo:
+  - "有关您的帐户的完整信息(& F): "
+  - "昵称(& F): & e%0"
+  - "& fUUID: & e%1"
+  - "Discord: & e%2(& F)"
+  - "& fDiscordID: & e%3"
+  - "链接日期(& F): & e%4"
+#Linking: information message
+LinkingSlashCommandPlayerNotOnlne: "此玩家不在线！"
+#Linking: player needs to be online
+LinkingSlashCommandNotLinked: "你没有联系！"
+#Linking: when player trying to unlink not linked account
+LinkingSlashCommandAccountNotYours: "您无法取消关联他人的账号！"
+#Linking: user trying to unlink other's account
+LinkingSlashCommandAlreadyLinked: "您已链接！"
+#Linking: user is already linked!
+LinkingSlashCommandNicknameError: "昵称不能太短或太长！"
+#Linking: nickname should be longed than 3 symbols or shorter than 17 symbols!
+LinkingSlashCommandCodeGenerated: "您已经生成了代码！"
+#Linking: if linking process already started
+LinkingSlashCommandLink: "代码已生成！现在，您需要在游戏中使用`/link %u` ！谢谢！"
+#Linking: start of linking process. %u - linking code
+LinkingSlashCommandUnLink: "完成！您已成功取消关联您的帐户"
+#Linking: unlinked accounts
+LinkingUnlinkedMessage: "您的帐户被& f%u & erequest取消关联(& e)"
+#Linking: unlinked accounts. %u - Discord
+LinkingKickMsg: "& c您需要将您的Minecraft帐户与Discord帐户关联！"
+#Linking: kick message
+
+### SLASHCOMMANDS ###
+WhitelistRegexErrorDescription: "昵称只能包含英文符号！"
+#Whitelist: SlashCommand nickname regex check failed
+WhitelistedSuccessful: "播放器* *%p* *已添加到白名单中"
+#Whitelist: player was added in whitelist
+WhitelistedAlready: "播放器* *%p* *已在白名单中"
+#Whitelist: player already in whitelist
+WhitelistRemovedSuccessful: "玩家* *%p* *已从白名单中删除"
+#Whitelist: player was removed from whitelist
+NotInWhitelist: "在白名单中找不到播放器* *%p* *"
+#Whitelist: player not found in whitelist
+WhitelistListChooseTitle: ":warning: 选择选项"
+#Whitelist: list of whitelisted players choose option (title)
+WhitelistListChooseDescription:
+  - "选择这些选项以查看白名单中的所有玩家！"
+  - ":green_circle: %0 -默认白名单（按服务器）"
+  - ":blue_circle: %1 -我们的白名单（通过插件）"
+#Whitelist: list of whitelisted players choose option (description)
+WhitelistListChooseDefaultWhitelistButton: "默认白名单"
+#Whitelist: list of whitelisted players choose option (button name) [default]
+WhitelistListChooseOurWhitelistButton: "我们的白名单"
+#Whitelist: list of whitelisted players choose option (button name) [ourwhitelist]
+WhitelistListOurWhitelistChooseTitle: ":warning: 选择选项"
+#Whitelist: list of whitelisted players choose option (title) [ourwhitelist]
+WhitelistListOurWhitelistChooseDescription:
+  - "选择这些选项以查看OurWhitelist中的所有玩家或管理员！"
+  - ":green_circle: %0 -普通玩家"
+  - ":blue_circle: %1 -管理员"
+#Whitelist: list of whitelisted players choose option (description) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonPlayers: "普通玩家"
+#Whitelist: list of whitelisted players choose option (button name) (players) [ourwhitelist]
+WhitelistListOurWhitelistChooseButtonAdministrators: "管理员"
+#Whitelist: list of whitelisted players choose option (button name) (administrators) [ourwhitelist]
+ListPlayersTitle: ":page_with_curl: 玩家列表"
+#Whitelist: list of online players (title)
+ListPlayersDescription: "当前在线玩家: * *%p* *"
+#Whitelist: list of online players (description)
+ListPlayersFooter: "在线玩家总数: %p"
+#Whitelist: list of online players (footer)
+ListBannedPlayersTitle: ":page_with_curl: 被禁球员名单"
+#Whitelist: list of banned players (title)
+ListBannedPlayersDescription: "当前被禁止的玩家： * *%p* *"
+#Whitelist: list of banned players (description)
+ListBannedPlayersFooter: "被禁止的玩家总数： %p"
+#Whitelist: list of banned players (footer)
+ListWhitelistedDefaultTitle: ":page_with_curl: 白名单球员列表（默认）"
+#Whitelist: list of whitelisted players (title) [default]
+ListWhitelistedDefaultDescription: "当前处于默认白名单中的玩家： * *%p* *"
+#Whitelist: list of whitelisted players (description) [default]
+ListWhitelistedDefaultFooter: "白名单玩家总数: %p"
+#Whitelist: list of whitelisted players (footer) [default]
+ListWhitelistedOurWhitelistTitle: ":page_with_curl: 白名单玩家列表(OurWhitelist)"
+#Whitelist: list of whitelisted players (title) [ourwhitelist]
+ListWhitelistedOurWhitelistDescription: "当前在OurWhitelist的玩家: * *%p* *"
+#Whitelist: list of whitelisted players (description) [ourwhitelist]
+ListWhitelistedOurWhitelistFooter: "白名单玩家总数: %p"
+#Whitelist: list of whitelisted players (footer) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistTitle: ":page_with_curl: 白名单管理员列表(OurWhitelist)"
+#Whitelist: list of whitelisted administrators (title) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistDescription: "当前在OurWhitelist中的管理员: * *%p* *"
+#Whitelist: list of whitelisted administrators (description) [ourwhitelist]
+ListAdministratorsWhitelistedOurWhitelistFooter: "白名单管理员总数: %p"
+#Whitelist: list of whitelisted administrators (footer) [ourwhitelist]
+
+### EMBEDS COLORS ###
+# Use this site(https://htmlcolorcodes.com/) to pick your color
+
+ErrorEmbedColor: "#ff380d"
+# Embed color for error embeds
+
+SuccessEmbedColor: "#c0ff5f"
+# Embed color for success embeds
+
+ConfirmMenuEmbedColor: "#f7dcd7"
+# Embed color for whitelist confirmation menu embed
+
+ListEmbedColor: "#ffe14d"
+# Embed color for whitelisted players list embed
+
+ReactionEmbedColor: "#94e45b"
+# Embed color for /setupreaction embed
+
+LogsEmbedColor: "#51ffb5"
+# Embed color for logs embeds
+
+DMEmbedColor: "#51ff80"
+# Embed color for welcome DM embed
+
+WelcomeMessageEmbedColor: "#51ffca"
+# Embed color for global welcome message embed
+
+LinkedEmbedColor: "#9eff52"
+# Embed color for successful account link DM embed
+
+### LOGGING ###
+WhitelistLogEmbedTitle: ":page_with_curl: 白名单日志"
+#Title for whitelist embed message log
+WhitelistLogEmbedDescription: "用户* *%u* *将他的昵称* *%p* *添加到白名单！"
+#Description for whitelist embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+WhitelistSlashCommandAddLogEmbedDescription: "Administrator **%a** added nickname **%p** to whitelist!"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+WhitelistSlashCommandRemovedLogEmbedDescription: "管理员* *%a* *从白名单中删除了昵称* *%p* * ！"
+#Description for whitelist embed message log
+#%p - added nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+LinkingLogTitle: ":page_with_curl: 链接日志"
+#Title for link embed message log
+LinkingLogLinkedDescription: "用户* *%u* *与他的Minecraft帐户关联* *%p* * ， UUID * *%i* *"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+LinkingLogUnLinkedDescription: "用户* *%u* *已将其Minecraft帐户* *%p* *与UUID * *%i* *取消关联"
+#Description for link embed message log
+#%p - added nickname
+#%u - user's mention (@User)
+#%d - user's discord (User#0001)
+#%i - player's UUID
+CheckLogEmbedTitle: ":page_with_curl: 检查日志"
+#Title for account check embed message log
+CheckWhitelistLogEmbedDescription: "管理员* *%a* *检查玩家* *%p* *是否存在于白名单中"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%d - administrator's discord (Administrator#0001)
+CheckLinkNickLogEmbedDescription: "管理员* *%a* *已检查其关联帐户的玩家* *%p* *"
+#Description for account check embed message log
+#%p - player's nickname
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkDiscordIDLogEmbedDescription: "管理员* *%a* *使用DiscordID * *%p* *检查其关联帐户的用户"
+#Description for account check embed message log
+#%p - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+CheckLinkLogEmbedDescription: "管理员* *%a* *使用DiscordID * *%l* *检查用户，其关联帐户的昵称为* *%p* *"
+#Description for account check embed message log
+#%p - player's nickname
+#%l - user's DiscordID
+#%a - administrator's mention (@Administrator)
+#%i - administrator's discord (Administrator#0001)
+
+### CHECK ###
+WhitelistCheckFoundTitle: ":green_book: 找到"
+#Title for found account embed message
+WhitelistCheckFoundDescription: "在白名单中找到玩家* *%p* *"
+#Description for found account embed message [Default whitelist]
+WhitelistCheckFoundOurWhitelistDescription: "玩家* *%p* *在我们的白名单中找到。他是： * *%t* *"
+#Description for found account embed message [OurWhitelist]
+WhitelistCheckNotFoundTitle: ":closed_book: 未找到"
+#Title for not found account embed message
+WhitelistCheckNotFoundDescription: "在白名单中找到玩家* *%p* *"
+#Description for not found account embed message [Default whitelist]
+LinkingCheckDiscordIDNotFound: "DiscordID长度应为18个字符，类型为: long"
+#Description for DiscordID issue embed message
+LinkingCheckFoundTitle: ":green_book: 找到"
+#Title for found account embed message
+LinkingCheckFoundDescription:
+  - "我们找到了有关此帐户的信息："
+  - "昵称: * *%n* *"
+  - "UUID: * *%u* *"
+  - "Discord: * *%d* *"
+  - "DiscordID: * *%i* *"
+  - "链接日期: * *%t* *"
+  - "提到（如果有的话） ： %m"
+#Description for all linked account information embed message
+LinkingCheckNotFoundTitle: ":closed_book: 未找到"
+#Title for error embed message
+LinkingCheckNotFoundDescription: "我们无法找到有关此玩家的信息！要么他没有关联账号，要么您提供的信息不准确"
+#Description for error embed message
+
+#Language file version: 1.0 (Include this version where you report translation issue)
