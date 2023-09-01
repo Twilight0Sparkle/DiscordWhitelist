@@ -1,2 +1,1 @@
-# DiscordWhitelist
-Best way to connect players with your Discord server
+![https://windstudio.gitbook.io/discordwhitelist](https://i.imgur.com/4hajuPr.png)
