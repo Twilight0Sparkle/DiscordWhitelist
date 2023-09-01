@@ -7,7 +7,7 @@
 [![second](https://i.imgur.com/cI9A3s3.png)](https://discord.gg/XMGprbGtgR)
 [![third](https://i.imgur.com/BDebAPp.png)](https://billing.wyvern.host/aff.php?aff=77)
 
-<center> Image transcription: </center> <br/>
+<p align="center"> Image transcription: </p> <br/>
 DiscordWhitelist© <br/>
 Best way to connect players with your Discord server <br/>
 
@@ -52,7 +52,7 @@ Developer’s Discord server! Here you can <br/>
 ・ suggest your idea for update or translation <br/>
 ・ just talk with many peoples <br/>
 If you need any support - just ask for that in support <br/>
- channel and you will get quality support. <br/>
+channel and you will get quality support. <br/>
 (Just [tap me](https://discord.gg/XMGprbGtgR) to visit Support server) <br/>
 
 Our Partnership <br/>
