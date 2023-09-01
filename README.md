@@ -7,7 +7,7 @@
 [![second](https://i.imgur.com/cI9A3s3.png)](https://discord.gg/XMGprbGtgR)
 [![third](https://i.imgur.com/BDebAPp.png)](https://billing.wyvern.host/aff.php?aff=77)
 
-<p align="center"> Image transcription: </p> <br/>
+<p align="center"> Image transcription: <br/>
 DiscordWhitelist© <br/>
 Best way to connect players with your Discord server <br/>
 
@@ -27,7 +27,7 @@ Plugin's wiki <br/>
 View plugin’s wiki to solve some your questions. <br/>
 This can help you with plugin setting and other stuff. <br/>
 Anyway, if you have questions related the plugin <br/>
- - feel free to ask these on developer’s Discord server! <br/>
+feel free to ask these on developer’s Discord server! <br/>
 ([Click me](https://windstudio.gitbook.io/discordwhitelist) to be redirected to wiki) <br/>
 
 Plugin's features <br/>
@@ -63,4 +63,4 @@ hosting & support quality! Affordable prices. <br/>
 Just try it and you will get best hosting! <br/>
 (Just [tap me](https://billing.wyvern.host/aff.php?aff=77) to visit WYVERN’s website) <br/>
 
-WIND Studio LOGO <br/>
+WIND Studio LOGO </p> <br/>
