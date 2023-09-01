@@ -1,8 +1,13 @@
+[Check it on Spigot!](https://www.spigotmc.org/resources/discord-whitelist-fourth-generation-%E3%83%BBfree-advanced-powerful-tool.97587/)
+[Download it on Hangar!](https://hangar.papermc.io/WIND-Studio/DiscordWhitelist)
+[See it out on Craftaro <3](https://craftaro.com/marketplace/product/discord-whitelist-fourth-generationfree-advanced-powerful-tool.1007)
+[Inspect this on Polymart!](https://polymart.org/resource/discord-whitelist.3927)
+
 [![first](https://i.imgur.com/4hajuPr.png)](https://windstudio.gitbook.io/discordwhitelist)
 [![second](https://i.imgur.com/cI9A3s3.png)](https://discord.gg/XMGprbGtgR)
 [![third](https://i.imgur.com/BDebAPp.png)](https://billing.wyvern.host/aff.php?aff=77)
 
-:-:Image transcription::-:
+Image transcription:
 DiscordWhitelist©
 Best way to connect players with your Discord server
 
