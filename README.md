@@ -2,7 +2,7 @@
 [![second](https://i.imgur.com/cI9A3s3.png)](https://discord.gg/XMGprbGtgR)
 [![third](https://i.imgur.com/BDebAPp.png)](https://billing.wyvern.host/aff.php?aff=77)
 
-..Image transcription:..
+:Image transcription::
 DiscordWhitelist©
 Best way to connect players with your Discord server
 
